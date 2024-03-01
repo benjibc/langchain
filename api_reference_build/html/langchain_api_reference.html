@@ -10,7 +10,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   
-  <title>langchain 0.1.7 &mdash; 🦜🔗 LangChain 0.1.7</title>
+  <title>langchain 0.1.9 &mdash; 🦜🔗 LangChain 0.1.9</title>
   
   <link rel="canonical" href="https://api.python.langchain.com/en/latest/langchain_api_reference.html" />
 
@@ -61,10 +61,28 @@
           <a class="sk-nav-link nav-link" href="experimental_api_reference.html">Experimental</a>
         </li>
         <li class="nav-item">
+          <a class="sk-nav-link nav-link" href="text_splitters_api_reference.html">Text splitters</a>
+        </li>
+        <li class="nav-item">
+          <a class="sk-nav-link nav-link nav-more-item-mobile-items" href="ai21_api_reference.html">ai21</a>
+        </li>
+        <li class="nav-item">
+          <a class="sk-nav-link nav-link nav-more-item-mobile-items" href="airbyte_api_reference.html">airbyte</a>
+        </li>
+        <li class="nav-item">
           <a class="sk-nav-link nav-link nav-more-item-mobile-items" href="anthropic_api_reference.html">anthropic</a>
         </li>
         <li class="nav-item">
+          <a class="sk-nav-link nav-link nav-more-item-mobile-items" href="astradb_api_reference.html">astradb</a>
+        </li>
+        <li class="nav-item">
+          <a class="sk-nav-link nav-link nav-more-item-mobile-items" href="elasticsearch_api_reference.html">elasticsearch</a>
+        </li>
+        <li class="nav-item">
           <a class="sk-nav-link nav-link nav-more-item-mobile-items" href="exa_api_reference.html">exa</a>
+        </li>
+        <li class="nav-item">
+          <a class="sk-nav-link nav-link nav-more-item-mobile-items" href="fireworks_api_reference.html">fireworks</a>
         </li>
         <li class="nav-item">
           <a class="sk-nav-link nav-link nav-more-item-mobile-items" href="google_genai_api_reference.html">google-genai</a>
@@ -73,7 +91,16 @@
           <a class="sk-nav-link nav-link nav-more-item-mobile-items" href="google_vertexai_api_reference.html">google-vertexai</a>
         </li>
         <li class="nav-item">
+          <a class="sk-nav-link nav-link nav-more-item-mobile-items" href="groq_api_reference.html">groq</a>
+        </li>
+        <li class="nav-item">
+          <a class="sk-nav-link nav-link nav-more-item-mobile-items" href="ibm_api_reference.html">ibm</a>
+        </li>
+        <li class="nav-item">
           <a class="sk-nav-link nav-link nav-more-item-mobile-items" href="mistralai_api_reference.html">mistralai</a>
+        </li>
+        <li class="nav-item">
+          <a class="sk-nav-link nav-link nav-more-item-mobile-items" href="mongodb_api_reference.html">mongodb</a>
         </li>
         <li class="nav-item">
           <a class="sk-nav-link nav-link nav-more-item-mobile-items" href="nomic_api_reference.html">nomic</a>
@@ -99,11 +126,19 @@
         <li class="nav-item dropdown nav-more-item-dropdown">
           <a class="sk-nav-link nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Partner libs</a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="sk-nav-dropdown-item dropdown-item" href="ai21_api_reference.html">ai21</a>
+              <a class="sk-nav-dropdown-item dropdown-item" href="airbyte_api_reference.html">airbyte</a>
               <a class="sk-nav-dropdown-item dropdown-item" href="anthropic_api_reference.html">anthropic</a>
+              <a class="sk-nav-dropdown-item dropdown-item" href="astradb_api_reference.html">astradb</a>
+              <a class="sk-nav-dropdown-item dropdown-item" href="elasticsearch_api_reference.html">elasticsearch</a>
               <a class="sk-nav-dropdown-item dropdown-item" href="exa_api_reference.html">exa</a>
+              <a class="sk-nav-dropdown-item dropdown-item" href="fireworks_api_reference.html">fireworks</a>
               <a class="sk-nav-dropdown-item dropdown-item" href="google_genai_api_reference.html">google-genai</a>
               <a class="sk-nav-dropdown-item dropdown-item" href="google_vertexai_api_reference.html">google-vertexai</a>
+              <a class="sk-nav-dropdown-item dropdown-item" href="groq_api_reference.html">groq</a>
+              <a class="sk-nav-dropdown-item dropdown-item" href="ibm_api_reference.html">ibm</a>
               <a class="sk-nav-dropdown-item dropdown-item" href="mistralai_api_reference.html">mistralai</a>
+              <a class="sk-nav-dropdown-item dropdown-item" href="mongodb_api_reference.html">mongodb</a>
               <a class="sk-nav-dropdown-item dropdown-item" href="nomic_api_reference.html">nomic</a>
               <a class="sk-nav-dropdown-item dropdown-item" href="nvidia_ai_endpoints_api_reference.html">nvidia-ai-endpoints</a>
               <a class="sk-nav-dropdown-item dropdown-item" href="nvidia_trt_api_reference.html">nvidia-trt</a>
@@ -140,7 +175,7 @@
         </div>
             <div class="sk-sidebar-toc">
               <ul>
-<li><a class="reference internal" href="#"><code class="docutils literal notranslate"><span class="pre">langchain</span></code> 0.1.7</a><ul>
+<li><a class="reference internal" href="#"><code class="docutils literal notranslate"><span class="pre">langchain</span></code> 0.1.9</a><ul>
 <li><a class="reference internal" href="#module-langchain.agents"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain.agents</span></code></a><ul>
 <li><a class="reference internal" href="#classes">Classes</a></li>
 <li><a class="reference internal" href="#functions">Functions</a></li>
@@ -157,67 +192,60 @@
 </li>
 <li><a class="reference internal" href="#module-langchain.embeddings"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain.embeddings</span></code></a><ul>
 <li><a class="reference internal" href="#id4">Classes</a></li>
-<li><a class="reference internal" href="#id5">Functions</a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#module-langchain.evaluation"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain.evaluation</span></code></a><ul>
-<li><a class="reference internal" href="#id6">Classes</a></li>
-<li><a class="reference internal" href="#id7">Functions</a></li>
+<li><a class="reference internal" href="#id5">Classes</a></li>
+<li><a class="reference internal" href="#id6">Functions</a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#module-langchain.hub"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain.hub</span></code></a><ul>
-<li><a class="reference internal" href="#id8">Functions</a></li>
+<li><a class="reference internal" href="#id7">Functions</a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#module-langchain.indexes"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain.indexes</span></code></a><ul>
+<li><a class="reference internal" href="#id8">Classes</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#module-langchain.memory"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain.memory</span></code></a><ul>
 <li><a class="reference internal" href="#id9">Classes</a></li>
 <li><a class="reference internal" href="#id10">Functions</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#module-langchain.memory"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain.memory</span></code></a><ul>
-<li><a class="reference internal" href="#id11">Classes</a></li>
-<li><a class="reference internal" href="#id12">Functions</a></li>
-</ul>
-</li>
 <li><a class="reference internal" href="#module-langchain.model_laboratory"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain.model_laboratory</span></code></a><ul>
-<li><a class="reference internal" href="#id13">Classes</a></li>
+<li><a class="reference internal" href="#id11">Classes</a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#module-langchain.output_parsers"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain.output_parsers</span></code></a><ul>
+<li><a class="reference internal" href="#id12">Classes</a></li>
+<li><a class="reference internal" href="#id13">Functions</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#module-langchain.retrievers"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain.retrievers</span></code></a><ul>
 <li><a class="reference internal" href="#id14">Classes</a></li>
 <li><a class="reference internal" href="#id15">Functions</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#module-langchain.retrievers"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain.retrievers</span></code></a><ul>
-<li><a class="reference internal" href="#id16">Classes</a></li>
-<li><a class="reference internal" href="#id17">Functions</a></li>
-</ul>
-</li>
 <li><a class="reference internal" href="#module-langchain.runnables"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain.runnables</span></code></a><ul>
-<li><a class="reference internal" href="#id18">Classes</a></li>
+<li><a class="reference internal" href="#id16">Classes</a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#module-langchain.smith"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain.smith</span></code></a><ul>
-<li><a class="reference internal" href="#id19">Classes</a></li>
-<li><a class="reference internal" href="#id20">Functions</a></li>
+<li><a class="reference internal" href="#id17">Classes</a></li>
+<li><a class="reference internal" href="#id18">Functions</a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#module-langchain.storage"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain.storage</span></code></a><ul>
-<li><a class="reference internal" href="#id21">Classes</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#module-langchain.text_splitter"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain.text_splitter</span></code></a><ul>
-<li><a class="reference internal" href="#id24">Classes</a></li>
-<li><a class="reference internal" href="#id25">Functions</a></li>
+<li><a class="reference internal" href="#id19">Classes</a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#module-langchain.tools"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain.tools</span></code></a><ul>
-<li><a class="reference internal" href="#id26">Classes</a></li>
-<li><a class="reference internal" href="#id27">Functions</a></li>
+<li><a class="reference internal" href="#id20">Classes</a></li>
+<li><a class="reference internal" href="#id21">Functions</a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#module-langchain.utils"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain.utils</span></code></a><ul>
-<li><a class="reference internal" href="#id28">Functions</a></li>
+<li><a class="reference internal" href="#id22">Functions</a></li>
 </ul>
 </li>
 </ul>
@@ -230,8 +258,8 @@
     <div id="sk-page-content-wrapper">
       <div class="sk-page-content container-fluid body px-md-3" role="main">
         
-  <section id="langchain-0-1-7">
-<h1><code class="docutils literal notranslate"><span class="pre">langchain</span></code> 0.1.7<a class="headerlink" href="#langchain-0-1-7" title="Permalink to this heading">¶</a></h1>
+  <section id="langchain-0-1-9">
+<h1><code class="docutils literal notranslate"><span class="pre">langchain</span></code> 0.1.9<a class="headerlink" href="#langchain-0-1-9" title="Permalink to this heading">¶</a></h1>
 <section id="module-langchain.agents">
 <span id="langchain-agents"></span><h2><a class="reference internal" href="#module-langchain.agents" title="langchain.agents"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain.agents</span></code></a><a class="headerlink" href="#module-langchain.agents" title="Permalink to this heading">¶</a></h2>
 <p><strong>Agent</strong> is a class that uses an LLM to choose a sequence of actions to take.</p>
@@ -263,7 +291,7 @@ to take and in which order.</p>
 </colgroup>
 <tbody>
 <tr class="row-odd"><td><p><a class="reference internal" href="agents/langchain.agents.agent.Agent.html#langchain.agents.agent.Agent" title="langchain.agents.agent.Agent"><code class="xref py py-obj docutils literal notranslate"><span class="pre">agents.agent.Agent</span></code></a></p></td>
-<td><p>[<em>Deprecated</em>]  Agent that calls the language model and deciding the action.</p></td>
+<td><p>[<em>Deprecated</em>] Agent that calls the language model and deciding the action.</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="agents/langchain.agents.agent.AgentExecutor.html#langchain.agents.agent.AgentExecutor" title="langchain.agents.agent.AgentExecutor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">agents.agent.AgentExecutor</span></code></a></p></td>
 <td><p>Agent that is using tools.</p></td>
@@ -281,7 +309,7 @@ to take and in which order.</p>
 <td><p>Tool that just returns the query.</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="agents/langchain.agents.agent.LLMSingleActionAgent.html#langchain.agents.agent.LLMSingleActionAgent" title="langchain.agents.agent.LLMSingleActionAgent"><code class="xref py py-obj docutils literal notranslate"><span class="pre">agents.agent.LLMSingleActionAgent</span></code></a></p></td>
-<td><p>[<em>Deprecated</em>]  Base class for single action agents.[<em>Deprecated</em>] Base class for single action agents.</p></td>
+<td><p>[<em>Deprecated</em>] Base class for single action agents.</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="agents/langchain.agents.agent.MultiActionAgentOutputParser.html#langchain.agents.agent.MultiActionAgentOutputParser" title="langchain.agents.agent.MultiActionAgentOutputParser"><code class="xref py py-obj docutils literal notranslate"><span class="pre">agents.agent.MultiActionAgentOutputParser</span></code></a></p></td>
 <td><p>Base class for parsing agent output into agent actions/finish.</p></td>
@@ -305,22 +333,22 @@ to take and in which order.</p>
 <td><p>Toolkit for interacting with a Vector Store.</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="agents/langchain.agents.agent_types.AgentType.html#langchain.agents.agent_types.AgentType" title="langchain.agents.agent_types.AgentType"><code class="xref py py-obj docutils literal notranslate"><span class="pre">agents.agent_types.AgentType</span></code></a>(value)</p></td>
-<td><p>[<em>Deprecated</em>]  An enum for agent types.</p></td>
+<td><p>[<em>Deprecated</em>] An enum for agent types.</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="agents/langchain.agents.chat.base.ChatAgent.html#langchain.agents.chat.base.ChatAgent" title="langchain.agents.chat.base.ChatAgent"><code class="xref py py-obj docutils literal notranslate"><span class="pre">agents.chat.base.ChatAgent</span></code></a></p></td>
-<td><p>[<em>Deprecated</em>]  Chat Agent.[<em>Deprecated</em>] Chat Agent.</p></td>
+<td><p>[<em>Deprecated</em>] Chat Agent.</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="agents/langchain.agents.chat.output_parser.ChatOutputParser.html#langchain.agents.chat.output_parser.ChatOutputParser" title="langchain.agents.chat.output_parser.ChatOutputParser"><code class="xref py py-obj docutils literal notranslate"><span class="pre">agents.chat.output_parser.ChatOutputParser</span></code></a></p></td>
 <td><p>Output parser for the chat agent.</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="agents/langchain.agents.conversational.base.ConversationalAgent.html#langchain.agents.conversational.base.ConversationalAgent" title="langchain.agents.conversational.base.ConversationalAgent"><code class="xref py py-obj docutils literal notranslate"><span class="pre">agents.conversational.base.ConversationalAgent</span></code></a></p></td>
-<td><p>[<em>Deprecated</em>]  An agent that holds a conversation in addition to using tools.[<em>Deprecated</em>] An agent that holds a conversation in addition to using tools.</p></td>
+<td><p>[<em>Deprecated</em>] An agent that holds a conversation in addition to using tools.</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="agents/langchain.agents.conversational.output_parser.ConvoOutputParser.html#langchain.agents.conversational.output_parser.ConvoOutputParser" title="langchain.agents.conversational.output_parser.ConvoOutputParser"><code class="xref py py-obj docutils literal notranslate"><span class="pre">agents.conversational.output_parser.ConvoOutputParser</span></code></a></p></td>
 <td><p>Output parser for the conversational agent.</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="agents/langchain.agents.conversational_chat.base.ConversationalChatAgent.html#langchain.agents.conversational_chat.base.ConversationalChatAgent" title="langchain.agents.conversational_chat.base.ConversationalChatAgent"><code class="xref py py-obj docutils literal notranslate"><span class="pre">agents.conversational_chat.base.ConversationalChatAgent</span></code></a></p></td>
-<td><p>[<em>Deprecated</em>]  An agent designed to hold a conversation in addition to using tools.[<em>Deprecated</em>] An agent designed to hold a conversation in addition to using tools.</p></td>
+<td><p>[<em>Deprecated</em>] An agent designed to hold a conversation in addition to using tools.</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="agents/langchain.agents.conversational_chat.output_parser.ConvoOutputParser.html#langchain.agents.conversational_chat.output_parser.ConvoOutputParser" title="langchain.agents.conversational_chat.output_parser.ConvoOutputParser"><code class="xref py py-obj docutils literal notranslate"><span class="pre">agents.conversational_chat.output_parser.ConvoOutputParser</span></code></a></p></td>
 <td><p>Output parser for the conversational agent.</p></td>
@@ -329,10 +357,10 @@ to take and in which order.</p>
 <td><p>Configuration for chain to use in MRKL system.</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="agents/langchain.agents.mrkl.base.MRKLChain.html#langchain.agents.mrkl.base.MRKLChain" title="langchain.agents.mrkl.base.MRKLChain"><code class="xref py py-obj docutils literal notranslate"><span class="pre">agents.mrkl.base.MRKLChain</span></code></a></p></td>
-<td><p>[<em>Deprecated</em>]  [Deprecated] Chain that implements the MRKL system.[<em>Deprecated</em>] [Deprecated] Chain that implements the MRKL system.</p></td>
+<td><p>[<em>Deprecated</em>] [Deprecated] Chain that implements the MRKL system.</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="agents/langchain.agents.mrkl.base.ZeroShotAgent.html#langchain.agents.mrkl.base.ZeroShotAgent" title="langchain.agents.mrkl.base.ZeroShotAgent"><code class="xref py py-obj docutils literal notranslate"><span class="pre">agents.mrkl.base.ZeroShotAgent</span></code></a></p></td>
-<td><p>[<em>Deprecated</em>]  Agent for the MRKL chain.[<em>Deprecated</em>] Agent for the MRKL chain.</p></td>
+<td><p>[<em>Deprecated</em>] Agent for the MRKL chain.</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="agents/langchain.agents.mrkl.output_parser.MRKLOutputParser.html#langchain.agents.mrkl.output_parser.MRKLOutputParser" title="langchain.agents.mrkl.output_parser.MRKLOutputParser"><code class="xref py py-obj docutils literal notranslate"><span class="pre">agents.mrkl.output_parser.MRKLOutputParser</span></code></a></p></td>
 <td><p>MRKL Output parser for the chat agent.</p></td>
@@ -350,10 +378,10 @@ to take and in which order.</p>
 <td><p>Memory used to save agent output AND intermediate steps.</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="agents/langchain.agents.openai_functions_agent.base.OpenAIFunctionsAgent.html#langchain.agents.openai_functions_agent.base.OpenAIFunctionsAgent" title="langchain.agents.openai_functions_agent.base.OpenAIFunctionsAgent"><code class="xref py py-obj docutils literal notranslate"><span class="pre">agents.openai_functions_agent.base.OpenAIFunctionsAgent</span></code></a></p></td>
-<td><p>[<em>Deprecated</em>]  An Agent driven by OpenAIs function powered API.</p></td>
+<td><p>[<em>Deprecated</em>] An Agent driven by OpenAIs function powered API.</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="agents/langchain.agents.openai_functions_multi_agent.base.OpenAIMultiFunctionsAgent.html#langchain.agents.openai_functions_multi_agent.base.OpenAIMultiFunctionsAgent" title="langchain.agents.openai_functions_multi_agent.base.OpenAIMultiFunctionsAgent"><code class="xref py py-obj docutils literal notranslate"><span class="pre">agents.openai_functions_multi_agent.base.OpenAIMultiFunctionsAgent</span></code></a></p></td>
-<td><p>[<em>Deprecated</em>]  An Agent driven by OpenAIs function powered API.</p></td>
+<td><p>[<em>Deprecated</em>] An Agent driven by OpenAIs function powered API.</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="agents/langchain.agents.output_parsers.json.JSONAgentOutputParser.html#langchain.agents.output_parsers.json.JSONAgentOutputParser" title="langchain.agents.output_parsers.json.JSONAgentOutputParser"><code class="xref py py-obj docutils literal notranslate"><span class="pre">agents.output_parsers.json.JSONAgentOutputParser</span></code></a></p></td>
 <td><p>Parses tool invocations and final answers in JSON format.</p></td>
@@ -380,16 +408,16 @@ to take and in which order.</p>
 <td><p>Parses tool invocations and final answers in XML format.</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="agents/langchain.agents.react.base.DocstoreExplorer.html#langchain.agents.react.base.DocstoreExplorer" title="langchain.agents.react.base.DocstoreExplorer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">agents.react.base.DocstoreExplorer</span></code></a>(docstore)</p></td>
-<td><p>[<em>Deprecated</em>]  Class to assist with exploration of a document store.[<em>Deprecated</em>] Class to assist with exploration of a document store.</p></td>
+<td><p>[<em>Deprecated</em>] Class to assist with exploration of a document store.</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="agents/langchain.agents.react.base.ReActChain.html#langchain.agents.react.base.ReActChain" title="langchain.agents.react.base.ReActChain"><code class="xref py py-obj docutils literal notranslate"><span class="pre">agents.react.base.ReActChain</span></code></a></p></td>
-<td><p>[<em>Deprecated</em>]  [Deprecated] Chain that implements the ReAct paper.[<em>Deprecated</em>] [Deprecated] Chain that implements the ReAct paper.</p></td>
+<td><p>[<em>Deprecated</em>] [Deprecated] Chain that implements the ReAct paper.</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="agents/langchain.agents.react.base.ReActDocstoreAgent.html#langchain.agents.react.base.ReActDocstoreAgent" title="langchain.agents.react.base.ReActDocstoreAgent"><code class="xref py py-obj docutils literal notranslate"><span class="pre">agents.react.base.ReActDocstoreAgent</span></code></a></p></td>
-<td><p>[<em>Deprecated</em>]  Agent for the ReAct chain.[<em>Deprecated</em>] Agent for the ReAct chain.</p></td>
+<td><p>[<em>Deprecated</em>] Agent for the ReAct chain.</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="agents/langchain.agents.react.base.ReActTextWorldAgent.html#langchain.agents.react.base.ReActTextWorldAgent" title="langchain.agents.react.base.ReActTextWorldAgent"><code class="xref py py-obj docutils literal notranslate"><span class="pre">agents.react.base.ReActTextWorldAgent</span></code></a></p></td>
-<td><p>[<em>Deprecated</em>]  Agent for the ReAct TextWorld chain.[<em>Deprecated</em>] Agent for the ReAct TextWorld chain.</p></td>
+<td><p>[<em>Deprecated</em>] Agent for the ReAct TextWorld chain.</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="agents/langchain.agents.react.output_parser.ReActOutputParser.html#langchain.agents.react.output_parser.ReActOutputParser" title="langchain.agents.react.output_parser.ReActOutputParser"><code class="xref py py-obj docutils literal notranslate"><span class="pre">agents.react.output_parser.ReActOutputParser</span></code></a></p></td>
 <td><p>Output parser for the ReAct agent.</p></td>
@@ -398,13 +426,13 @@ to take and in which order.</p>
 <td><p>Chat prompt template for the agent scratchpad.</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="agents/langchain.agents.self_ask_with_search.base.SelfAskWithSearchAgent.html#langchain.agents.self_ask_with_search.base.SelfAskWithSearchAgent" title="langchain.agents.self_ask_with_search.base.SelfAskWithSearchAgent"><code class="xref py py-obj docutils literal notranslate"><span class="pre">agents.self_ask_with_search.base.SelfAskWithSearchAgent</span></code></a></p></td>
-<td><p>[<em>Deprecated</em>]  Agent for the self-ask-with-search paper.[<em>Deprecated</em>] Agent for the self-ask-with-search paper.</p></td>
+<td><p>[<em>Deprecated</em>] Agent for the self-ask-with-search paper.</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="agents/langchain.agents.self_ask_with_search.base.SelfAskWithSearchChain.html#langchain.agents.self_ask_with_search.base.SelfAskWithSearchChain" title="langchain.agents.self_ask_with_search.base.SelfAskWithSearchChain"><code class="xref py py-obj docutils literal notranslate"><span class="pre">agents.self_ask_with_search.base.SelfAskWithSearchChain</span></code></a></p></td>
-<td><p>[<em>Deprecated</em>]  [Deprecated] Chain that does self-ask with search.[<em>Deprecated</em>] [Deprecated] Chain that does self-ask with search.</p></td>
+<td><p>[<em>Deprecated</em>] [Deprecated] Chain that does self-ask with search.</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="agents/langchain.agents.structured_chat.base.StructuredChatAgent.html#langchain.agents.structured_chat.base.StructuredChatAgent" title="langchain.agents.structured_chat.base.StructuredChatAgent"><code class="xref py py-obj docutils literal notranslate"><span class="pre">agents.structured_chat.base.StructuredChatAgent</span></code></a></p></td>
-<td><p>[<em>Deprecated</em>]  Structured Chat Agent.[<em>Deprecated</em>] Structured Chat Agent.</p></td>
+<td><p>[<em>Deprecated</em>] Structured Chat Agent.</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="agents/langchain.agents.structured_chat.output_parser.StructuredChatOutputParser.html#langchain.agents.structured_chat.output_parser.StructuredChatOutputParser" title="langchain.agents.structured_chat.output_parser.StructuredChatOutputParser"><code class="xref py py-obj docutils literal notranslate"><span class="pre">agents.structured_chat.output_parser.StructuredChatOutputParser</span></code></a></p></td>
 <td><p>Output parser for the structured chat agent.</p></td>
@@ -416,7 +444,7 @@ to take and in which order.</p>
 <td><p>Tool that is run when invalid tool name is encountered by agent.</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="agents/langchain.agents.xml.base.XMLAgent.html#langchain.agents.xml.base.XMLAgent" title="langchain.agents.xml.base.XMLAgent"><code class="xref py py-obj docutils literal notranslate"><span class="pre">agents.xml.base.XMLAgent</span></code></a></p></td>
-<td><p>[<em>Deprecated</em>]  Agent that uses XML tags.</p></td>
+<td><p>[<em>Deprecated</em>] Agent that uses XML tags.</p></td>
 </tr>
 </tbody>
 </table>
@@ -457,7 +485,7 @@ to take and in which order.</p>
 <td><p>Format the intermediate steps as XML.</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="agents/langchain.agents.initialize.initialize_agent.html#langchain.agents.initialize.initialize_agent" title="langchain.agents.initialize.initialize_agent"><code class="xref py py-obj docutils literal notranslate"><span class="pre">agents.initialize.initialize_agent</span></code></a>(tools, llm)</p></td>
-<td><p>[<em>Deprecated</em>]  Load an agent executor given tools and LLM.</p></td>
+<td><p>[<em>Deprecated</em>] Load an agent executor given tools and LLM.</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="agents/langchain.agents.json_chat.base.create_json_chat_agent.html#langchain.agents.json_chat.base.create_json_chat_agent" title="langchain.agents.json_chat.base.create_json_chat_agent"><code class="xref py py-obj docutils literal notranslate"><span class="pre">agents.json_chat.base.create_json_chat_agent</span></code></a>(...)</p></td>
 <td><p>Create an agent that uses JSON to format its logic, build for Chat Models.</p></td>
@@ -472,10 +500,10 @@ to take and in which order.</p>
 <td><p>Load tools based on their name.</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="agents/langchain.agents.loading.load_agent.html#langchain.agents.loading.load_agent" title="langchain.agents.loading.load_agent"><code class="xref py py-obj docutils literal notranslate"><span class="pre">agents.loading.load_agent</span></code></a>(path, **kwargs)</p></td>
-<td><p>[<em>Deprecated</em>]  Unified method for loading an agent from LangChainHub or local fs.</p></td>
+<td><p>[<em>Deprecated</em>] Unified method for loading an agent from LangChainHub or local fs.</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="agents/langchain.agents.loading.load_agent_from_config.html#langchain.agents.loading.load_agent_from_config" title="langchain.agents.loading.load_agent_from_config"><code class="xref py py-obj docutils literal notranslate"><span class="pre">agents.loading.load_agent_from_config</span></code></a>(config)</p></td>
-<td><p>[<em>Deprecated</em>]  Load agent from Config Dict.</p></td>
+<td><p>[<em>Deprecated</em>] Load agent from Config Dict.</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="agents/langchain.agents.openai_functions_agent.base.create_openai_functions_agent.html#langchain.agents.openai_functions_agent.base.create_openai_functions_agent" title="langchain.agents.openai_functions_agent.base.create_openai_functions_agent"><code class="xref py py-obj docutils literal notranslate"><span class="pre">agents.openai_functions_agent.base.create_openai_functions_agent</span></code></a>(...)</p></td>
 <td><p>Create an agent that uses OpenAI function calling.</p></td>
@@ -913,10 +941,10 @@ like logging, outside the main sequence of component calls,</p></li>
 <td><p>Load chain from Config Dict.</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="chains/langchain.chains.openai_functions.base.create_openai_fn_chain.html#langchain.chains.openai_functions.base.create_openai_fn_chain" title="langchain.chains.openai_functions.base.create_openai_fn_chain"><code class="xref py py-obj docutils literal notranslate"><span class="pre">chains.openai_functions.base.create_openai_fn_chain</span></code></a>(...)</p></td>
-<td><p>[<em>Deprecated</em>]  [Legacy] Create an LLM chain that uses OpenAI functions.</p></td>
+<td><p>[<em>Deprecated</em>] [Legacy] Create an LLM chain that uses OpenAI functions.</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="chains/langchain.chains.openai_functions.base.create_structured_output_chain.html#langchain.chains.openai_functions.base.create_structured_output_chain" title="langchain.chains.openai_functions.base.create_structured_output_chain"><code class="xref py py-obj docutils literal notranslate"><span class="pre">chains.openai_functions.base.create_structured_output_chain</span></code></a>(...)</p></td>
-<td><p>[<em>Deprecated</em>]  [Legacy] Create an LLMChain that uses an OpenAI function to get a structured output.</p></td>
+<td><p>[<em>Deprecated</em>] [Legacy] Create an LLMChain that uses an OpenAI function to get a structured output.</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="chains/langchain.chains.openai_functions.citation_fuzzy_match.create_citation_fuzzy_match_chain.html#langchain.chains.openai_functions.citation_fuzzy_match.create_citation_fuzzy_match_chain" title="langchain.chains.openai_functions.citation_fuzzy_match.create_citation_fuzzy_match_chain"><code class="xref py py-obj docutils literal notranslate"><span class="pre">chains.openai_functions.citation_fuzzy_match.create_citation_fuzzy_match_chain</span></code></a>(llm)</p></td>
 <td><p>Create a citation fuzzy match chain.</p></td>
@@ -1023,17 +1051,6 @@ from different APIs and services.</p>
 </tbody>
 </table>
 </section>
-<section id="id5">
-<h3>Functions<a class="headerlink" href="#id5" title="Permalink to this heading">¶</a></h3>
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-</tbody>
-</table>
-</section>
 </section>
 <section id="module-langchain.evaluation">
 <span id="langchain-evaluation"></span><h2><a class="reference internal" href="#module-langchain.evaluation" title="langchain.evaluation"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain.evaluation</span></code></a><a class="headerlink" href="#module-langchain.evaluation" title="Permalink to this heading">¶</a></h2>
@@ -1079,8 +1096,8 @@ name of the dataset to load.</p>
 <li><p><a class="reference internal" href="evaluation/langchain.evaluation.schema.AgentTrajectoryEvaluator.html#langchain.evaluation.schema.AgentTrajectoryEvaluator" title="langchain.evaluation.schema.AgentTrajectoryEvaluator"><code class="xref py py-class docutils literal notranslate"><span class="pre">AgentTrajectoryEvaluator</span></code></a> Evaluate the full sequence of actions taken by an agent.</p></li>
 </ul>
 <p>These interfaces enable easier composability and usage within a higher level evaluation framework.</p>
-<section id="id6">
-<h3>Classes<a class="headerlink" href="#id6" title="Permalink to this heading">¶</a></h3>
+<section id="id5">
+<h3>Classes<a class="headerlink" href="#id5" title="Permalink to this heading">¶</a></h3>
 <table class="autosummary longtable docutils align-default">
 <colgroup>
 <col style="width: 10%" />
@@ -1192,8 +1209,8 @@ name of the dataset to load.</p>
 </tbody>
 </table>
 </section>
-<section id="id7">
-<h3>Functions<a class="headerlink" href="#id7" title="Permalink to this heading">¶</a></h3>
+<section id="id6">
+<h3>Functions<a class="headerlink" href="#id6" title="Permalink to this heading">¶</a></h3>
 <table class="autosummary longtable docutils align-default">
 <colgroup>
 <col style="width: 10%" />
@@ -1225,8 +1242,8 @@ name of the dataset to load.</p>
 <section id="module-langchain.hub">
 <span id="langchain-hub"></span><h2><a class="reference internal" href="#module-langchain.hub" title="langchain.hub"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain.hub</span></code></a><a class="headerlink" href="#module-langchain.hub" title="Permalink to this heading">¶</a></h2>
 <p>Interface with the LangChain Hub.</p>
-<section id="id8">
-<h3>Functions<a class="headerlink" href="#id8" title="Permalink to this heading">¶</a></h3>
+<section id="id7">
+<h3>Functions<a class="headerlink" href="#id7" title="Permalink to this heading">¶</a></h3>
 <table class="autosummary longtable docutils align-default">
 <colgroup>
 <col style="width: 10%" />
@@ -1245,19 +1262,18 @@ name of the dataset to load.</p>
 </section>
 <section id="module-langchain.indexes">
 <span id="langchain-indexes"></span><h2><a class="reference internal" href="#module-langchain.indexes" title="langchain.indexes"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain.indexes</span></code></a><a class="headerlink" href="#module-langchain.indexes" title="Permalink to this heading">¶</a></h2>
-<p>Code to support various indexing workflows.</p>
-<p>Provides code to:</p>
+<p><strong>Index</strong> is used to avoid writing duplicated content
+into the vectostore and to avoid over-writing content if it’s unchanged.</p>
+<p>Indexes also :</p>
 <ul class="simple">
 <li><p>Create knowledge graphs from data.</p></li>
 <li><p>Support indexing workflows from LangChain data loaders to vectorstores.</p></li>
 </ul>
-<p>For indexing workflows, this code is used to avoid writing duplicated content
-into the vectostore and to avoid over-writing content if it’s unchanged.</p>
-<p>Importantly, this keeps on working even if the content being written is derived
+<p>Importantly, Index keeps on working even if the content being written is derived
 via a set of transformations from some source content (e.g., indexing children
 documents that were derived from parent documents by chunking.)</p>
-<section id="id9">
-<h3>Classes<a class="headerlink" href="#id9" title="Permalink to this heading">¶</a></h3>
+<section id="id8">
+<h3>Classes<a class="headerlink" href="#id8" title="Permalink to this heading">¶</a></h3>
 <table class="autosummary longtable docutils align-default">
 <colgroup>
 <col style="width: 10%" />
@@ -1276,17 +1292,6 @@ documents that were derived from parent documents by chunking.)</p>
 <tr class="row-even"><td><p><a class="reference internal" href="indexes/langchain.indexes.vectorstore.VectorstoreIndexCreator.html#langchain.indexes.vectorstore.VectorstoreIndexCreator" title="langchain.indexes.vectorstore.VectorstoreIndexCreator"><code class="xref py py-obj docutils literal notranslate"><span class="pre">indexes.vectorstore.VectorstoreIndexCreator</span></code></a></p></td>
 <td><p>Logic for creating indexes.</p></td>
 </tr>
-</tbody>
-</table>
-</section>
-<section id="id10">
-<h3>Functions<a class="headerlink" href="#id10" title="Permalink to this heading">¶</a></h3>
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
 </tbody>
 </table>
 </section>
@@ -1311,8 +1316,8 @@ documents that were derived from parent documents by chunking.)</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">AIMessage</span><span class="p">,</span> <span class="n">BaseMessage</span><span class="p">,</span> <span class="n">HumanMessage</span>
 </pre></div>
 </div>
-<section id="id11">
-<h3>Classes<a class="headerlink" href="#id11" title="Permalink to this heading">¶</a></h3>
+<section id="id9">
+<h3>Classes<a class="headerlink" href="#id9" title="Permalink to this heading">¶</a></h3>
 <table class="autosummary longtable docutils align-default">
 <colgroup>
 <col style="width: 10%" />
@@ -1385,8 +1390,8 @@ documents that were derived from parent documents by chunking.)</p>
 </tbody>
 </table>
 </section>
-<section id="id12">
-<h3>Functions<a class="headerlink" href="#id12" title="Permalink to this heading">¶</a></h3>
+<section id="id10">
+<h3>Functions<a class="headerlink" href="#id10" title="Permalink to this heading">¶</a></h3>
 <table class="autosummary longtable docutils align-default">
 <colgroup>
 <col style="width: 10%" />
@@ -1403,8 +1408,8 @@ documents that were derived from parent documents by chunking.)</p>
 <section id="module-langchain.model_laboratory">
 <span id="langchain-model-laboratory"></span><h2><a class="reference internal" href="#module-langchain.model_laboratory" title="langchain.model_laboratory"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain.model_laboratory</span></code></a><a class="headerlink" href="#module-langchain.model_laboratory" title="Permalink to this heading">¶</a></h2>
 <p>Experiment with different models.</p>
-<section id="id13">
-<h3>Classes<a class="headerlink" href="#id13" title="Permalink to this heading">¶</a></h3>
+<section id="id11">
+<h3>Classes<a class="headerlink" href="#id11" title="Permalink to this heading">¶</a></h3>
 <table class="autosummary longtable docutils align-default">
 <colgroup>
 <col style="width: 10%" />
@@ -1429,8 +1434,8 @@ documents that were derived from parent documents by chunking.)</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Serializable</span><span class="p">,</span> <span class="n">Generation</span><span class="p">,</span> <span class="n">PromptValue</span>
 </pre></div>
 </div>
-<section id="id14">
-<h3>Classes<a class="headerlink" href="#id14" title="Permalink to this heading">¶</a></h3>
+<section id="id12">
+<h3>Classes<a class="headerlink" href="#id12" title="Permalink to this heading">¶</a></h3>
 <table class="autosummary longtable docutils align-default">
 <colgroup>
 <col style="width: 10%" />
@@ -1452,62 +1457,35 @@ documents that were derived from parent documents by chunking.)</p>
 <tr class="row-odd"><td><p><a class="reference internal" href="output_parsers/langchain.output_parsers.fix.OutputFixingParser.html#langchain.output_parsers.fix.OutputFixingParser" title="langchain.output_parsers.fix.OutputFixingParser"><code class="xref py py-obj docutils literal notranslate"><span class="pre">output_parsers.fix.OutputFixingParser</span></code></a></p></td>
 <td><p>Wraps a parser and tries to fix parsing errors.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="output_parsers/langchain.output_parsers.openai_functions.JsonKeyOutputFunctionsParser.html#langchain.output_parsers.openai_functions.JsonKeyOutputFunctionsParser" title="langchain.output_parsers.openai_functions.JsonKeyOutputFunctionsParser"><code class="xref py py-obj docutils literal notranslate"><span class="pre">output_parsers.openai_functions.JsonKeyOutputFunctionsParser</span></code></a></p></td>
-<td><p>Parse an output as the element of the Json object.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="output_parsers/langchain.output_parsers.openai_functions.JsonOutputFunctionsParser.html#langchain.output_parsers.openai_functions.JsonOutputFunctionsParser" title="langchain.output_parsers.openai_functions.JsonOutputFunctionsParser"><code class="xref py py-obj docutils literal notranslate"><span class="pre">output_parsers.openai_functions.JsonOutputFunctionsParser</span></code></a></p></td>
-<td><p>Parse an output as the Json object.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="output_parsers/langchain.output_parsers.openai_functions.OutputFunctionsParser.html#langchain.output_parsers.openai_functions.OutputFunctionsParser" title="langchain.output_parsers.openai_functions.OutputFunctionsParser"><code class="xref py py-obj docutils literal notranslate"><span class="pre">output_parsers.openai_functions.OutputFunctionsParser</span></code></a></p></td>
-<td><p>Parse an output that is one of sets of values.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="output_parsers/langchain.output_parsers.openai_functions.PydanticAttrOutputFunctionsParser.html#langchain.output_parsers.openai_functions.PydanticAttrOutputFunctionsParser" title="langchain.output_parsers.openai_functions.PydanticAttrOutputFunctionsParser"><code class="xref py py-obj docutils literal notranslate"><span class="pre">output_parsers.openai_functions.PydanticAttrOutputFunctionsParser</span></code></a></p></td>
-<td><p>Parse an output as an attribute of a pydantic object.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="output_parsers/langchain.output_parsers.openai_functions.PydanticOutputFunctionsParser.html#langchain.output_parsers.openai_functions.PydanticOutputFunctionsParser" title="langchain.output_parsers.openai_functions.PydanticOutputFunctionsParser"><code class="xref py py-obj docutils literal notranslate"><span class="pre">output_parsers.openai_functions.PydanticOutputFunctionsParser</span></code></a></p></td>
-<td><p>Parse an output as a pydantic object.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="output_parsers/langchain.output_parsers.openai_tools.JsonOutputKeyToolsParser.html#langchain.output_parsers.openai_tools.JsonOutputKeyToolsParser" title="langchain.output_parsers.openai_tools.JsonOutputKeyToolsParser"><code class="xref py py-obj docutils literal notranslate"><span class="pre">output_parsers.openai_tools.JsonOutputKeyToolsParser</span></code></a></p></td>
-<td><p>Parse tools from OpenAI response.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="output_parsers/langchain.output_parsers.openai_tools.JsonOutputToolsParser.html#langchain.output_parsers.openai_tools.JsonOutputToolsParser" title="langchain.output_parsers.openai_tools.JsonOutputToolsParser"><code class="xref py py-obj docutils literal notranslate"><span class="pre">output_parsers.openai_tools.JsonOutputToolsParser</span></code></a></p></td>
-<td><p>Parse tools from OpenAI response.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="output_parsers/langchain.output_parsers.openai_tools.PydanticToolsParser.html#langchain.output_parsers.openai_tools.PydanticToolsParser" title="langchain.output_parsers.openai_tools.PydanticToolsParser"><code class="xref py py-obj docutils literal notranslate"><span class="pre">output_parsers.openai_tools.PydanticToolsParser</span></code></a></p></td>
-<td><p>Parse tools from OpenAI response.</p></td>
-</tr>
 <tr class="row-even"><td><p><a class="reference internal" href="output_parsers/langchain.output_parsers.pandas_dataframe.PandasDataFrameOutputParser.html#langchain.output_parsers.pandas_dataframe.PandasDataFrameOutputParser" title="langchain.output_parsers.pandas_dataframe.PandasDataFrameOutputParser"><code class="xref py py-obj docutils literal notranslate"><span class="pre">output_parsers.pandas_dataframe.PandasDataFrameOutputParser</span></code></a></p></td>
 <td><p>Parse an output using Pandas DataFrame format.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="output_parsers/langchain.output_parsers.pydantic.PydanticOutputParser.html#langchain.output_parsers.pydantic.PydanticOutputParser" title="langchain.output_parsers.pydantic.PydanticOutputParser"><code class="xref py py-obj docutils literal notranslate"><span class="pre">output_parsers.pydantic.PydanticOutputParser</span></code></a></p></td>
-<td><p>Parse an output using a pydantic model.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="output_parsers/langchain.output_parsers.regex.RegexParser.html#langchain.output_parsers.regex.RegexParser" title="langchain.output_parsers.regex.RegexParser"><code class="xref py py-obj docutils literal notranslate"><span class="pre">output_parsers.regex.RegexParser</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="output_parsers/langchain.output_parsers.regex.RegexParser.html#langchain.output_parsers.regex.RegexParser" title="langchain.output_parsers.regex.RegexParser"><code class="xref py py-obj docutils literal notranslate"><span class="pre">output_parsers.regex.RegexParser</span></code></a></p></td>
 <td><p>Parse the output of an LLM call using a regex.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="output_parsers/langchain.output_parsers.regex_dict.RegexDictParser.html#langchain.output_parsers.regex_dict.RegexDictParser" title="langchain.output_parsers.regex_dict.RegexDictParser"><code class="xref py py-obj docutils literal notranslate"><span class="pre">output_parsers.regex_dict.RegexDictParser</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="output_parsers/langchain.output_parsers.regex_dict.RegexDictParser.html#langchain.output_parsers.regex_dict.RegexDictParser" title="langchain.output_parsers.regex_dict.RegexDictParser"><code class="xref py py-obj docutils literal notranslate"><span class="pre">output_parsers.regex_dict.RegexDictParser</span></code></a></p></td>
 <td><p>Parse the output of an LLM call into a Dictionary using a regex.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="output_parsers/langchain.output_parsers.retry.RetryOutputParser.html#langchain.output_parsers.retry.RetryOutputParser" title="langchain.output_parsers.retry.RetryOutputParser"><code class="xref py py-obj docutils literal notranslate"><span class="pre">output_parsers.retry.RetryOutputParser</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="output_parsers/langchain.output_parsers.retry.RetryOutputParser.html#langchain.output_parsers.retry.RetryOutputParser" title="langchain.output_parsers.retry.RetryOutputParser"><code class="xref py py-obj docutils literal notranslate"><span class="pre">output_parsers.retry.RetryOutputParser</span></code></a></p></td>
 <td><p>Wraps a parser and tries to fix parsing errors.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="output_parsers/langchain.output_parsers.retry.RetryWithErrorOutputParser.html#langchain.output_parsers.retry.RetryWithErrorOutputParser" title="langchain.output_parsers.retry.RetryWithErrorOutputParser"><code class="xref py py-obj docutils literal notranslate"><span class="pre">output_parsers.retry.RetryWithErrorOutputParser</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="output_parsers/langchain.output_parsers.retry.RetryWithErrorOutputParser.html#langchain.output_parsers.retry.RetryWithErrorOutputParser" title="langchain.output_parsers.retry.RetryWithErrorOutputParser"><code class="xref py py-obj docutils literal notranslate"><span class="pre">output_parsers.retry.RetryWithErrorOutputParser</span></code></a></p></td>
 <td><p>Wraps a parser and tries to fix parsing errors.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="output_parsers/langchain.output_parsers.structured.ResponseSchema.html#langchain.output_parsers.structured.ResponseSchema" title="langchain.output_parsers.structured.ResponseSchema"><code class="xref py py-obj docutils literal notranslate"><span class="pre">output_parsers.structured.ResponseSchema</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="output_parsers/langchain.output_parsers.structured.ResponseSchema.html#langchain.output_parsers.structured.ResponseSchema" title="langchain.output_parsers.structured.ResponseSchema"><code class="xref py py-obj docutils literal notranslate"><span class="pre">output_parsers.structured.ResponseSchema</span></code></a></p></td>
 <td><p>A schema for a response from a structured output parser.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="output_parsers/langchain.output_parsers.structured.StructuredOutputParser.html#langchain.output_parsers.structured.StructuredOutputParser" title="langchain.output_parsers.structured.StructuredOutputParser"><code class="xref py py-obj docutils literal notranslate"><span class="pre">output_parsers.structured.StructuredOutputParser</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="output_parsers/langchain.output_parsers.structured.StructuredOutputParser.html#langchain.output_parsers.structured.StructuredOutputParser" title="langchain.output_parsers.structured.StructuredOutputParser"><code class="xref py py-obj docutils literal notranslate"><span class="pre">output_parsers.structured.StructuredOutputParser</span></code></a></p></td>
 <td><p>Parse the output of an LLM call to a structured output.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="output_parsers/langchain.output_parsers.yaml.YamlOutputParser.html#langchain.output_parsers.yaml.YamlOutputParser" title="langchain.output_parsers.yaml.YamlOutputParser"><code class="xref py py-obj docutils literal notranslate"><span class="pre">output_parsers.yaml.YamlOutputParser</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="output_parsers/langchain.output_parsers.yaml.YamlOutputParser.html#langchain.output_parsers.yaml.YamlOutputParser" title="langchain.output_parsers.yaml.YamlOutputParser"><code class="xref py py-obj docutils literal notranslate"><span class="pre">output_parsers.yaml.YamlOutputParser</span></code></a></p></td>
 <td><p>Parse YAML output using a pydantic model.</p></td>
 </tr>
 </tbody>
 </table>
 </section>
-<section id="id15">
-<h3>Functions<a class="headerlink" href="#id15" title="Permalink to this heading">¶</a></h3>
+<section id="id13">
+<h3>Functions<a class="headerlink" href="#id13" title="Permalink to this heading">¶</a></h3>
 <table class="autosummary longtable docutils align-default">
 <colgroup>
 <col style="width: 10%" />
@@ -1536,8 +1514,8 @@ the backbone of a retriever, but there are other types of retrievers as well.</p
 <span class="n">CallbackManagerForRetrieverRun</span><span class="p">,</span> <span class="n">AsyncCallbackManagerForRetrieverRun</span>
 </pre></div>
 </div>
-<section id="id16">
-<h3>Classes<a class="headerlink" href="#id16" title="Permalink to this heading">¶</a></h3>
+<section id="id14">
+<h3>Classes<a class="headerlink" href="#id14" title="Permalink to this heading">¶</a></h3>
 <table class="autosummary longtable docutils align-default">
 <colgroup>
 <col style="width: 10%" />
@@ -1547,125 +1525,122 @@ the backbone of a retriever, but there are other types of retrievers as well.</p
 <tr class="row-odd"><td><p><a class="reference internal" href="retrievers/langchain.retrievers.contextual_compression.ContextualCompressionRetriever.html#langchain.retrievers.contextual_compression.ContextualCompressionRetriever" title="langchain.retrievers.contextual_compression.ContextualCompressionRetriever"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retrievers.contextual_compression.ContextualCompressionRetriever</span></code></a></p></td>
 <td><p>Retriever that wraps a base retriever and compresses the results.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="retrievers/langchain.retrievers.document_compressors.base.BaseDocumentCompressor.html#langchain.retrievers.document_compressors.base.BaseDocumentCompressor" title="langchain.retrievers.document_compressors.base.BaseDocumentCompressor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retrievers.document_compressors.base.BaseDocumentCompressor</span></code></a></p></td>
-<td><p>Base class for document compressors.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="retrievers/langchain.retrievers.document_compressors.base.DocumentCompressorPipeline.html#langchain.retrievers.document_compressors.base.DocumentCompressorPipeline" title="langchain.retrievers.document_compressors.base.DocumentCompressorPipeline"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retrievers.document_compressors.base.DocumentCompressorPipeline</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="retrievers/langchain.retrievers.document_compressors.base.DocumentCompressorPipeline.html#langchain.retrievers.document_compressors.base.DocumentCompressorPipeline" title="langchain.retrievers.document_compressors.base.DocumentCompressorPipeline"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retrievers.document_compressors.base.DocumentCompressorPipeline</span></code></a></p></td>
 <td><p>Document compressor that uses a pipeline of Transformers.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="retrievers/langchain.retrievers.document_compressors.chain_extract.LLMChainExtractor.html#langchain.retrievers.document_compressors.chain_extract.LLMChainExtractor" title="langchain.retrievers.document_compressors.chain_extract.LLMChainExtractor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retrievers.document_compressors.chain_extract.LLMChainExtractor</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="retrievers/langchain.retrievers.document_compressors.chain_extract.LLMChainExtractor.html#langchain.retrievers.document_compressors.chain_extract.LLMChainExtractor" title="langchain.retrievers.document_compressors.chain_extract.LLMChainExtractor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retrievers.document_compressors.chain_extract.LLMChainExtractor</span></code></a></p></td>
 <td><p>Document compressor that uses an LLM chain to extract the relevant parts of documents.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="retrievers/langchain.retrievers.document_compressors.chain_extract.NoOutputParser.html#langchain.retrievers.document_compressors.chain_extract.NoOutputParser" title="langchain.retrievers.document_compressors.chain_extract.NoOutputParser"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retrievers.document_compressors.chain_extract.NoOutputParser</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="retrievers/langchain.retrievers.document_compressors.chain_extract.NoOutputParser.html#langchain.retrievers.document_compressors.chain_extract.NoOutputParser" title="langchain.retrievers.document_compressors.chain_extract.NoOutputParser"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retrievers.document_compressors.chain_extract.NoOutputParser</span></code></a></p></td>
 <td><p>Parse outputs that could return a null string of some sort.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="retrievers/langchain.retrievers.document_compressors.chain_filter.LLMChainFilter.html#langchain.retrievers.document_compressors.chain_filter.LLMChainFilter" title="langchain.retrievers.document_compressors.chain_filter.LLMChainFilter"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retrievers.document_compressors.chain_filter.LLMChainFilter</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="retrievers/langchain.retrievers.document_compressors.chain_filter.LLMChainFilter.html#langchain.retrievers.document_compressors.chain_filter.LLMChainFilter" title="langchain.retrievers.document_compressors.chain_filter.LLMChainFilter"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retrievers.document_compressors.chain_filter.LLMChainFilter</span></code></a></p></td>
 <td><p>Filter that drops documents that aren't relevant to the query.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="retrievers/langchain.retrievers.document_compressors.cohere_rerank.CohereRerank.html#langchain.retrievers.document_compressors.cohere_rerank.CohereRerank" title="langchain.retrievers.document_compressors.cohere_rerank.CohereRerank"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retrievers.document_compressors.cohere_rerank.CohereRerank</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="retrievers/langchain.retrievers.document_compressors.cohere_rerank.CohereRerank.html#langchain.retrievers.document_compressors.cohere_rerank.CohereRerank" title="langchain.retrievers.document_compressors.cohere_rerank.CohereRerank"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retrievers.document_compressors.cohere_rerank.CohereRerank</span></code></a></p></td>
 <td><p>Document compressor that uses <cite>Cohere Rerank API</cite>.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="retrievers/langchain.retrievers.document_compressors.embeddings_filter.EmbeddingsFilter.html#langchain.retrievers.document_compressors.embeddings_filter.EmbeddingsFilter" title="langchain.retrievers.document_compressors.embeddings_filter.EmbeddingsFilter"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retrievers.document_compressors.embeddings_filter.EmbeddingsFilter</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="retrievers/langchain.retrievers.document_compressors.embeddings_filter.EmbeddingsFilter.html#langchain.retrievers.document_compressors.embeddings_filter.EmbeddingsFilter" title="langchain.retrievers.document_compressors.embeddings_filter.EmbeddingsFilter"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retrievers.document_compressors.embeddings_filter.EmbeddingsFilter</span></code></a></p></td>
 <td><p>Document compressor that uses embeddings to drop documents unrelated to the query.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="retrievers/langchain.retrievers.document_compressors.flashrank_rerank.FlashrankRerank.html#langchain.retrievers.document_compressors.flashrank_rerank.FlashrankRerank" title="langchain.retrievers.document_compressors.flashrank_rerank.FlashrankRerank"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retrievers.document_compressors.flashrank_rerank.FlashrankRerank</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="retrievers/langchain.retrievers.document_compressors.flashrank_rerank.FlashrankRerank.html#langchain.retrievers.document_compressors.flashrank_rerank.FlashrankRerank" title="langchain.retrievers.document_compressors.flashrank_rerank.FlashrankRerank"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retrievers.document_compressors.flashrank_rerank.FlashrankRerank</span></code></a></p></td>
 <td><p>Document compressor using Flashrank interface.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="retrievers/langchain.retrievers.ensemble.EnsembleRetriever.html#langchain.retrievers.ensemble.EnsembleRetriever" title="langchain.retrievers.ensemble.EnsembleRetriever"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retrievers.ensemble.EnsembleRetriever</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="retrievers/langchain.retrievers.ensemble.EnsembleRetriever.html#langchain.retrievers.ensemble.EnsembleRetriever" title="langchain.retrievers.ensemble.EnsembleRetriever"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retrievers.ensemble.EnsembleRetriever</span></code></a></p></td>
 <td><p>Retriever that ensembles the multiple retrievers.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="retrievers/langchain.retrievers.merger_retriever.MergerRetriever.html#langchain.retrievers.merger_retriever.MergerRetriever" title="langchain.retrievers.merger_retriever.MergerRetriever"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retrievers.merger_retriever.MergerRetriever</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="retrievers/langchain.retrievers.merger_retriever.MergerRetriever.html#langchain.retrievers.merger_retriever.MergerRetriever" title="langchain.retrievers.merger_retriever.MergerRetriever"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retrievers.merger_retriever.MergerRetriever</span></code></a></p></td>
 <td><p>Retriever that merges the results of multiple retrievers.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="retrievers/langchain.retrievers.multi_query.LineListOutputParser.html#langchain.retrievers.multi_query.LineListOutputParser" title="langchain.retrievers.multi_query.LineListOutputParser"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retrievers.multi_query.LineListOutputParser</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="retrievers/langchain.retrievers.multi_query.LineListOutputParser.html#langchain.retrievers.multi_query.LineListOutputParser" title="langchain.retrievers.multi_query.LineListOutputParser"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retrievers.multi_query.LineListOutputParser</span></code></a></p></td>
 <td><p>Output parser for a list of lines.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="retrievers/langchain.retrievers.multi_query.MultiQueryRetriever.html#langchain.retrievers.multi_query.MultiQueryRetriever" title="langchain.retrievers.multi_query.MultiQueryRetriever"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retrievers.multi_query.MultiQueryRetriever</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="retrievers/langchain.retrievers.multi_query.MultiQueryRetriever.html#langchain.retrievers.multi_query.MultiQueryRetriever" title="langchain.retrievers.multi_query.MultiQueryRetriever"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retrievers.multi_query.MultiQueryRetriever</span></code></a></p></td>
 <td><p>Given a query, use an LLM to write a set of queries.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="retrievers/langchain.retrievers.multi_vector.MultiVectorRetriever.html#langchain.retrievers.multi_vector.MultiVectorRetriever" title="langchain.retrievers.multi_vector.MultiVectorRetriever"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retrievers.multi_vector.MultiVectorRetriever</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="retrievers/langchain.retrievers.multi_vector.MultiVectorRetriever.html#langchain.retrievers.multi_vector.MultiVectorRetriever" title="langchain.retrievers.multi_vector.MultiVectorRetriever"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retrievers.multi_vector.MultiVectorRetriever</span></code></a></p></td>
 <td><p>Retrieve from a set of multiple embeddings for the same document.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="retrievers/langchain.retrievers.multi_vector.SearchType.html#langchain.retrievers.multi_vector.SearchType" title="langchain.retrievers.multi_vector.SearchType"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retrievers.multi_vector.SearchType</span></code></a>(value)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="retrievers/langchain.retrievers.multi_vector.SearchType.html#langchain.retrievers.multi_vector.SearchType" title="langchain.retrievers.multi_vector.SearchType"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retrievers.multi_vector.SearchType</span></code></a>(value)</p></td>
 <td><p>Enumerator of the types of search to perform.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="retrievers/langchain.retrievers.parent_document_retriever.ParentDocumentRetriever.html#langchain.retrievers.parent_document_retriever.ParentDocumentRetriever" title="langchain.retrievers.parent_document_retriever.ParentDocumentRetriever"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retrievers.parent_document_retriever.ParentDocumentRetriever</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="retrievers/langchain.retrievers.parent_document_retriever.ParentDocumentRetriever.html#langchain.retrievers.parent_document_retriever.ParentDocumentRetriever" title="langchain.retrievers.parent_document_retriever.ParentDocumentRetriever"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retrievers.parent_document_retriever.ParentDocumentRetriever</span></code></a></p></td>
 <td><p>Retrieve small chunks then retrieve their parent documents.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="retrievers/langchain.retrievers.re_phraser.RePhraseQueryRetriever.html#langchain.retrievers.re_phraser.RePhraseQueryRetriever" title="langchain.retrievers.re_phraser.RePhraseQueryRetriever"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retrievers.re_phraser.RePhraseQueryRetriever</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="retrievers/langchain.retrievers.re_phraser.RePhraseQueryRetriever.html#langchain.retrievers.re_phraser.RePhraseQueryRetriever" title="langchain.retrievers.re_phraser.RePhraseQueryRetriever"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retrievers.re_phraser.RePhraseQueryRetriever</span></code></a></p></td>
 <td><p>Given a query, use an LLM to re-phrase it.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="retrievers/langchain.retrievers.self_query.astradb.AstraDBTranslator.html#langchain.retrievers.self_query.astradb.AstraDBTranslator" title="langchain.retrievers.self_query.astradb.AstraDBTranslator"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retrievers.self_query.astradb.AstraDBTranslator</span></code></a>()</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="retrievers/langchain.retrievers.self_query.astradb.AstraDBTranslator.html#langchain.retrievers.self_query.astradb.AstraDBTranslator" title="langchain.retrievers.self_query.astradb.AstraDBTranslator"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retrievers.self_query.astradb.AstraDBTranslator</span></code></a>()</p></td>
 <td><p>Translate AstraDB internal query language elements to valid filters.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="retrievers/langchain.retrievers.self_query.base.SelfQueryRetriever.html#langchain.retrievers.self_query.base.SelfQueryRetriever" title="langchain.retrievers.self_query.base.SelfQueryRetriever"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retrievers.self_query.base.SelfQueryRetriever</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="retrievers/langchain.retrievers.self_query.base.SelfQueryRetriever.html#langchain.retrievers.self_query.base.SelfQueryRetriever" title="langchain.retrievers.self_query.base.SelfQueryRetriever"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retrievers.self_query.base.SelfQueryRetriever</span></code></a></p></td>
 <td><p>Retriever that uses a vector store and an LLM to generate the vector store queries.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="retrievers/langchain.retrievers.self_query.chroma.ChromaTranslator.html#langchain.retrievers.self_query.chroma.ChromaTranslator" title="langchain.retrievers.self_query.chroma.ChromaTranslator"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retrievers.self_query.chroma.ChromaTranslator</span></code></a>()</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="retrievers/langchain.retrievers.self_query.chroma.ChromaTranslator.html#langchain.retrievers.self_query.chroma.ChromaTranslator" title="langchain.retrievers.self_query.chroma.ChromaTranslator"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retrievers.self_query.chroma.ChromaTranslator</span></code></a>()</p></td>
 <td><p>Translate <cite>Chroma</cite> internal query language elements to valid filters.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="retrievers/langchain.retrievers.self_query.dashvector.DashvectorTranslator.html#langchain.retrievers.self_query.dashvector.DashvectorTranslator" title="langchain.retrievers.self_query.dashvector.DashvectorTranslator"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retrievers.self_query.dashvector.DashvectorTranslator</span></code></a>()</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="retrievers/langchain.retrievers.self_query.dashvector.DashvectorTranslator.html#langchain.retrievers.self_query.dashvector.DashvectorTranslator" title="langchain.retrievers.self_query.dashvector.DashvectorTranslator"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retrievers.self_query.dashvector.DashvectorTranslator</span></code></a>()</p></td>
 <td><p>Logic for converting internal query language elements to valid filters.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="retrievers/langchain.retrievers.self_query.deeplake.DeepLakeTranslator.html#langchain.retrievers.self_query.deeplake.DeepLakeTranslator" title="langchain.retrievers.self_query.deeplake.DeepLakeTranslator"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retrievers.self_query.deeplake.DeepLakeTranslator</span></code></a>()</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="retrievers/langchain.retrievers.self_query.deeplake.DeepLakeTranslator.html#langchain.retrievers.self_query.deeplake.DeepLakeTranslator" title="langchain.retrievers.self_query.deeplake.DeepLakeTranslator"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retrievers.self_query.deeplake.DeepLakeTranslator</span></code></a>()</p></td>
 <td><p>Translate <cite>DeepLake</cite> internal query language elements to valid filters.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="retrievers/langchain.retrievers.self_query.elasticsearch.ElasticsearchTranslator.html#langchain.retrievers.self_query.elasticsearch.ElasticsearchTranslator" title="langchain.retrievers.self_query.elasticsearch.ElasticsearchTranslator"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retrievers.self_query.elasticsearch.ElasticsearchTranslator</span></code></a>()</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="retrievers/langchain.retrievers.self_query.elasticsearch.ElasticsearchTranslator.html#langchain.retrievers.self_query.elasticsearch.ElasticsearchTranslator" title="langchain.retrievers.self_query.elasticsearch.ElasticsearchTranslator"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retrievers.self_query.elasticsearch.ElasticsearchTranslator</span></code></a>()</p></td>
 <td><p>Translate <cite>Elasticsearch</cite> internal query language elements to valid filters.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="retrievers/langchain.retrievers.self_query.milvus.MilvusTranslator.html#langchain.retrievers.self_query.milvus.MilvusTranslator" title="langchain.retrievers.self_query.milvus.MilvusTranslator"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retrievers.self_query.milvus.MilvusTranslator</span></code></a>()</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="retrievers/langchain.retrievers.self_query.milvus.MilvusTranslator.html#langchain.retrievers.self_query.milvus.MilvusTranslator" title="langchain.retrievers.self_query.milvus.MilvusTranslator"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retrievers.self_query.milvus.MilvusTranslator</span></code></a>()</p></td>
 <td><p>Translate Milvus internal query language elements to valid filters.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="retrievers/langchain.retrievers.self_query.mongodb_atlas.MongoDBAtlasTranslator.html#langchain.retrievers.self_query.mongodb_atlas.MongoDBAtlasTranslator" title="langchain.retrievers.self_query.mongodb_atlas.MongoDBAtlasTranslator"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retrievers.self_query.mongodb_atlas.MongoDBAtlasTranslator</span></code></a>()</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="retrievers/langchain.retrievers.self_query.mongodb_atlas.MongoDBAtlasTranslator.html#langchain.retrievers.self_query.mongodb_atlas.MongoDBAtlasTranslator" title="langchain.retrievers.self_query.mongodb_atlas.MongoDBAtlasTranslator"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retrievers.self_query.mongodb_atlas.MongoDBAtlasTranslator</span></code></a>()</p></td>
 <td><p>Translate Mongo internal query language elements to valid filters.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="retrievers/langchain.retrievers.self_query.myscale.MyScaleTranslator.html#langchain.retrievers.self_query.myscale.MyScaleTranslator" title="langchain.retrievers.self_query.myscale.MyScaleTranslator"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retrievers.self_query.myscale.MyScaleTranslator</span></code></a>([...])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="retrievers/langchain.retrievers.self_query.myscale.MyScaleTranslator.html#langchain.retrievers.self_query.myscale.MyScaleTranslator" title="langchain.retrievers.self_query.myscale.MyScaleTranslator"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retrievers.self_query.myscale.MyScaleTranslator</span></code></a>([...])</p></td>
 <td><p>Translate <cite>MyScale</cite> internal query language elements to valid filters.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="retrievers/langchain.retrievers.self_query.opensearch.OpenSearchTranslator.html#langchain.retrievers.self_query.opensearch.OpenSearchTranslator" title="langchain.retrievers.self_query.opensearch.OpenSearchTranslator"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retrievers.self_query.opensearch.OpenSearchTranslator</span></code></a>()</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="retrievers/langchain.retrievers.self_query.opensearch.OpenSearchTranslator.html#langchain.retrievers.self_query.opensearch.OpenSearchTranslator" title="langchain.retrievers.self_query.opensearch.OpenSearchTranslator"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retrievers.self_query.opensearch.OpenSearchTranslator</span></code></a>()</p></td>
 <td><p>Translate <cite>OpenSearch</cite> internal query domain-specific language elements to valid filters.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="retrievers/langchain.retrievers.self_query.pgvector.PGVectorTranslator.html#langchain.retrievers.self_query.pgvector.PGVectorTranslator" title="langchain.retrievers.self_query.pgvector.PGVectorTranslator"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retrievers.self_query.pgvector.PGVectorTranslator</span></code></a>()</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="retrievers/langchain.retrievers.self_query.pgvector.PGVectorTranslator.html#langchain.retrievers.self_query.pgvector.PGVectorTranslator" title="langchain.retrievers.self_query.pgvector.PGVectorTranslator"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retrievers.self_query.pgvector.PGVectorTranslator</span></code></a>()</p></td>
 <td><p>Translate <cite>PGVector</cite> internal query language elements to valid filters.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="retrievers/langchain.retrievers.self_query.pinecone.PineconeTranslator.html#langchain.retrievers.self_query.pinecone.PineconeTranslator" title="langchain.retrievers.self_query.pinecone.PineconeTranslator"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retrievers.self_query.pinecone.PineconeTranslator</span></code></a>()</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="retrievers/langchain.retrievers.self_query.pinecone.PineconeTranslator.html#langchain.retrievers.self_query.pinecone.PineconeTranslator" title="langchain.retrievers.self_query.pinecone.PineconeTranslator"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retrievers.self_query.pinecone.PineconeTranslator</span></code></a>()</p></td>
 <td><p>Translate <cite>Pinecone</cite> internal query language elements to valid filters.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="retrievers/langchain.retrievers.self_query.qdrant.QdrantTranslator.html#langchain.retrievers.self_query.qdrant.QdrantTranslator" title="langchain.retrievers.self_query.qdrant.QdrantTranslator"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retrievers.self_query.qdrant.QdrantTranslator</span></code></a>(...)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="retrievers/langchain.retrievers.self_query.qdrant.QdrantTranslator.html#langchain.retrievers.self_query.qdrant.QdrantTranslator" title="langchain.retrievers.self_query.qdrant.QdrantTranslator"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retrievers.self_query.qdrant.QdrantTranslator</span></code></a>(...)</p></td>
 <td><p>Translate <cite>Qdrant</cite> internal query language elements to valid filters.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="retrievers/langchain.retrievers.self_query.redis.RedisTranslator.html#langchain.retrievers.self_query.redis.RedisTranslator" title="langchain.retrievers.self_query.redis.RedisTranslator"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retrievers.self_query.redis.RedisTranslator</span></code></a>(schema)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="retrievers/langchain.retrievers.self_query.redis.RedisTranslator.html#langchain.retrievers.self_query.redis.RedisTranslator" title="langchain.retrievers.self_query.redis.RedisTranslator"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retrievers.self_query.redis.RedisTranslator</span></code></a>(schema)</p></td>
 <td><p>Visitor for translating structured queries to Redis filter expressions.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="retrievers/langchain.retrievers.self_query.supabase.SupabaseVectorTranslator.html#langchain.retrievers.self_query.supabase.SupabaseVectorTranslator" title="langchain.retrievers.self_query.supabase.SupabaseVectorTranslator"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retrievers.self_query.supabase.SupabaseVectorTranslator</span></code></a>()</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="retrievers/langchain.retrievers.self_query.supabase.SupabaseVectorTranslator.html#langchain.retrievers.self_query.supabase.SupabaseVectorTranslator" title="langchain.retrievers.self_query.supabase.SupabaseVectorTranslator"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retrievers.self_query.supabase.SupabaseVectorTranslator</span></code></a>()</p></td>
 <td><p>Translate Langchain filters to Supabase PostgREST filters.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="retrievers/langchain.retrievers.self_query.timescalevector.TimescaleVectorTranslator.html#langchain.retrievers.self_query.timescalevector.TimescaleVectorTranslator" title="langchain.retrievers.self_query.timescalevector.TimescaleVectorTranslator"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retrievers.self_query.timescalevector.TimescaleVectorTranslator</span></code></a>()</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="retrievers/langchain.retrievers.self_query.timescalevector.TimescaleVectorTranslator.html#langchain.retrievers.self_query.timescalevector.TimescaleVectorTranslator" title="langchain.retrievers.self_query.timescalevector.TimescaleVectorTranslator"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retrievers.self_query.timescalevector.TimescaleVectorTranslator</span></code></a>()</p></td>
 <td><p>Translate the internal query language elements to valid filters.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="retrievers/langchain.retrievers.self_query.vectara.VectaraTranslator.html#langchain.retrievers.self_query.vectara.VectaraTranslator" title="langchain.retrievers.self_query.vectara.VectaraTranslator"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retrievers.self_query.vectara.VectaraTranslator</span></code></a>()</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="retrievers/langchain.retrievers.self_query.vectara.VectaraTranslator.html#langchain.retrievers.self_query.vectara.VectaraTranslator" title="langchain.retrievers.self_query.vectara.VectaraTranslator"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retrievers.self_query.vectara.VectaraTranslator</span></code></a>()</p></td>
 <td><p>Translate <cite>Vectara</cite> internal query language elements to valid filters.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="retrievers/langchain.retrievers.self_query.weaviate.WeaviateTranslator.html#langchain.retrievers.self_query.weaviate.WeaviateTranslator" title="langchain.retrievers.self_query.weaviate.WeaviateTranslator"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retrievers.self_query.weaviate.WeaviateTranslator</span></code></a>()</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="retrievers/langchain.retrievers.self_query.weaviate.WeaviateTranslator.html#langchain.retrievers.self_query.weaviate.WeaviateTranslator" title="langchain.retrievers.self_query.weaviate.WeaviateTranslator"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retrievers.self_query.weaviate.WeaviateTranslator</span></code></a>()</p></td>
 <td><p>Translate <cite>Weaviate</cite> internal query language elements to valid filters.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="retrievers/langchain.retrievers.time_weighted_retriever.TimeWeightedVectorStoreRetriever.html#langchain.retrievers.time_weighted_retriever.TimeWeightedVectorStoreRetriever" title="langchain.retrievers.time_weighted_retriever.TimeWeightedVectorStoreRetriever"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retrievers.time_weighted_retriever.TimeWeightedVectorStoreRetriever</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="retrievers/langchain.retrievers.time_weighted_retriever.TimeWeightedVectorStoreRetriever.html#langchain.retrievers.time_weighted_retriever.TimeWeightedVectorStoreRetriever" title="langchain.retrievers.time_weighted_retriever.TimeWeightedVectorStoreRetriever"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retrievers.time_weighted_retriever.TimeWeightedVectorStoreRetriever</span></code></a></p></td>
 <td><p>Retriever that combines embedding similarity with recency in retrieving values.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="retrievers/langchain.retrievers.web_research.QuestionListOutputParser.html#langchain.retrievers.web_research.QuestionListOutputParser" title="langchain.retrievers.web_research.QuestionListOutputParser"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retrievers.web_research.QuestionListOutputParser</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="retrievers/langchain.retrievers.web_research.QuestionListOutputParser.html#langchain.retrievers.web_research.QuestionListOutputParser" title="langchain.retrievers.web_research.QuestionListOutputParser"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retrievers.web_research.QuestionListOutputParser</span></code></a></p></td>
 <td><p>Output parser for a list of numbered questions.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="retrievers/langchain.retrievers.web_research.SearchQueries.html#langchain.retrievers.web_research.SearchQueries" title="langchain.retrievers.web_research.SearchQueries"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retrievers.web_research.SearchQueries</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="retrievers/langchain.retrievers.web_research.SearchQueries.html#langchain.retrievers.web_research.SearchQueries" title="langchain.retrievers.web_research.SearchQueries"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retrievers.web_research.SearchQueries</span></code></a></p></td>
 <td><p>Search queries to research for the user's goal.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="retrievers/langchain.retrievers.web_research.WebResearchRetriever.html#langchain.retrievers.web_research.WebResearchRetriever" title="langchain.retrievers.web_research.WebResearchRetriever"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retrievers.web_research.WebResearchRetriever</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="retrievers/langchain.retrievers.web_research.WebResearchRetriever.html#langchain.retrievers.web_research.WebResearchRetriever" title="langchain.retrievers.web_research.WebResearchRetriever"><code class="xref py py-obj docutils literal notranslate"><span class="pre">retrievers.web_research.WebResearchRetriever</span></code></a></p></td>
 <td><p><cite>Google Search API</cite> retriever.</p></td>
 </tr>
 </tbody>
 </table>
 </section>
-<section id="id17">
-<h3>Functions<a class="headerlink" href="#id17" title="Permalink to this heading">¶</a></h3>
+<section id="id15">
+<h3>Functions<a class="headerlink" href="#id15" title="Permalink to this heading">¶</a></h3>
 <table class="autosummary longtable docutils align-default">
 <colgroup>
 <col style="width: 10%" />
@@ -1693,8 +1668,8 @@ the backbone of a retriever, but there are other types of retrievers as well.</p
 </section>
 <section id="module-langchain.runnables">
 <span id="langchain-runnables"></span><h2><a class="reference internal" href="#module-langchain.runnables" title="langchain.runnables"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain.runnables</span></code></a><a class="headerlink" href="#module-langchain.runnables" title="Permalink to this heading">¶</a></h2>
-<section id="id18">
-<h3>Classes<a class="headerlink" href="#id18" title="Permalink to this heading">¶</a></h3>
+<section id="id16">
+<h3>Classes<a class="headerlink" href="#id16" title="Permalink to this heading">¶</a></h3>
 <table class="autosummary longtable docutils align-default">
 <colgroup>
 <col style="width: 10%" />
@@ -1799,8 +1774,8 @@ or LangSmith’s <cite>RunEvaluator</cite> classes.</p>
 <li><p><a class="reference internal" href="smith/langchain.smith.evaluation.runner_utils.run_on_dataset.html#langchain.smith.evaluation.runner_utils.run_on_dataset" title="langchain.smith.evaluation.runner_utils.run_on_dataset"><code class="xref py py-func docutils literal notranslate"><span class="pre">run_on_dataset</span></code></a>: Function to evaluate a chain, agent, or other LangChain component over a dataset.</p></li>
 <li><p><a class="reference internal" href="smith/langchain.smith.evaluation.config.RunEvalConfig.html#langchain.smith.evaluation.config.RunEvalConfig" title="langchain.smith.evaluation.config.RunEvalConfig"><code class="xref py py-class docutils literal notranslate"><span class="pre">RunEvalConfig</span></code></a>: Class representing the configuration for running evaluation. You can select evaluators by <a class="reference internal" href="evaluation/langchain.evaluation.schema.EvaluatorType.html#langchain.evaluation.schema.EvaluatorType" title="langchain.evaluation.schema.EvaluatorType"><code class="xref py py-class docutils literal notranslate"><span class="pre">EvaluatorType</span></code></a> or config, or you can pass in <cite>custom_evaluators</cite></p></li>
 </ul>
-<section id="id19">
-<h3>Classes<a class="headerlink" href="#id19" title="Permalink to this heading">¶</a></h3>
+<section id="id17">
+<h3>Classes<a class="headerlink" href="#id17" title="Permalink to this heading">¶</a></h3>
 <table class="autosummary longtable docutils align-default">
 <colgroup>
 <col style="width: 10%" />
@@ -1849,8 +1824,8 @@ or LangSmith’s <cite>RunEvaluator</cite> classes.</p>
 </tbody>
 </table>
 </section>
-<section id="id20">
-<h3>Functions<a class="headerlink" href="#id20" title="Permalink to this heading">¶</a></h3>
+<section id="id18">
+<h3>Functions<a class="headerlink" href="#id18" title="Permalink to this heading">¶</a></h3>
 <table class="autosummary longtable docutils align-default">
 <colgroup>
 <col style="width: 10%" />
@@ -1876,8 +1851,8 @@ or LangSmith’s <cite>RunEvaluator</cite> classes.</p>
 <p>Module provides implementations of various key-value stores that conform
 to a simple key-value interface.</p>
 <p>The primary goal of these storages is to support implementation of caching.</p>
-<section id="id21">
-<h3>Classes<a class="headerlink" href="#id21" title="Permalink to this heading">¶</a></h3>
+<section id="id19">
+<h3>Classes<a class="headerlink" href="#id19" title="Permalink to this heading">¶</a></h3>
 <table class="autosummary longtable docutils align-default">
 <colgroup>
 <col style="width: 10%" />
@@ -1897,102 +1872,6 @@ to a simple key-value interface.</p>
 </table>
 </section>
 </section>
-<section id="module-langchain.text_splitter">
-<span id="langchain-text-splitter"></span><h2><a class="reference internal" href="#module-langchain.text_splitter" title="langchain.text_splitter"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain.text_splitter</span></code></a><a class="headerlink" href="#module-langchain.text_splitter" title="Permalink to this heading">¶</a></h2>
-<p><strong>Text Splitters</strong> are classes for splitting text.</p>
-<p><strong>Class hierarchy:</strong></p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">BaseDocumentTransformer</span> <span class="o">--&gt;</span> <span class="n">TextSplitter</span> <span class="o">--&gt;</span> <span class="o">&lt;</span><span class="n">name</span><span class="o">&gt;</span><span class="n">TextSplitter</span>  <span class="c1"># Example: CharacterTextSplitter</span>
-                                             <span class="n">RecursiveCharacterTextSplitter</span> <span class="o">--&gt;</span>  <span class="o">&lt;</span><span class="n">name</span><span class="o">&gt;</span><span class="n">TextSplitter</span>
-</pre></div>
-</div>
-<p>Note: <strong>MarkdownHeaderTextSplitter</strong> and <a href="#id22"><span class="problematic" id="id23">**</span></a>HTMLHeaderTextSplitter do not derive from TextSplitter.</p>
-<p><strong>Main helpers:</strong></p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Document</span><span class="p">,</span> <span class="n">Tokenizer</span><span class="p">,</span> <span class="n">Language</span><span class="p">,</span> <span class="n">LineType</span><span class="p">,</span> <span class="n">HeaderType</span>
-</pre></div>
-</div>
-<section id="id24">
-<h3>Classes<a class="headerlink" href="#id24" title="Permalink to this heading">¶</a></h3>
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="text_splitter/langchain.text_splitter.CharacterTextSplitter.html#langchain.text_splitter.CharacterTextSplitter" title="langchain.text_splitter.CharacterTextSplitter"><code class="xref py py-obj docutils literal notranslate"><span class="pre">text_splitter.CharacterTextSplitter</span></code></a>([...])</p></td>
-<td><p>Splitting text that looks at characters.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="text_splitter/langchain.text_splitter.ElementType.html#langchain.text_splitter.ElementType" title="langchain.text_splitter.ElementType"><code class="xref py py-obj docutils literal notranslate"><span class="pre">text_splitter.ElementType</span></code></a></p></td>
-<td><p>Element type as typed dict.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="text_splitter/langchain.text_splitter.HTMLHeaderTextSplitter.html#langchain.text_splitter.HTMLHeaderTextSplitter" title="langchain.text_splitter.HTMLHeaderTextSplitter"><code class="xref py py-obj docutils literal notranslate"><span class="pre">text_splitter.HTMLHeaderTextSplitter</span></code></a>(...[, ...])</p></td>
-<td><p>Splitting HTML files based on specified headers.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="text_splitter/langchain.text_splitter.HeaderType.html#langchain.text_splitter.HeaderType" title="langchain.text_splitter.HeaderType"><code class="xref py py-obj docutils literal notranslate"><span class="pre">text_splitter.HeaderType</span></code></a></p></td>
-<td><p>Header type as typed dict.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="text_splitter/langchain.text_splitter.KonlpyTextSplitter.html#langchain.text_splitter.KonlpyTextSplitter" title="langchain.text_splitter.KonlpyTextSplitter"><code class="xref py py-obj docutils literal notranslate"><span class="pre">text_splitter.KonlpyTextSplitter</span></code></a>([separator])</p></td>
-<td><p>Splitting text using Konlpy package.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="text_splitter/langchain.text_splitter.Language.html#langchain.text_splitter.Language" title="langchain.text_splitter.Language"><code class="xref py py-obj docutils literal notranslate"><span class="pre">text_splitter.Language</span></code></a>(value)</p></td>
-<td><p>Enum of the programming languages.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="text_splitter/langchain.text_splitter.LatexTextSplitter.html#langchain.text_splitter.LatexTextSplitter" title="langchain.text_splitter.LatexTextSplitter"><code class="xref py py-obj docutils literal notranslate"><span class="pre">text_splitter.LatexTextSplitter</span></code></a>(**kwargs)</p></td>
-<td><p>Attempts to split the text along Latex-formatted layout elements.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="text_splitter/langchain.text_splitter.LineType.html#langchain.text_splitter.LineType" title="langchain.text_splitter.LineType"><code class="xref py py-obj docutils literal notranslate"><span class="pre">text_splitter.LineType</span></code></a></p></td>
-<td><p>Line type as typed dict.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="text_splitter/langchain.text_splitter.MarkdownHeaderTextSplitter.html#langchain.text_splitter.MarkdownHeaderTextSplitter" title="langchain.text_splitter.MarkdownHeaderTextSplitter"><code class="xref py py-obj docutils literal notranslate"><span class="pre">text_splitter.MarkdownHeaderTextSplitter</span></code></a>(...)</p></td>
-<td><p>Splitting markdown files based on specified headers.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="text_splitter/langchain.text_splitter.MarkdownTextSplitter.html#langchain.text_splitter.MarkdownTextSplitter" title="langchain.text_splitter.MarkdownTextSplitter"><code class="xref py py-obj docutils literal notranslate"><span class="pre">text_splitter.MarkdownTextSplitter</span></code></a>(**kwargs)</p></td>
-<td><p>Attempts to split the text along Markdown-formatted headings.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="text_splitter/langchain.text_splitter.NLTKTextSplitter.html#langchain.text_splitter.NLTKTextSplitter" title="langchain.text_splitter.NLTKTextSplitter"><code class="xref py py-obj docutils literal notranslate"><span class="pre">text_splitter.NLTKTextSplitter</span></code></a>([separator, ...])</p></td>
-<td><p>Splitting text using NLTK package.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="text_splitter/langchain.text_splitter.PythonCodeTextSplitter.html#langchain.text_splitter.PythonCodeTextSplitter" title="langchain.text_splitter.PythonCodeTextSplitter"><code class="xref py py-obj docutils literal notranslate"><span class="pre">text_splitter.PythonCodeTextSplitter</span></code></a>(**kwargs)</p></td>
-<td><p>Attempts to split the text along Python syntax.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="text_splitter/langchain.text_splitter.RecursiveCharacterTextSplitter.html#langchain.text_splitter.RecursiveCharacterTextSplitter" title="langchain.text_splitter.RecursiveCharacterTextSplitter"><code class="xref py py-obj docutils literal notranslate"><span class="pre">text_splitter.RecursiveCharacterTextSplitter</span></code></a>([...])</p></td>
-<td><p>Splitting text by recursively look at characters.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="text_splitter/langchain.text_splitter.RecursiveJsonSplitter.html#langchain.text_splitter.RecursiveJsonSplitter" title="langchain.text_splitter.RecursiveJsonSplitter"><code class="xref py py-obj docutils literal notranslate"><span class="pre">text_splitter.RecursiveJsonSplitter</span></code></a>([...])</p></td>
-<td><p></p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="text_splitter/langchain.text_splitter.SentenceTransformersTokenTextSplitter.html#langchain.text_splitter.SentenceTransformersTokenTextSplitter" title="langchain.text_splitter.SentenceTransformersTokenTextSplitter"><code class="xref py py-obj docutils literal notranslate"><span class="pre">text_splitter.SentenceTransformersTokenTextSplitter</span></code></a>([...])</p></td>
-<td><p>Splitting text to tokens using sentence model tokenizer.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="text_splitter/langchain.text_splitter.SpacyTextSplitter.html#langchain.text_splitter.SpacyTextSplitter" title="langchain.text_splitter.SpacyTextSplitter"><code class="xref py py-obj docutils literal notranslate"><span class="pre">text_splitter.SpacyTextSplitter</span></code></a>([separator, ...])</p></td>
-<td><p>Splitting text using Spacy package.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="text_splitter/langchain.text_splitter.TextSplitter.html#langchain.text_splitter.TextSplitter" title="langchain.text_splitter.TextSplitter"><code class="xref py py-obj docutils literal notranslate"><span class="pre">text_splitter.TextSplitter</span></code></a>(chunk_size, ...)</p></td>
-<td><p>Interface for splitting text into chunks.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="text_splitter/langchain.text_splitter.TokenTextSplitter.html#langchain.text_splitter.TokenTextSplitter" title="langchain.text_splitter.TokenTextSplitter"><code class="xref py py-obj docutils literal notranslate"><span class="pre">text_splitter.TokenTextSplitter</span></code></a>([...])</p></td>
-<td><p>Splitting text to tokens using model tokenizer.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="text_splitter/langchain.text_splitter.Tokenizer.html#langchain.text_splitter.Tokenizer" title="langchain.text_splitter.Tokenizer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">text_splitter.Tokenizer</span></code></a>(chunk_overlap, ...)</p></td>
-<td><p>Tokenizer data class.</p></td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="id25">
-<h3>Functions<a class="headerlink" href="#id25" title="Permalink to this heading">¶</a></h3>
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="text_splitter/langchain.text_splitter.split_text_on_tokens.html#langchain.text_splitter.split_text_on_tokens" title="langchain.text_splitter.split_text_on_tokens"><code class="xref py py-obj docutils literal notranslate"><span class="pre">text_splitter.split_text_on_tokens</span></code></a>(*, text, ...)</p></td>
-<td><p>Split incoming text and return chunks using tokenizer.</p></td>
-</tr>
-</tbody>
-</table>
-</section>
-</section>
 <section id="module-langchain.tools">
 <span id="langchain-tools"></span><h2><a class="reference internal" href="#module-langchain.tools" title="langchain.tools"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain.tools</span></code></a><a class="headerlink" href="#module-langchain.tools" title="Permalink to this heading">¶</a></h2>
 <p><strong>Tools</strong> are classes that an Agent uses to interact with the world.</p>
@@ -2007,8 +1886,8 @@ tool for the job.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">CallbackManagerForToolRun</span><span class="p">,</span> <span class="n">AsyncCallbackManagerForToolRun</span>
 </pre></div>
 </div>
-<section id="id26">
-<h3>Classes<a class="headerlink" href="#id26" title="Permalink to this heading">¶</a></h3>
+<section id="id20">
+<h3>Classes<a class="headerlink" href="#id20" title="Permalink to this heading">¶</a></h3>
 <table class="autosummary longtable docutils align-default">
 <colgroup>
 <col style="width: 10%" />
@@ -2021,8 +1900,8 @@ tool for the job.</p>
 </tbody>
 </table>
 </section>
-<section id="id27">
-<h3>Functions<a class="headerlink" href="#id27" title="Permalink to this heading">¶</a></h3>
+<section id="id21">
+<h3>Functions<a class="headerlink" href="#id21" title="Permalink to this heading">¶</a></h3>
 <table class="autosummary longtable docutils align-default">
 <colgroup>
 <col style="width: 10%" />
@@ -2046,8 +1925,8 @@ tool for the job.</p>
 <span id="langchain-utils"></span><h2><a class="reference internal" href="#module-langchain.utils" title="langchain.utils"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain.utils</span></code></a><a class="headerlink" href="#module-langchain.utils" title="Permalink to this heading">¶</a></h2>
 <p><strong>Utility functions</strong> for LangChain.</p>
 <p>These functions do not depend on any other LangChain module.</p>
-<section id="id28">
-<h3>Functions<a class="headerlink" href="#id28" title="Permalink to this heading">¶</a></h3>
+<section id="id22">
+<h3>Functions<a class="headerlink" href="#id22" title="Permalink to this heading">¶</a></h3>
 <table class="autosummary longtable docutils align-default">
 <colgroup>
 <col style="width: 10%" />
@@ -2068,7 +1947,7 @@ tool for the job.</p>
     <div class="container">
       <footer class="sk-content-footer">
             &copy; 2023, LangChain, Inc..
-          Last updated on Feb 14, 2024.
+          Last updated on Mar 01, 2024.
           <a href="_sources/langchain_api_reference.rst.txt" rel="nofollow">Show this page source</a>
       </footer>
     </div>

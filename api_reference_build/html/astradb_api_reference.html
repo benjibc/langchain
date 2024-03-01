@@ -10,7 +10,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   
-  <title>langchain_astradb 0.0.1 &mdash; 🦜🔗 LangChain 0.1.7</title>
+  <title>langchain_astradb 0.0.1 &mdash; 🦜🔗 LangChain 0.1.9</title>
   
   <link rel="canonical" href="https://api.python.langchain.com/en/latest/astradb_api_reference.html" />
 
@@ -61,7 +61,13 @@
           <a class="sk-nav-link nav-link" href="experimental_api_reference.html">Experimental</a>
         </li>
         <li class="nav-item">
+          <a class="sk-nav-link nav-link" href="text_splitters_api_reference.html">Text splitters</a>
+        </li>
+        <li class="nav-item">
           <a class="sk-nav-link nav-link nav-more-item-mobile-items" href="ai21_api_reference.html">ai21</a>
+        </li>
+        <li class="nav-item">
+          <a class="sk-nav-link nav-link nav-more-item-mobile-items" href="airbyte_api_reference.html">airbyte</a>
         </li>
         <li class="nav-item">
           <a class="sk-nav-link nav-link nav-more-item-mobile-items" href="anthropic_api_reference.html">anthropic</a>
@@ -70,7 +76,13 @@
           <a class="sk-nav-link nav-link nav-more-item-mobile-items" href="#">astradb</a>
         </li>
         <li class="nav-item">
+          <a class="sk-nav-link nav-link nav-more-item-mobile-items" href="elasticsearch_api_reference.html">elasticsearch</a>
+        </li>
+        <li class="nav-item">
           <a class="sk-nav-link nav-link nav-more-item-mobile-items" href="exa_api_reference.html">exa</a>
+        </li>
+        <li class="nav-item">
+          <a class="sk-nav-link nav-link nav-more-item-mobile-items" href="fireworks_api_reference.html">fireworks</a>
         </li>
         <li class="nav-item">
           <a class="sk-nav-link nav-link nav-more-item-mobile-items" href="google_genai_api_reference.html">google-genai</a>
@@ -79,10 +91,16 @@
           <a class="sk-nav-link nav-link nav-more-item-mobile-items" href="google_vertexai_api_reference.html">google-vertexai</a>
         </li>
         <li class="nav-item">
+          <a class="sk-nav-link nav-link nav-more-item-mobile-items" href="groq_api_reference.html">groq</a>
+        </li>
+        <li class="nav-item">
           <a class="sk-nav-link nav-link nav-more-item-mobile-items" href="ibm_api_reference.html">ibm</a>
         </li>
         <li class="nav-item">
           <a class="sk-nav-link nav-link nav-more-item-mobile-items" href="mistralai_api_reference.html">mistralai</a>
+        </li>
+        <li class="nav-item">
+          <a class="sk-nav-link nav-link nav-more-item-mobile-items" href="mongodb_api_reference.html">mongodb</a>
         </li>
         <li class="nav-item">
           <a class="sk-nav-link nav-link nav-more-item-mobile-items" href="nomic_api_reference.html">nomic</a>
@@ -109,13 +127,18 @@
           <a class="sk-nav-link nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Partner libs</a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
               <a class="sk-nav-dropdown-item dropdown-item" href="ai21_api_reference.html">ai21</a>
+              <a class="sk-nav-dropdown-item dropdown-item" href="airbyte_api_reference.html">airbyte</a>
               <a class="sk-nav-dropdown-item dropdown-item" href="anthropic_api_reference.html">anthropic</a>
               <a class="sk-nav-dropdown-item dropdown-item" href="#">astradb</a>
+              <a class="sk-nav-dropdown-item dropdown-item" href="elasticsearch_api_reference.html">elasticsearch</a>
               <a class="sk-nav-dropdown-item dropdown-item" href="exa_api_reference.html">exa</a>
+              <a class="sk-nav-dropdown-item dropdown-item" href="fireworks_api_reference.html">fireworks</a>
               <a class="sk-nav-dropdown-item dropdown-item" href="google_genai_api_reference.html">google-genai</a>
               <a class="sk-nav-dropdown-item dropdown-item" href="google_vertexai_api_reference.html">google-vertexai</a>
+              <a class="sk-nav-dropdown-item dropdown-item" href="groq_api_reference.html">groq</a>
               <a class="sk-nav-dropdown-item dropdown-item" href="ibm_api_reference.html">ibm</a>
               <a class="sk-nav-dropdown-item dropdown-item" href="mistralai_api_reference.html">mistralai</a>
+              <a class="sk-nav-dropdown-item dropdown-item" href="mongodb_api_reference.html">mongodb</a>
               <a class="sk-nav-dropdown-item dropdown-item" href="nomic_api_reference.html">nomic</a>
               <a class="sk-nav-dropdown-item dropdown-item" href="nvidia_ai_endpoints_api_reference.html">nvidia-ai-endpoints</a>
               <a class="sk-nav-dropdown-item dropdown-item" href="nvidia_trt_api_reference.html">nvidia-trt</a>
@@ -153,13 +176,21 @@
             <div class="sk-sidebar-toc">
               <ul>
 <li><a class="reference internal" href="#"><code class="docutils literal notranslate"><span class="pre">langchain_astradb</span></code> 0.0.1</a><ul>
+<li><a class="reference internal" href="#module-langchain_astradb.chat_message_histories"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_astradb.chat_message_histories</span></code></a><ul>
+<li><a class="reference internal" href="#classes">Classes</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#module-langchain_astradb.storage"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_astradb.storage</span></code></a><ul>
+<li><a class="reference internal" href="#id1">Classes</a></li>
+</ul>
+</li>
 <li><a class="reference internal" href="#module-langchain_astradb.utils"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_astradb.utils</span></code></a><ul>
+<li><a class="reference internal" href="#id2">Classes</a></li>
 <li><a class="reference internal" href="#functions">Functions</a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#module-langchain_astradb.vectorstores"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_astradb.vectorstores</span></code></a><ul>
-<li><a class="reference internal" href="#classes">Classes</a></li>
-<li><a class="reference internal" href="#id1">Functions</a></li>
+<li><a class="reference internal" href="#id3">Classes</a></li>
 </ul>
 </li>
 </ul>
@@ -174,8 +205,63 @@
         
   <section id="langchain-astradb-0-0-1">
 <h1><code class="docutils literal notranslate"><span class="pre">langchain_astradb</span></code> 0.0.1<a class="headerlink" href="#langchain-astradb-0-0-1" title="Permalink to this heading">¶</a></h1>
+<section id="module-langchain_astradb.chat_message_histories">
+<span id="langchain-astradb-chat-message-histories"></span><h2><a class="reference internal" href="#module-langchain_astradb.chat_message_histories" title="langchain_astradb.chat_message_histories"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_astradb.chat_message_histories</span></code></a><a class="headerlink" href="#module-langchain_astradb.chat_message_histories" title="Permalink to this heading">¶</a></h2>
+<p>Astra DB - based chat message history, based on astrapy.</p>
+<section id="classes">
+<h3>Classes<a class="headerlink" href="#classes" title="Permalink to this heading">¶</a></h3>
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="chat_message_histories/langchain_astradb.chat_message_histories.AstraDBChatMessageHistory.html#langchain_astradb.chat_message_histories.AstraDBChatMessageHistory" title="langchain_astradb.chat_message_histories.AstraDBChatMessageHistory"><code class="xref py py-obj docutils literal notranslate"><span class="pre">chat_message_histories.AstraDBChatMessageHistory</span></code></a>(*, ...)</p></td>
+<td><p>Chat message history that stores history in Astra DB.</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="module-langchain_astradb.storage">
+<span id="langchain-astradb-storage"></span><h2><a class="reference internal" href="#module-langchain_astradb.storage" title="langchain_astradb.storage"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_astradb.storage</span></code></a><a class="headerlink" href="#module-langchain_astradb.storage" title="Permalink to this heading">¶</a></h2>
+<section id="id1">
+<h3>Classes<a class="headerlink" href="#id1" title="Permalink to this heading">¶</a></h3>
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="storage/langchain_astradb.storage.AstraDBBaseStore.html#langchain_astradb.storage.AstraDBBaseStore" title="langchain_astradb.storage.AstraDBBaseStore"><code class="xref py py-obj docutils literal notranslate"><span class="pre">storage.AstraDBBaseStore</span></code></a>(*args, **kwargs)</p></td>
+<td><p>Base class for the DataStax AstraDB data store.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="storage/langchain_astradb.storage.AstraDBByteStore.html#langchain_astradb.storage.AstraDBByteStore" title="langchain_astradb.storage.AstraDBByteStore"><code class="xref py py-obj docutils literal notranslate"><span class="pre">storage.AstraDBByteStore</span></code></a>(*, collection_name)</p></td>
+<td><p>ByteStore implementation using DataStax AstraDB as the underlying store.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="storage/langchain_astradb.storage.AstraDBStore.html#langchain_astradb.storage.AstraDBStore" title="langchain_astradb.storage.AstraDBStore"><code class="xref py py-obj docutils literal notranslate"><span class="pre">storage.AstraDBStore</span></code></a>(collection_name, *[, ...])</p></td>
+<td><p>BaseStore implementation using DataStax AstraDB as the underlying store.</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
 <section id="module-langchain_astradb.utils">
 <span id="langchain-astradb-utils"></span><h2><a class="reference internal" href="#module-langchain_astradb.utils" title="langchain_astradb.utils"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_astradb.utils</span></code></a><a class="headerlink" href="#module-langchain_astradb.utils" title="Permalink to this heading">¶</a></h2>
+<section id="id2">
+<h3>Classes<a class="headerlink" href="#id2" title="Permalink to this heading">¶</a></h3>
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="utils/langchain_astradb.utils.astradb.SetupMode.html#langchain_astradb.utils.astradb.SetupMode" title="langchain_astradb.utils.astradb.SetupMode"><code class="xref py py-obj docutils literal notranslate"><span class="pre">utils.astradb.SetupMode</span></code></a>(value)</p></td>
+<td><p>An enumeration.</p></td>
+</tr>
+</tbody>
+</table>
+</section>
 <section id="functions">
 <h3>Functions<a class="headerlink" href="#functions" title="Permalink to this heading">¶</a></h3>
 <table class="autosummary longtable docutils align-default">
@@ -196,8 +282,8 @@
 </section>
 <section id="module-langchain_astradb.vectorstores">
 <span id="langchain-astradb-vectorstores"></span><h2><a class="reference internal" href="#module-langchain_astradb.vectorstores" title="langchain_astradb.vectorstores"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_astradb.vectorstores</span></code></a><a class="headerlink" href="#module-langchain_astradb.vectorstores" title="Permalink to this heading">¶</a></h2>
-<section id="classes">
-<h3>Classes<a class="headerlink" href="#classes" title="Permalink to this heading">¶</a></h3>
+<section id="id3">
+<h3>Classes<a class="headerlink" href="#id3" title="Permalink to this heading">¶</a></h3>
 <table class="autosummary longtable docutils align-default">
 <colgroup>
 <col style="width: 10%" />
@@ -210,17 +296,6 @@
 </tbody>
 </table>
 </section>
-<section id="id1">
-<h3>Functions<a class="headerlink" href="#id1" title="Permalink to this heading">¶</a></h3>
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-</tbody>
-</table>
-</section>
 </section>
 </section>
 
@@ -229,7 +304,7 @@
     <div class="container">
       <footer class="sk-content-footer">
             &copy; 2023, LangChain, Inc..
-          Last updated on Feb 17, 2024.
+          Last updated on Mar 01, 2024.
           <a href="_sources/astradb_api_reference.rst.txt" rel="nofollow">Show this page source</a>
       </footer>
     </div>

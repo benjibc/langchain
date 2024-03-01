@@ -9,7 +9,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   
-  <title>langchain_core.retrievers &mdash; 🦜🔗 LangChain 0.1.7</title>
+  <title>langchain_core.retrievers &mdash; 🦜🔗 LangChain 0.1.9</title>
   
   <link rel="canonical" href="https://api.python.langchain.com/en/latest/_modules/langchain_core/retrievers.html" />
 
@@ -60,7 +60,13 @@
           <a class="sk-nav-link nav-link" href="../../experimental_api_reference.html">Experimental</a>
         </li>
         <li class="nav-item">
+          <a class="sk-nav-link nav-link" href="../../text_splitters_api_reference.html">Text splitters</a>
+        </li>
+        <li class="nav-item">
           <a class="sk-nav-link nav-link nav-more-item-mobile-items" href="../../ai21_api_reference.html">ai21</a>
+        </li>
+        <li class="nav-item">
+          <a class="sk-nav-link nav-link nav-more-item-mobile-items" href="../../airbyte_api_reference.html">airbyte</a>
         </li>
         <li class="nav-item">
           <a class="sk-nav-link nav-link nav-more-item-mobile-items" href="../../anthropic_api_reference.html">anthropic</a>
@@ -69,7 +75,13 @@
           <a class="sk-nav-link nav-link nav-more-item-mobile-items" href="../../astradb_api_reference.html">astradb</a>
         </li>
         <li class="nav-item">
+          <a class="sk-nav-link nav-link nav-more-item-mobile-items" href="../../elasticsearch_api_reference.html">elasticsearch</a>
+        </li>
+        <li class="nav-item">
           <a class="sk-nav-link nav-link nav-more-item-mobile-items" href="../../exa_api_reference.html">exa</a>
+        </li>
+        <li class="nav-item">
+          <a class="sk-nav-link nav-link nav-more-item-mobile-items" href="../../fireworks_api_reference.html">fireworks</a>
         </li>
         <li class="nav-item">
           <a class="sk-nav-link nav-link nav-more-item-mobile-items" href="../../google_genai_api_reference.html">google-genai</a>
@@ -78,10 +90,16 @@
           <a class="sk-nav-link nav-link nav-more-item-mobile-items" href="../../google_vertexai_api_reference.html">google-vertexai</a>
         </li>
         <li class="nav-item">
+          <a class="sk-nav-link nav-link nav-more-item-mobile-items" href="../../groq_api_reference.html">groq</a>
+        </li>
+        <li class="nav-item">
           <a class="sk-nav-link nav-link nav-more-item-mobile-items" href="../../ibm_api_reference.html">ibm</a>
         </li>
         <li class="nav-item">
           <a class="sk-nav-link nav-link nav-more-item-mobile-items" href="../../mistralai_api_reference.html">mistralai</a>
+        </li>
+        <li class="nav-item">
+          <a class="sk-nav-link nav-link nav-more-item-mobile-items" href="../../mongodb_api_reference.html">mongodb</a>
         </li>
         <li class="nav-item">
           <a class="sk-nav-link nav-link nav-more-item-mobile-items" href="../../nomic_api_reference.html">nomic</a>
@@ -108,13 +126,18 @@
           <a class="sk-nav-link nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Partner libs</a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
               <a class="sk-nav-dropdown-item dropdown-item" href="../../ai21_api_reference.html">ai21</a>
+              <a class="sk-nav-dropdown-item dropdown-item" href="../../airbyte_api_reference.html">airbyte</a>
               <a class="sk-nav-dropdown-item dropdown-item" href="../../anthropic_api_reference.html">anthropic</a>
               <a class="sk-nav-dropdown-item dropdown-item" href="../../astradb_api_reference.html">astradb</a>
+              <a class="sk-nav-dropdown-item dropdown-item" href="../../elasticsearch_api_reference.html">elasticsearch</a>
               <a class="sk-nav-dropdown-item dropdown-item" href="../../exa_api_reference.html">exa</a>
+              <a class="sk-nav-dropdown-item dropdown-item" href="../../fireworks_api_reference.html">fireworks</a>
               <a class="sk-nav-dropdown-item dropdown-item" href="../../google_genai_api_reference.html">google-genai</a>
               <a class="sk-nav-dropdown-item dropdown-item" href="../../google_vertexai_api_reference.html">google-vertexai</a>
+              <a class="sk-nav-dropdown-item dropdown-item" href="../../groq_api_reference.html">groq</a>
               <a class="sk-nav-dropdown-item dropdown-item" href="../../ibm_api_reference.html">ibm</a>
               <a class="sk-nav-dropdown-item dropdown-item" href="../../mistralai_api_reference.html">mistralai</a>
+              <a class="sk-nav-dropdown-item dropdown-item" href="../../mongodb_api_reference.html">mongodb</a>
               <a class="sk-nav-dropdown-item dropdown-item" href="../../nomic_api_reference.html">nomic</a>
               <a class="sk-nav-dropdown-item dropdown-item" href="../../nvidia_ai_endpoints_api_reference.html">nvidia-ai-endpoints</a>
               <a class="sk-nav-dropdown-item dropdown-item" href="../../nvidia_trt_api_reference.html">nvidia-trt</a>
@@ -157,7 +180,27 @@
       <div class="sk-page-content container-fluid body px-md-3" role="main">
         
   <h1>Source code for langchain_core.retrievers</h1><div class="highlight"><pre>
-<span></span><span class="kn">from</span> <span class="nn">__future__</span> <span class="kn">import</span> <span class="n">annotations</span>
+<span></span><span class="sd">&quot;&quot;&quot;**Retriever** class returns Documents given a text **query**.</span>
+
+<span class="sd">It is more general than a vector store. A retriever does not need to be able to</span>
+<span class="sd">store documents, only to return (or retrieve) it. Vector stores can be used as</span>
+<span class="sd">the backbone of a retriever, but there are other types of retrievers as well.</span>
+
+<span class="sd">**Class hierarchy:**</span>
+
+<span class="sd">.. code-block::</span>
+
+<span class="sd">    BaseRetriever --&gt; &lt;name&gt;Retriever  # Examples: ArxivRetriever, MergerRetriever</span>
+
+<span class="sd">**Main helpers:**</span>
+
+<span class="sd">.. code-block::</span>
+
+<span class="sd">    RetrieverInput, RetrieverOutput, RetrieverLike, RetrieverOutputLike,</span>
+<span class="sd">    Document, Serializable, Callbacks,</span>
+<span class="sd">    CallbackManagerForRetrieverRun, AsyncCallbackManagerForRetrieverRun</span>
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="kn">from</span> <span class="nn">__future__</span> <span class="kn">import</span> <span class="n">annotations</span>
 
 <span class="kn">import</span> <span class="nn">warnings</span>
 <span class="kn">from</span> <span class="nn">abc</span> <span class="kn">import</span> <span class="n">ABC</span><span class="p">,</span> <span class="n">abstractmethod</span>
@@ -187,7 +230,7 @@
 <span class="n">RetrieverOutputLike</span> <span class="o">=</span> <span class="n">Runnable</span><span class="p">[</span><span class="n">Any</span><span class="p">,</span> <span class="n">RetrieverOutput</span><span class="p">]</span>
 
 
-<span class="k">class</span> <span class="nc">BaseRetriever</span><span class="p">(</span><span class="n">RunnableSerializable</span><span class="p">[</span><span class="n">RetrieverInput</span><span class="p">,</span> <span class="n">RetrieverOutput</span><span class="p">],</span> <span class="n">ABC</span><span class="p">):</span>
+<div class="viewcode-block" id="BaseRetriever"><a class="viewcode-back" href="../../retrievers/langchain_core.retrievers.BaseRetriever.html#langchain_community.vectorstores.vectara.BaseRetriever">[docs]</a><span class="k">class</span> <span class="nc">BaseRetriever</span><span class="p">(</span><span class="n">RunnableSerializable</span><span class="p">[</span><span class="n">RetrieverInput</span><span class="p">,</span> <span class="n">RetrieverOutput</span><span class="p">],</span> <span class="n">ABC</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;Abstract base class for a Document retrieval system.</span>
 
 <span class="sd">    A retrieval system is defined as something that can take string queries and return</span>
@@ -273,7 +316,7 @@
             <span class="nb">len</span><span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="n">parameters</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span> <span class="o">-</span> <span class="p">{</span><span class="s2">&quot;self&quot;</span><span class="p">,</span> <span class="s2">&quot;query&quot;</span><span class="p">,</span> <span class="s2">&quot;run_manager&quot;</span><span class="p">})</span> <span class="o">&gt;</span> <span class="mi">0</span>
         <span class="p">)</span>
 
-    <span class="k">def</span> <span class="nf">invoke</span><span class="p">(</span>
+<div class="viewcode-block" id="BaseRetriever.invoke"><a class="viewcode-back" href="../../retrievers/langchain_core.retrievers.BaseRetriever.html#langchain_community.vectorstores.vectara.BaseRetriever.invoke">[docs]</a>    <span class="k">def</span> <span class="nf">invoke</span><span class="p">(</span>
         <span class="bp">self</span><span class="p">,</span> <span class="nb">input</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">config</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">RunnableConfig</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">:</span> <span class="n">Any</span>
     <span class="p">)</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="n">Document</span><span class="p">]:</span>
         <span class="n">config</span> <span class="o">=</span> <span class="n">ensure_config</span><span class="p">(</span><span class="n">config</span><span class="p">)</span>
@@ -284,9 +327,9 @@
             <span class="n">metadata</span><span class="o">=</span><span class="n">config</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;metadata&quot;</span><span class="p">),</span>
             <span class="n">run_name</span><span class="o">=</span><span class="n">config</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;run_name&quot;</span><span class="p">),</span>
             <span class="o">**</span><span class="n">kwargs</span><span class="p">,</span>
-        <span class="p">)</span>
+        <span class="p">)</span></div>
 
-    <span class="k">async</span> <span class="k">def</span> <span class="nf">ainvoke</span><span class="p">(</span>
+<div class="viewcode-block" id="BaseRetriever.ainvoke"><a class="viewcode-back" href="../../retrievers/langchain_core.retrievers.BaseRetriever.html#langchain_community.vectorstores.vectara.BaseRetriever.ainvoke">[docs]</a>    <span class="k">async</span> <span class="k">def</span> <span class="nf">ainvoke</span><span class="p">(</span>
         <span class="bp">self</span><span class="p">,</span>
         <span class="nb">input</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
         <span class="n">config</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">RunnableConfig</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
@@ -300,7 +343,7 @@
             <span class="n">metadata</span><span class="o">=</span><span class="n">config</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;metadata&quot;</span><span class="p">),</span>
             <span class="n">run_name</span><span class="o">=</span><span class="n">config</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;run_name&quot;</span><span class="p">),</span>
             <span class="o">**</span><span class="n">kwargs</span><span class="p">,</span>
-        <span class="p">)</span>
+        <span class="p">)</span></div>
 
     <span class="nd">@abstractmethod</span>
     <span class="k">def</span> <span class="nf">_get_relevant_documents</span><span class="p">(</span>
@@ -331,7 +374,7 @@
             <span class="n">run_manager</span><span class="o">=</span><span class="n">run_manager</span><span class="o">.</span><span class="n">get_sync</span><span class="p">(),</span>
         <span class="p">)</span>
 
-    <span class="k">def</span> <span class="nf">get_relevant_documents</span><span class="p">(</span>
+<div class="viewcode-block" id="BaseRetriever.get_relevant_documents"><a class="viewcode-back" href="../../retrievers/langchain_core.retrievers.BaseRetriever.html#langchain_community.vectorstores.vectara.BaseRetriever.get_relevant_documents">[docs]</a>    <span class="k">def</span> <span class="nf">get_relevant_documents</span><span class="p">(</span>
         <span class="bp">self</span><span class="p">,</span>
         <span class="n">query</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
         <span class="o">*</span><span class="p">,</span>
@@ -385,9 +428,9 @@
             <span class="n">run_manager</span><span class="o">.</span><span class="n">on_retriever_end</span><span class="p">(</span>
                 <span class="n">result</span><span class="p">,</span>
             <span class="p">)</span>
-            <span class="k">return</span> <span class="n">result</span>
+            <span class="k">return</span> <span class="n">result</span></div>
 
-    <span class="k">async</span> <span class="k">def</span> <span class="nf">aget_relevant_documents</span><span class="p">(</span>
+<div class="viewcode-block" id="BaseRetriever.aget_relevant_documents"><a class="viewcode-back" href="../../retrievers/langchain_core.retrievers.BaseRetriever.html#langchain_community.vectorstores.vectara.BaseRetriever.aget_relevant_documents">[docs]</a>    <span class="k">async</span> <span class="k">def</span> <span class="nf">aget_relevant_documents</span><span class="p">(</span>
         <span class="bp">self</span><span class="p">,</span>
         <span class="n">query</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
         <span class="o">*</span><span class="p">,</span>
@@ -441,14 +484,14 @@
             <span class="k">await</span> <span class="n">run_manager</span><span class="o">.</span><span class="n">on_retriever_end</span><span class="p">(</span>
                 <span class="n">result</span><span class="p">,</span>
             <span class="p">)</span>
-            <span class="k">return</span> <span class="n">result</span>
+            <span class="k">return</span> <span class="n">result</span></div></div>
 </pre></div>
 
       </div>
     <div class="container">
       <footer class="sk-content-footer">
             &copy; 2023, LangChain, Inc..
-          Last updated on Feb 17, 2024.
+          Last updated on Mar 01, 2024.
       </footer>
     </div>
   </div>

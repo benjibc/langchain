@@ -1,7 +1,7 @@
 .. langchain_api_reference:
 
 =======================
-``langchain`` 0.1.7
+``langchain`` 0.1.9
 =======================
 
 :mod:`langchain.agents`
@@ -740,16 +740,6 @@ Classes
     
     embeddings.cache.CacheBackedEmbeddings
     
-Functions
---------------
-.. currentmodule:: langchain
-
-.. autosummary::
-    :toctree: embeddings
-    :template: function.rst
-
-    
-
 :mod:`langchain.evaluation`
 ============================
 
@@ -961,16 +951,6 @@ Classes
     
     indexes.vectorstore.VectorstoreIndexCreator
     
-Functions
---------------
-.. currentmodule:: langchain
-
-.. autosummary::
-    :toctree: indexes
-    :template: function.rst
-
-    
-
 :mod:`langchain.memory`
 ========================
 
@@ -1130,43 +1110,7 @@ Classes
     
     :template: pydantic.rst
     
-    output_parsers.openai_functions.JsonKeyOutputFunctionsParser
-    
-    :template: pydantic.rst
-    
-    output_parsers.openai_functions.JsonOutputFunctionsParser
-    
-    :template: pydantic.rst
-    
-    output_parsers.openai_functions.OutputFunctionsParser
-    
-    :template: pydantic.rst
-    
-    output_parsers.openai_functions.PydanticAttrOutputFunctionsParser
-    
-    :template: pydantic.rst
-    
-    output_parsers.openai_functions.PydanticOutputFunctionsParser
-    
-    :template: pydantic.rst
-    
-    output_parsers.openai_tools.JsonOutputKeyToolsParser
-    
-    :template: pydantic.rst
-    
-    output_parsers.openai_tools.JsonOutputToolsParser
-    
-    :template: pydantic.rst
-    
-    output_parsers.openai_tools.PydanticToolsParser
-    
-    :template: pydantic.rst
-    
     output_parsers.pandas_dataframe.PandasDataFrameOutputParser
-    
-    :template: pydantic.rst
-    
-    output_parsers.pydantic.PydanticOutputParser
     
     :template: pydantic.rst
     
@@ -1222,10 +1166,6 @@ Classes
     :template: pydantic.rst
     
     retrievers.contextual_compression.ContextualCompressionRetriever
-    
-    :template: pydantic.rst
-    
-    retrievers.document_compressors.base.BaseDocumentCompressor
     
     :template: pydantic.rst
     
@@ -1516,105 +1456,6 @@ Classes
     
     storage.in_memory.InMemoryBaseStore
     
-:mod:`langchain.text_splitter`
-===============================
-
-.. automodule:: langchain.text_splitter
-    :no-members:
-    :no-inherited-members:
-
-Classes
---------------
-.. currentmodule:: langchain
-
-.. autosummary::
-    :toctree: text_splitter
-    :template: class.rst
-    
-    text_splitter.CharacterTextSplitter
-    
-    :template: typeddict.rst
-    
-    text_splitter.ElementType
-    
-    :template: class.rst
-    
-    text_splitter.HTMLHeaderTextSplitter
-    
-    :template: typeddict.rst
-    
-    text_splitter.HeaderType
-    
-    :template: class.rst
-    
-    text_splitter.KonlpyTextSplitter
-    
-    :template: enum.rst
-    
-    text_splitter.Language
-    
-    :template: class.rst
-    
-    text_splitter.LatexTextSplitter
-    
-    :template: typeddict.rst
-    
-    text_splitter.LineType
-    
-    :template: class.rst
-    
-    text_splitter.MarkdownHeaderTextSplitter
-    
-    :template: class.rst
-    
-    text_splitter.MarkdownTextSplitter
-    
-    :template: class.rst
-    
-    text_splitter.NLTKTextSplitter
-    
-    :template: class.rst
-    
-    text_splitter.PythonCodeTextSplitter
-    
-    :template: class.rst
-    
-    text_splitter.RecursiveCharacterTextSplitter
-    
-    :template: class.rst
-    
-    text_splitter.RecursiveJsonSplitter
-    
-    :template: class.rst
-    
-    text_splitter.SentenceTransformersTokenTextSplitter
-    
-    :template: class.rst
-    
-    text_splitter.SpacyTextSplitter
-    
-    :template: class.rst
-    
-    text_splitter.TextSplitter
-    
-    :template: class.rst
-    
-    text_splitter.TokenTextSplitter
-    
-    :template: class.rst
-    
-    text_splitter.Tokenizer
-    
-Functions
---------------
-.. currentmodule:: langchain
-
-.. autosummary::
-    :toctree: text_splitter
-    :template: function.rst
-
-    text_splitter.split_text_on_tokens
-
 :mod:`langchain.tools`
 =======================
 

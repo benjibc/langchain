@@ -10,7 +10,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   
-  <title>langchain_community.vectorstores.qdrant.Qdrant &mdash; 🦜🔗 LangChain 0.1.7</title>
+  <title>langchain_community.vectorstores.qdrant.Qdrant &mdash; 🦜🔗 LangChain 0.1.9</title>
   
   <link rel="canonical" href="https://api.python.langchain.com/en/latest/vectorstores/langchain_community.vectorstores.qdrant.Qdrant.html" />
 
@@ -61,10 +61,28 @@
           <a class="sk-nav-link nav-link" href="../experimental_api_reference.html">Experimental</a>
         </li>
         <li class="nav-item">
+          <a class="sk-nav-link nav-link" href="../text_splitters_api_reference.html">Text splitters</a>
+        </li>
+        <li class="nav-item">
+          <a class="sk-nav-link nav-link nav-more-item-mobile-items" href="../ai21_api_reference.html">ai21</a>
+        </li>
+        <li class="nav-item">
+          <a class="sk-nav-link nav-link nav-more-item-mobile-items" href="../airbyte_api_reference.html">airbyte</a>
+        </li>
+        <li class="nav-item">
           <a class="sk-nav-link nav-link nav-more-item-mobile-items" href="../anthropic_api_reference.html">anthropic</a>
         </li>
         <li class="nav-item">
+          <a class="sk-nav-link nav-link nav-more-item-mobile-items" href="../astradb_api_reference.html">astradb</a>
+        </li>
+        <li class="nav-item">
+          <a class="sk-nav-link nav-link nav-more-item-mobile-items" href="../elasticsearch_api_reference.html">elasticsearch</a>
+        </li>
+        <li class="nav-item">
           <a class="sk-nav-link nav-link nav-more-item-mobile-items" href="../exa_api_reference.html">exa</a>
+        </li>
+        <li class="nav-item">
+          <a class="sk-nav-link nav-link nav-more-item-mobile-items" href="../fireworks_api_reference.html">fireworks</a>
         </li>
         <li class="nav-item">
           <a class="sk-nav-link nav-link nav-more-item-mobile-items" href="../google_genai_api_reference.html">google-genai</a>
@@ -73,7 +91,16 @@
           <a class="sk-nav-link nav-link nav-more-item-mobile-items" href="../google_vertexai_api_reference.html">google-vertexai</a>
         </li>
         <li class="nav-item">
+          <a class="sk-nav-link nav-link nav-more-item-mobile-items" href="../groq_api_reference.html">groq</a>
+        </li>
+        <li class="nav-item">
+          <a class="sk-nav-link nav-link nav-more-item-mobile-items" href="../ibm_api_reference.html">ibm</a>
+        </li>
+        <li class="nav-item">
           <a class="sk-nav-link nav-link nav-more-item-mobile-items" href="../mistralai_api_reference.html">mistralai</a>
+        </li>
+        <li class="nav-item">
+          <a class="sk-nav-link nav-link nav-more-item-mobile-items" href="../mongodb_api_reference.html">mongodb</a>
         </li>
         <li class="nav-item">
           <a class="sk-nav-link nav-link nav-more-item-mobile-items" href="../nomic_api_reference.html">nomic</a>
@@ -99,11 +126,19 @@
         <li class="nav-item dropdown nav-more-item-dropdown">
           <a class="sk-nav-link nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Partner libs</a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="sk-nav-dropdown-item dropdown-item" href="../ai21_api_reference.html">ai21</a>
+              <a class="sk-nav-dropdown-item dropdown-item" href="../airbyte_api_reference.html">airbyte</a>
               <a class="sk-nav-dropdown-item dropdown-item" href="../anthropic_api_reference.html">anthropic</a>
+              <a class="sk-nav-dropdown-item dropdown-item" href="../astradb_api_reference.html">astradb</a>
+              <a class="sk-nav-dropdown-item dropdown-item" href="../elasticsearch_api_reference.html">elasticsearch</a>
               <a class="sk-nav-dropdown-item dropdown-item" href="../exa_api_reference.html">exa</a>
+              <a class="sk-nav-dropdown-item dropdown-item" href="../fireworks_api_reference.html">fireworks</a>
               <a class="sk-nav-dropdown-item dropdown-item" href="../google_genai_api_reference.html">google-genai</a>
               <a class="sk-nav-dropdown-item dropdown-item" href="../google_vertexai_api_reference.html">google-vertexai</a>
+              <a class="sk-nav-dropdown-item dropdown-item" href="../groq_api_reference.html">groq</a>
+              <a class="sk-nav-dropdown-item dropdown-item" href="../ibm_api_reference.html">ibm</a>
               <a class="sk-nav-dropdown-item dropdown-item" href="../mistralai_api_reference.html">mistralai</a>
+              <a class="sk-nav-dropdown-item dropdown-item" href="../mongodb_api_reference.html">mongodb</a>
               <a class="sk-nav-dropdown-item dropdown-item" href="../nomic_api_reference.html">nomic</a>
               <a class="sk-nav-dropdown-item dropdown-item" href="../nvidia_ai_endpoints_api_reference.html">nvidia-ai-endpoints</a>
               <a class="sk-nav-dropdown-item dropdown-item" href="../nvidia_trt_api_reference.html">nvidia-trt</a>
@@ -329,10 +364,40 @@
 </tr>
 </tbody>
 </table>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>client</strong> (<em>Any</em>) – </p></li>
+<li><p><strong>collection_name</strong> (<em>str</em>) – </p></li>
+<li><p><strong>embeddings</strong> (<em>Optional</em><em>[</em><a class="reference internal" href="../embeddings/langchain_core.embeddings.Embeddings.html#langchain_core.embeddings.Embeddings" title="langchain_core.embeddings.Embeddings"><em>Embeddings</em></a><em>]</em>) – </p></li>
+<li><p><strong>content_payload_key</strong> (<em>str</em>) – </p></li>
+<li><p><strong>metadata_payload_key</strong> (<em>str</em>) – </p></li>
+<li><p><strong>distance_strategy</strong> (<em>str</em>) – </p></li>
+<li><p><strong>vector_name</strong> (<em>Optional</em><em>[</em><em>str</em><em>]</em>) – </p></li>
+<li><p><strong>async_client</strong> (<em>Optional</em><em>[</em><em>Any</em><em>]</em>) – </p></li>
+<li><p><strong>embedding_function</strong> (<em>Optional</em><em>[</em><em>Callable</em><em>]</em>) – </p></li>
+</ul>
+</dd>
+</dl>
 <dl class="py method">
 <dt class="sig sig-object py" id="langchain_community.vectorstores.qdrant.Qdrant.__init__">
 <span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">client</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">collection_name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">embeddings</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="../embeddings/langchain_core.embeddings.Embeddings.html#langchain_core.embeddings.Embeddings" title="langchain_core.embeddings.Embeddings"><span class="pre">Embeddings</span></a><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">content_payload_key</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'page_content'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">metadata_payload_key</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'metadata'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">distance_strategy</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'COSINE'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vector_name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">async_client</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">embedding_function</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">Callable</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/langchain_community/vectorstores/qdrant.html#Qdrant.__init__"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#langchain_community.vectorstores.qdrant.Qdrant.__init__" title="Permalink to this definition">¶</a></dt>
 <dd><p>Initialize with necessary components.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>client</strong> (<em>Any</em>) – </p></li>
+<li><p><strong>collection_name</strong> (<em>str</em>) – </p></li>
+<li><p><strong>embeddings</strong> (<em>Optional</em><em>[</em><a class="reference internal" href="../embeddings/langchain_core.embeddings.Embeddings.html#langchain_core.embeddings.Embeddings" title="langchain_core.embeddings.Embeddings"><em>Embeddings</em></a><em>]</em>) – </p></li>
+<li><p><strong>content_payload_key</strong> (<em>str</em>) – </p></li>
+<li><p><strong>metadata_payload_key</strong> (<em>str</em>) – </p></li>
+<li><p><strong>distance_strategy</strong> (<em>str</em>) – </p></li>
+<li><p><strong>vector_name</strong> (<em>Optional</em><em>[</em><em>str</em><em>]</em>) – </p></li>
+<li><p><strong>async_client</strong> (<em>Optional</em><em>[</em><em>Any</em><em>]</em>) – </p></li>
+<li><p><strong>embedding_function</strong> (<em>Optional</em><em>[</em><em>Callable</em><em>]</em>) – </p></li>
+</ul>
+</dd>
+</dl>
 </dd></dl>
 
 <dl class="py method">
@@ -341,7 +406,11 @@
 <dd><p>Run more documents through the embeddings and add to the vectorstore.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>(</strong><strong>List</strong><strong>[</strong><strong>Document</strong><strong>]</strong> (<em>documents</em>) – Documents to add to the vectorstore.</p>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>(</strong><strong>List</strong><strong>[</strong><strong>Document</strong><strong>]</strong> (<em>documents</em>) – Documents to add to the vectorstore.</p></li>
+<li><p><strong>documents</strong> (<em>List</em><em>[</em><a class="reference internal" href="../documents/langchain_core.documents.base.Document.html#langchain_core.documents.base.Document" title="langchain_core.documents.base.Document"><em>Document</em></a><em>]</em>) – </p></li>
+<li><p><strong>kwargs</strong> (<em>Any</em>) – </p></li>
+</ul>
 </dd>
 <dt class="field-even">Returns</dt>
 <dd class="field-even"><p>List of IDs of the added texts.</p>
@@ -359,16 +428,20 @@
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>texts</strong> – Iterable of strings to add to the vectorstore.</p></li>
-<li><p><strong>metadatas</strong> – Optional list of metadatas associated with the texts.</p></li>
-<li><p><strong>ids</strong> – Optional list of ids to associate with the texts. Ids have to be
+<li><p><strong>texts</strong> (<em>Iterable</em><em>[</em><em>str</em><em>]</em>) – Iterable of strings to add to the vectorstore.</p></li>
+<li><p><strong>metadatas</strong> (<em>Optional</em><em>[</em><em>List</em><em>[</em><em>dict</em><em>]</em><em>]</em>) – Optional list of metadatas associated with the texts.</p></li>
+<li><p><strong>ids</strong> (<em>Optional</em><em>[</em><em>Sequence</em><em>[</em><em>str</em><em>]</em><em>]</em>) – Optional list of ids to associate with the texts. Ids have to be
 uuid-like strings.</p></li>
-<li><p><strong>batch_size</strong> – How many vectors upload per-request.
+<li><p><strong>batch_size</strong> (<em>int</em>) – How many vectors upload per-request.
 Default: 64</p></li>
+<li><p><strong>kwargs</strong> (<em>Any</em>) – </p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns</dt>
 <dd class="field-even"><p>List of ids from adding the texts into the vectorstore.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><em>List</em>[str]</p>
 </dd>
 </dl>
 </dd></dl>
@@ -376,7 +449,46 @@ Default: 64</p></li>
 <dl class="py method">
 <dt class="sig sig-object py" id="langchain_community.vectorstores.qdrant.Qdrant.aconstruct_instance">
 <em class="property"><span class="pre">async</span><span class="w"> </span><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">aconstruct_instance</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">texts</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">embedding</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="../embeddings/langchain_core.embeddings.Embeddings.html#langchain_core.embeddings.Embeddings" title="langchain_core.embeddings.Embeddings"><span class="pre">Embeddings</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">location</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">url</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">port</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">6333</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">grpc_port</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">6334</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">prefer_grpc</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">https</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">bool</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">api_key</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">prefix</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeout</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">host</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">path</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">collection_name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">distance_func</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'Cosine'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">content_payload_key</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'page_content'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">metadata_payload_key</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'metadata'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vector_name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">shard_number</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">replication_factor</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">write_consistency_factor</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">on_disk_payload</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">bool</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">hnsw_config</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">common_types.HnswConfigDiff</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">optimizers_config</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">common_types.OptimizersConfigDiff</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">wal_config</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">common_types.WalConfigDiff</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">quantization_config</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">common_types.QuantizationConfig</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">init_from</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">common_types.InitFrom</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">on_disk</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">bool</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">force_recreate</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#langchain_community.vectorstores.qdrant.Qdrant" title="langchain_community.vectorstores.qdrant.Qdrant"><span class="pre">Qdrant</span></a></span></span><a class="reference internal" href="../_modules/langchain_community/vectorstores/qdrant.html#Qdrant.aconstruct_instance"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#langchain_community.vectorstores.qdrant.Qdrant.aconstruct_instance" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>texts</strong> (<em>List</em><em>[</em><em>str</em><em>]</em>) – </p></li>
+<li><p><strong>embedding</strong> (<a class="reference internal" href="../embeddings/langchain_core.embeddings.Embeddings.html#langchain_core.embeddings.Embeddings" title="langchain_core.embeddings.Embeddings"><em>Embeddings</em></a>) – </p></li>
+<li><p><strong>location</strong> (<em>Optional</em><em>[</em><em>str</em><em>]</em>) – </p></li>
+<li><p><strong>url</strong> (<em>Optional</em><em>[</em><em>str</em><em>]</em>) – </p></li>
+<li><p><strong>port</strong> (<em>Optional</em><em>[</em><em>int</em><em>]</em>) – </p></li>
+<li><p><strong>grpc_port</strong> (<em>int</em>) – </p></li>
+<li><p><strong>prefer_grpc</strong> (<em>bool</em>) – </p></li>
+<li><p><strong>https</strong> (<em>Optional</em><em>[</em><em>bool</em><em>]</em>) – </p></li>
+<li><p><strong>api_key</strong> (<em>Optional</em><em>[</em><em>str</em><em>]</em>) – </p></li>
+<li><p><strong>prefix</strong> (<em>Optional</em><em>[</em><em>str</em><em>]</em>) – </p></li>
+<li><p><strong>timeout</strong> (<em>Optional</em><em>[</em><em>float</em><em>]</em>) – </p></li>
+<li><p><strong>host</strong> (<em>Optional</em><em>[</em><em>str</em><em>]</em>) – </p></li>
+<li><p><strong>path</strong> (<em>Optional</em><em>[</em><em>str</em><em>]</em>) – </p></li>
+<li><p><strong>collection_name</strong> (<em>Optional</em><em>[</em><em>str</em><em>]</em>) – </p></li>
+<li><p><strong>distance_func</strong> (<em>str</em>) – </p></li>
+<li><p><strong>content_payload_key</strong> (<em>str</em>) – </p></li>
+<li><p><strong>metadata_payload_key</strong> (<em>str</em>) – </p></li>
+<li><p><strong>vector_name</strong> (<em>Optional</em><em>[</em><em>str</em><em>]</em>) – </p></li>
+<li><p><strong>shard_number</strong> (<em>Optional</em><em>[</em><em>int</em><em>]</em>) – </p></li>
+<li><p><strong>replication_factor</strong> (<em>Optional</em><em>[</em><em>int</em><em>]</em>) – </p></li>
+<li><p><strong>write_consistency_factor</strong> (<em>Optional</em><em>[</em><em>int</em><em>]</em>) – </p></li>
+<li><p><strong>on_disk_payload</strong> (<em>Optional</em><em>[</em><em>bool</em><em>]</em>) – </p></li>
+<li><p><strong>hnsw_config</strong> (<em>Optional</em><em>[</em><em>common_types.HnswConfigDiff</em><em>]</em>) – </p></li>
+<li><p><strong>optimizers_config</strong> (<em>Optional</em><em>[</em><em>common_types.OptimizersConfigDiff</em><em>]</em>) – </p></li>
+<li><p><strong>wal_config</strong> (<em>Optional</em><em>[</em><em>common_types.WalConfigDiff</em><em>]</em>) – </p></li>
+<li><p><strong>quantization_config</strong> (<em>Optional</em><em>[</em><em>common_types.QuantizationConfig</em><em>]</em>) – </p></li>
+<li><p><strong>init_from</strong> (<em>Optional</em><em>[</em><em>common_types.InitFrom</em><em>]</em>) – </p></li>
+<li><p><strong>on_disk</strong> (<em>Optional</em><em>[</em><em>bool</em><em>]</em>) – </p></li>
+<li><p><strong>force_recreate</strong> (<em>bool</em>) – </p></li>
+<li><p><strong>kwargs</strong> (<em>Any</em>) – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference internal" href="#langchain_community.vectorstores.qdrant.Qdrant" title="langchain_community.vectorstores.qdrant.Qdrant">Qdrant</a></p>
+</dd>
+</dl>
+</dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="langchain_community.vectorstores.qdrant.Qdrant.add_documents">
@@ -384,7 +496,11 @@ Default: 64</p></li>
 <dd><p>Run more documents through the embeddings and add to the vectorstore.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>(</strong><strong>List</strong><strong>[</strong><strong>Document</strong><strong>]</strong> (<em>documents</em>) – Documents to add to the vectorstore.</p>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>(</strong><strong>List</strong><strong>[</strong><strong>Document</strong><strong>]</strong> (<em>documents</em>) – Documents to add to the vectorstore.</p></li>
+<li><p><strong>documents</strong> (<em>List</em><em>[</em><a class="reference internal" href="../documents/langchain_core.documents.base.Document.html#langchain_core.documents.base.Document" title="langchain_core.documents.base.Document"><em>Document</em></a><em>]</em>) – </p></li>
+<li><p><strong>kwargs</strong> (<em>Any</em>) – </p></li>
+</ul>
 </dd>
 <dt class="field-even">Returns</dt>
 <dd class="field-even"><p>List of IDs of the added texts.</p>
@@ -402,16 +518,20 @@ Default: 64</p></li>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>texts</strong> – Iterable of strings to add to the vectorstore.</p></li>
-<li><p><strong>metadatas</strong> – Optional list of metadatas associated with the texts.</p></li>
-<li><p><strong>ids</strong> – Optional list of ids to associate with the texts. Ids have to be
+<li><p><strong>texts</strong> (<em>Iterable</em><em>[</em><em>str</em><em>]</em>) – Iterable of strings to add to the vectorstore.</p></li>
+<li><p><strong>metadatas</strong> (<em>Optional</em><em>[</em><em>List</em><em>[</em><em>dict</em><em>]</em><em>]</em>) – Optional list of metadatas associated with the texts.</p></li>
+<li><p><strong>ids</strong> (<em>Optional</em><em>[</em><em>Sequence</em><em>[</em><em>str</em><em>]</em><em>]</em>) – Optional list of ids to associate with the texts. Ids have to be
 uuid-like strings.</p></li>
-<li><p><strong>batch_size</strong> – How many vectors upload per-request.
+<li><p><strong>batch_size</strong> (<em>int</em>) – How many vectors upload per-request.
 Default: 64</p></li>
+<li><p><strong>kwargs</strong> (<em>Any</em>) – </p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns</dt>
 <dd class="field-even"><p>List of ids from adding the texts into the vectorstore.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><em>List</em>[str]</p>
 </dd>
 </dl>
 </dd></dl>
@@ -423,12 +543,15 @@ Default: 64</p></li>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>ids</strong> – List of ids to delete.</p></li>
-<li><p><strong>**kwargs</strong> – Other keyword arguments that subclasses might use.</p></li>
+<li><p><strong>ids</strong> (<em>Optional</em><em>[</em><em>List</em><em>[</em><em>str</em><em>]</em><em>]</em>) – List of ids to delete.</p></li>
+<li><p><strong>**kwargs</strong> (<em>Any</em>) – Other keyword arguments that subclasses might use.</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns</dt>
 <dd class="field-even"><p>True if deletion is successful, False otherwise.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><em>Optional</em>[bool]</p>
 </dd>
 </dl>
 </dd></dl>
@@ -437,6 +560,18 @@ Default: 64</p></li>
 <dt class="sig sig-object py" id="langchain_community.vectorstores.qdrant.Qdrant.afrom_documents">
 <em class="property"><span class="pre">async</span><span class="w"> </span><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">afrom_documents</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">documents</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="../documents/langchain_core.documents.base.Document.html#langchain_core.documents.base.Document" title="langchain_core.documents.base.Document"><span class="pre">Document</span></a><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">embedding</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="../embeddings/langchain_core.embeddings.Embeddings.html#langchain_core.embeddings.Embeddings" title="langchain_core.embeddings.Embeddings"><span class="pre">Embeddings</span></a></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">VST</span></span></span><a class="headerlink" href="#langchain_community.vectorstores.qdrant.Qdrant.afrom_documents" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return VectorStore initialized from documents and embeddings.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>documents</strong> (<em>List</em><em>[</em><a class="reference internal" href="../documents/langchain_core.documents.base.Document.html#langchain_core.documents.base.Document" title="langchain_core.documents.base.Document"><em>Document</em></a><em>]</em>) – </p></li>
+<li><p><strong>embedding</strong> (<a class="reference internal" href="../embeddings/langchain_core.embeddings.Embeddings.html#langchain_core.embeddings.Embeddings" title="langchain_core.embeddings.Embeddings"><em>Embeddings</em></a>) – </p></li>
+<li><p><strong>kwargs</strong> (<em>Any</em>) – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>VST</p>
+</dd>
+</dl>
 </dd></dl>
 
 <dl class="py method">
@@ -446,72 +581,76 @@ Default: 64</p></li>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>texts</strong> – A list of texts to be indexed in Qdrant.</p></li>
-<li><p><strong>embedding</strong> – A subclass of <cite>Embeddings</cite>, responsible for text vectorization.</p></li>
-<li><p><strong>metadatas</strong> – An optional list of metadata. If provided it has to be of the same
+<li><p><strong>texts</strong> (<em>List</em><em>[</em><em>str</em><em>]</em>) – A list of texts to be indexed in Qdrant.</p></li>
+<li><p><strong>embedding</strong> (<a class="reference internal" href="../embeddings/langchain_core.embeddings.Embeddings.html#langchain_core.embeddings.Embeddings" title="langchain_core.embeddings.Embeddings"><em>Embeddings</em></a>) – A subclass of <cite>Embeddings</cite>, responsible for text vectorization.</p></li>
+<li><p><strong>metadatas</strong> (<em>Optional</em><em>[</em><em>List</em><em>[</em><em>dict</em><em>]</em><em>]</em>) – An optional list of metadata. If provided it has to be of the same
 length as a list of texts.</p></li>
-<li><p><strong>ids</strong> – Optional list of ids to associate with the texts. Ids have to be
+<li><p><strong>ids</strong> (<em>Optional</em><em>[</em><em>Sequence</em><em>[</em><em>str</em><em>]</em><em>]</em>) – Optional list of ids to associate with the texts. Ids have to be
 uuid-like strings.</p></li>
-<li><p><strong>location</strong> – If <cite>:memory:</cite> - use in-memory Qdrant instance.
+<li><p><strong>location</strong> (<em>Optional</em><em>[</em><em>str</em><em>]</em>) – If <cite>:memory:</cite> - use in-memory Qdrant instance.
 If <cite>str</cite> - use it as a <cite>url</cite> parameter.
 If <cite>None</cite> - fallback to relying on <cite>host</cite> and <cite>port</cite> parameters.</p></li>
-<li><p><strong>url</strong> – either host or str of “Optional[scheme], host, Optional[port],
+<li><p><strong>url</strong> (<em>Optional</em><em>[</em><em>str</em><em>]</em>) – either host or str of “Optional[scheme], host, Optional[port],
 Optional[prefix]”. Default: <cite>None</cite></p></li>
-<li><p><strong>port</strong> – Port of the REST API interface. Default: 6333</p></li>
-<li><p><strong>grpc_port</strong> – Port of the gRPC interface. Default: 6334</p></li>
-<li><p><strong>prefer_grpc</strong> – If true - use gPRC interface whenever possible in custom methods.
+<li><p><strong>port</strong> (<em>Optional</em><em>[</em><em>int</em><em>]</em>) – Port of the REST API interface. Default: 6333</p></li>
+<li><p><strong>grpc_port</strong> (<em>int</em>) – Port of the gRPC interface. Default: 6334</p></li>
+<li><p><strong>prefer_grpc</strong> (<em>bool</em>) – If true - use gPRC interface whenever possible in custom methods.
 Default: False</p></li>
-<li><p><strong>https</strong> – If true - use HTTPS(SSL) protocol. Default: None</p></li>
-<li><p><strong>api_key</strong> – API key for authentication in Qdrant Cloud. Default: None</p></li>
-<li><p><strong>prefix</strong> – <p>If not None - add prefix to the REST URL path.
+<li><p><strong>https</strong> (<em>Optional</em><em>[</em><em>bool</em><em>]</em>) – If true - use HTTPS(SSL) protocol. Default: None</p></li>
+<li><p><strong>api_key</strong> (<em>Optional</em><em>[</em><em>str</em><em>]</em>) – API key for authentication in Qdrant Cloud. Default: None</p></li>
+<li><p><strong>prefix</strong> (<em>Optional</em><em>[</em><em>str</em><em>]</em>) – <p>If not None - add prefix to the REST URL path.
 Example: service/v1 will result in</p>
 <blockquote>
 <div><p><a class="reference external" href="http://localhost:6333/service/v1">http://localhost:6333/service/v1</a>/{qdrant-endpoint} for REST API.</p>
 </div></blockquote>
 <p>Default: None</p>
 </p></li>
-<li><p><strong>timeout</strong> – Timeout for REST and gRPC API requests.
+<li><p><strong>timeout</strong> (<em>Optional</em><em>[</em><em>float</em><em>]</em>) – Timeout for REST and gRPC API requests.
 Default: 5.0 seconds for REST and unlimited for gRPC</p></li>
-<li><p><strong>host</strong> – Host name of Qdrant service. If url and host are None, set to
+<li><p><strong>host</strong> (<em>Optional</em><em>[</em><em>str</em><em>]</em>) – Host name of Qdrant service. If url and host are None, set to
 ‘localhost’. Default: None</p></li>
-<li><p><strong>path</strong> – Path in which the vectors will be stored while using local mode.
+<li><p><strong>path</strong> (<em>Optional</em><em>[</em><em>str</em><em>]</em>) – Path in which the vectors will be stored while using local mode.
 Default: None</p></li>
-<li><p><strong>collection_name</strong> – Name of the Qdrant collection to be used. If not provided,
+<li><p><strong>collection_name</strong> (<em>Optional</em><em>[</em><em>str</em><em>]</em>) – Name of the Qdrant collection to be used. If not provided,
 it will be created randomly. Default: None</p></li>
-<li><p><strong>distance_func</strong> – Distance function. One of: “Cosine” / “Euclid” / “Dot”.
+<li><p><strong>distance_func</strong> (<em>str</em>) – Distance function. One of: “Cosine” / “Euclid” / “Dot”.
 Default: “Cosine”</p></li>
-<li><p><strong>content_payload_key</strong> – A payload key used to store the content of the document.
+<li><p><strong>content_payload_key</strong> (<em>str</em>) – A payload key used to store the content of the document.
 Default: “page_content”</p></li>
-<li><p><strong>metadata_payload_key</strong> – A payload key used to store the metadata of the document.
+<li><p><strong>metadata_payload_key</strong> (<em>str</em>) – A payload key used to store the metadata of the document.
 Default: “metadata”</p></li>
-<li><p><strong>vector_name</strong> – Name of the vector to be used internally in Qdrant.
+<li><p><strong>vector_name</strong> (<em>Optional</em><em>[</em><em>str</em><em>]</em>) – Name of the vector to be used internally in Qdrant.
 Default: None</p></li>
-<li><p><strong>batch_size</strong> – How many vectors upload per-request.
+<li><p><strong>batch_size</strong> (<em>int</em>) – How many vectors upload per-request.
 Default: 64</p></li>
-<li><p><strong>shard_number</strong> – Number of shards in collection. Default is 1, minimum is 1.</p></li>
-<li><p><strong>replication_factor</strong> – Replication factor for collection. Default is 1, minimum is 1.
+<li><p><strong>shard_number</strong> (<em>Optional</em><em>[</em><em>int</em><em>]</em>) – Number of shards in collection. Default is 1, minimum is 1.</p></li>
+<li><p><strong>replication_factor</strong> (<em>Optional</em><em>[</em><em>int</em><em>]</em>) – Replication factor for collection. Default is 1, minimum is 1.
 Defines how many copies of each shard will be created.
 Have effect only in distributed mode.</p></li>
-<li><p><strong>write_consistency_factor</strong> – Write consistency factor for collection. Default is 1, minimum is 1.
+<li><p><strong>write_consistency_factor</strong> (<em>Optional</em><em>[</em><em>int</em><em>]</em>) – Write consistency factor for collection. Default is 1, minimum is 1.
 Defines how many replicas should apply the operation for us to consider
 it successful. Increasing this number will make the collection more
 resilient to inconsistencies, but will also make it fail if not enough
 replicas are available.
 Does not have any performance impact.
 Have effect only in distributed mode.</p></li>
-<li><p><strong>on_disk_payload</strong> – If true - point`s payload will not be stored in memory.
+<li><p><strong>on_disk_payload</strong> (<em>Optional</em><em>[</em><em>bool</em><em>]</em>) – If true - point`s payload will not be stored in memory.
 It will be read from the disk every time it is requested.
 This setting saves RAM by (slightly) increasing the response time.
 Note: those payload values that are involved in filtering and are
 indexed - remain in RAM.</p></li>
-<li><p><strong>hnsw_config</strong> – Params for HNSW index</p></li>
-<li><p><strong>optimizers_config</strong> – Params for optimizer</p></li>
-<li><p><strong>wal_config</strong> – Params for Write-Ahead-Log</p></li>
-<li><p><strong>quantization_config</strong> – Params for quantization, if None - quantization will be disabled</p></li>
-<li><p><strong>init_from</strong> – Use data stored in another collection to initialize this collection</p></li>
-<li><p><strong>force_recreate</strong> – Force recreating the collection</p></li>
-<li><p><strong>**kwargs</strong> – Additional arguments passed directly into REST client initialization</p></li>
+<li><p><strong>hnsw_config</strong> (<em>Optional</em><em>[</em><em>common_types.HnswConfigDiff</em><em>]</em>) – Params for HNSW index</p></li>
+<li><p><strong>optimizers_config</strong> (<em>Optional</em><em>[</em><em>common_types.OptimizersConfigDiff</em><em>]</em>) – Params for optimizer</p></li>
+<li><p><strong>wal_config</strong> (<em>Optional</em><em>[</em><em>common_types.WalConfigDiff</em><em>]</em>) – Params for Write-Ahead-Log</p></li>
+<li><p><strong>quantization_config</strong> (<em>Optional</em><em>[</em><em>common_types.QuantizationConfig</em><em>]</em>) – Params for quantization, if None - quantization will be disabled</p></li>
+<li><p><strong>init_from</strong> (<em>Optional</em><em>[</em><em>common_types.InitFrom</em><em>]</em>) – Use data stored in another collection to initialize this collection</p></li>
+<li><p><strong>force_recreate</strong> (<em>bool</em>) – Force recreating the collection</p></li>
+<li><p><strong>**kwargs</strong> (<em>Any</em>) – Additional arguments passed directly into REST client initialization</p></li>
+<li><p><strong>on_disk</strong> (<em>Optional</em><em>[</em><em>bool</em><em>]</em>) – </p></li>
 </ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference internal" href="#langchain_community.vectorstores.qdrant.Qdrant" title="langchain_community.vectorstores.qdrant.Qdrant">Qdrant</a></p>
 </dd>
 </dl>
 <p>This is a user-friendly interface that:
@@ -542,22 +681,22 @@ among selected documents.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>query</strong> – Text to look up documents similar to.</p></li>
-<li><p><strong>k</strong> – Number of Documents to return. Defaults to 4.</p></li>
-<li><p><strong>fetch_k</strong> – Number of Documents to fetch to pass to MMR algorithm.
+<li><p><strong>query</strong> (<em>str</em>) – Text to look up documents similar to.</p></li>
+<li><p><strong>k</strong> (<em>int</em>) – Number of Documents to return. Defaults to 4.</p></li>
+<li><p><strong>fetch_k</strong> (<em>int</em>) – Number of Documents to fetch to pass to MMR algorithm.
 Defaults to 20.</p></li>
-<li><p><strong>lambda_mult</strong> – Number between 0 and 1 that determines the degree
+<li><p><strong>lambda_mult</strong> (<em>float</em>) – Number between 0 and 1 that determines the degree
 of diversity among the results with 0 corresponding
 to maximum diversity and 1 to minimum diversity.
 Defaults to 0.5.</p></li>
-<li><p><strong>filter</strong> – Filter by metadata. Defaults to None.</p></li>
-<li><p><strong>search_params</strong> – Additional search params</p></li>
-<li><p><strong>score_threshold</strong> – Define a minimal score threshold for the result.
+<li><p><strong>filter</strong> (<em>Optional</em><em>[</em><em>MetadataFilter</em><em>]</em>) – Filter by metadata. Defaults to None.</p></li>
+<li><p><strong>search_params</strong> (<em>Optional</em><em>[</em><em>common_types.SearchParams</em><em>]</em>) – Additional search params</p></li>
+<li><p><strong>score_threshold</strong> (<em>Optional</em><em>[</em><em>float</em><em>]</em>) – Define a minimal score threshold for the result.
 If defined, less similar results will not be returned.
 Score of the returned result might be higher or smaller than the
 threshold depending on the Distance function used.
 E.g. for cosine similarity only higher scores will be returned.</p></li>
-<li><p><strong>consistency</strong> – <p>Read consistency of the search. Defines how many replicas should be
+<li><p><strong>consistency</strong> (<em>Optional</em><em>[</em><em>common_types.ReadConsistency</em><em>]</em>) – <p>Read consistency of the search. Defines how many replicas should be
 queried before returning the result.
 Values:
 - int - number of replicas to query, values should present in all</p>
@@ -578,12 +717,15 @@ Values:
 <li><p>’all’ - query all replicas, and return values present in all replicas</p></li>
 </ul>
 </p></li>
-<li><p><strong>**kwargs</strong> – Any other named arguments to pass through to
+<li><p><strong>**kwargs</strong> (<em>Any</em>) – Any other named arguments to pass through to
 AsyncQdrantClient.Search().</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns</dt>
 <dd class="field-even"><p>List of Documents selected by maximal marginal relevance.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>List[<a class="reference internal" href="../documents/langchain_core.documents.base.Document.html#langchain_core.documents.base.Document" title="langchain_core.documents.base.Document">Document</a>]</p>
 </dd>
 </dl>
 </dd></dl>
@@ -603,18 +745,18 @@ among selected documents.
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>lambda_mult</strong> – Number between 0 and 1 that determines the degree
+<li><p><strong>lambda_mult</strong> (<em>float</em>) – Number between 0 and 1 that determines the degree
 of diversity among the results with 0 corresponding
 to maximum diversity and 1 to minimum diversity.
 Defaults to 0.5.</p></li>
-<li><p><strong>filter</strong> – Filter by metadata. Defaults to None.</p></li>
-<li><p><strong>search_params</strong> – Additional search params</p></li>
-<li><p><strong>score_threshold</strong> – Define a minimal score threshold for the result.
+<li><p><strong>filter</strong> (<em>Optional</em><em>[</em><em>MetadataFilter</em><em>]</em>) – Filter by metadata. Defaults to None.</p></li>
+<li><p><strong>search_params</strong> (<em>Optional</em><em>[</em><em>common_types.SearchParams</em><em>]</em>) – Additional search params</p></li>
+<li><p><strong>score_threshold</strong> (<em>Optional</em><em>[</em><em>float</em><em>]</em>) – Define a minimal score threshold for the result.
 If defined, less similar results will not be returned.
 Score of the returned result might be higher or smaller than the
 threshold depending on the Distance function used.
 E.g. for cosine similarity only higher scores will be returned.</p></li>
-<li><p><strong>consistency</strong> – <p>Read consistency of the search. Defines how many replicas should be
+<li><p><strong>consistency</strong> (<em>Optional</em><em>[</em><em>common_types.ReadConsistency</em><em>]</em>) – <p>Read consistency of the search. Defines how many replicas should be
 queried before returning the result.
 Values:
 - int - number of replicas to query, values should present in all</p>
@@ -635,13 +777,19 @@ Values:
 <li><p>’all’ - query all replicas, and return values present in all replicas</p></li>
 </ul>
 </p></li>
-<li><p><strong>**kwargs</strong> – Any other named arguments to pass through to
+<li><p><strong>**kwargs</strong> (<em>Any</em>) – Any other named arguments to pass through to
 AsyncQdrantClient.Search().</p></li>
+<li><p><strong>embedding</strong> (<em>List</em><em>[</em><em>float</em><em>]</em>) – </p></li>
+<li><p><strong>k</strong> (<em>int</em>) – </p></li>
+<li><p><strong>fetch_k</strong> (<em>int</em>) – </p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns</dt>
 <dd class="field-even"><p>List of Documents selected by maximal marginal relevance and distance for
 each.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>List[<a class="reference internal" href="../documents/langchain_core.documents.base.Document.html#langchain_core.documents.base.Document" title="langchain_core.documents.base.Document">Document</a>]</p>
 </dd>
 </dl>
 </dd></dl>
@@ -660,14 +808,27 @@ among selected documents.
 </div></blockquote>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>lambda_mult</strong> – Number between 0 and 1 that determines the degree
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>lambda_mult</strong> (<em>float</em>) – Number between 0 and 1 that determines the degree
 of diversity among the results with 0 corresponding
 to maximum diversity and 1 to minimum diversity.
-Defaults to 0.5.</p>
+Defaults to 0.5.</p></li>
+<li><p><strong>embedding</strong> (<em>List</em><em>[</em><em>float</em><em>]</em>) – </p></li>
+<li><p><strong>k</strong> (<em>int</em>) – </p></li>
+<li><p><strong>fetch_k</strong> (<em>int</em>) – </p></li>
+<li><p><strong>filter</strong> (<em>Optional</em><em>[</em><em>MetadataFilter</em><em>]</em>) – </p></li>
+<li><p><strong>search_params</strong> (<em>Optional</em><em>[</em><em>common_types.SearchParams</em><em>]</em>) – </p></li>
+<li><p><strong>score_threshold</strong> (<em>Optional</em><em>[</em><em>float</em><em>]</em>) – </p></li>
+<li><p><strong>consistency</strong> (<em>Optional</em><em>[</em><em>common_types.ReadConsistency</em><em>]</em>) – </p></li>
+<li><p><strong>kwargs</strong> (<em>Any</em>) – </p></li>
+</ul>
 </dd>
 <dt class="field-even">Returns</dt>
 <dd class="field-even"><p>List of Documents selected by maximal marginal relevance and distance for
 each.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>List[Tuple[<a class="reference internal" href="../documents/langchain_core.documents.base.Document.html#langchain_core.documents.base.Document" title="langchain_core.documents.base.Document">Document</a>, float]]</p>
 </dd>
 </dl>
 </dd></dl>
@@ -699,6 +860,7 @@ lambda_mult: Diversity of results returned by MMR;</p>
 <p>filter: Filter by document metadata</p>
 </div></blockquote>
 </p></li>
+<li><p><strong>kwargs</strong> (<em>Any</em>) – </p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns</dt>
@@ -745,6 +907,18 @@ lambda_mult: Diversity of results returned by MMR;</p>
 <dt class="sig sig-object py" id="langchain_community.vectorstores.qdrant.Qdrant.asearch">
 <em class="property"><span class="pre">async</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">asearch</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">query</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">search_type</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="../documents/langchain_core.documents.base.Document.html#langchain_core.documents.base.Document" title="langchain_core.documents.base.Document"><span class="pre">Document</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#langchain_community.vectorstores.qdrant.Qdrant.asearch" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return docs most similar to query using specified search type.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>query</strong> (<em>str</em>) – </p></li>
+<li><p><strong>search_type</strong> (<em>str</em>) – </p></li>
+<li><p><strong>kwargs</strong> (<em>Any</em>) – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>List[<a class="reference internal" href="../documents/langchain_core.documents.base.Document.html#langchain_core.documents.base.Document" title="langchain_core.documents.base.Document">Document</a>]</p>
+</dd>
+</dl>
 </dd></dl>
 
 <dl class="py method">
@@ -758,6 +932,17 @@ lambda_mult: Diversity of results returned by MMR;</p>
 <dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>List of Documents most similar to the query.</p>
 </dd>
+<dt class="field-even">Parameters</dt>
+<dd class="field-even"><ul class="simple">
+<li><p><strong>query</strong> (<em>str</em>) – </p></li>
+<li><p><strong>k</strong> (<em>int</em>) – </p></li>
+<li><p><strong>filter</strong> (<em>Optional</em><em>[</em><em>MetadataFilter</em><em>]</em>) – </p></li>
+<li><p><strong>kwargs</strong> (<em>Any</em>) – </p></li>
+</ul>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>List[<a class="reference internal" href="../documents/langchain_core.documents.base.Document.html#langchain_core.documents.base.Document" title="langchain_core.documents.base.Document">Document</a>]</p>
+</dd>
 </dl>
 </dd></dl>
 
@@ -768,19 +953,19 @@ lambda_mult: Diversity of results returned by MMR;</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>embedding</strong> – Embedding vector to look up documents similar to.</p></li>
-<li><p><strong>k</strong> – Number of Documents to return. Defaults to 4.</p></li>
-<li><p><strong>filter</strong> – Filter by metadata. Defaults to None.</p></li>
-<li><p><strong>search_params</strong> – Additional search params</p></li>
-<li><p><strong>offset</strong> – Offset of the first result to return.
+<li><p><strong>embedding</strong> (<em>List</em><em>[</em><em>float</em><em>]</em>) – Embedding vector to look up documents similar to.</p></li>
+<li><p><strong>k</strong> (<em>int</em>) – Number of Documents to return. Defaults to 4.</p></li>
+<li><p><strong>filter</strong> (<em>Optional</em><em>[</em><em>MetadataFilter</em><em>]</em>) – Filter by metadata. Defaults to None.</p></li>
+<li><p><strong>search_params</strong> (<em>Optional</em><em>[</em><em>common_types.SearchParams</em><em>]</em>) – Additional search params</p></li>
+<li><p><strong>offset</strong> (<em>int</em>) – Offset of the first result to return.
 May be used to paginate results.
 Note: large offset values may cause performance issues.</p></li>
-<li><p><strong>score_threshold</strong> – Define a minimal score threshold for the result.
+<li><p><strong>score_threshold</strong> (<em>Optional</em><em>[</em><em>float</em><em>]</em>) – Define a minimal score threshold for the result.
 If defined, less similar results will not be returned.
 Score of the returned result might be higher or smaller than the
 threshold depending on the Distance function used.
 E.g. for cosine similarity only higher scores will be returned.</p></li>
-<li><p><strong>consistency</strong> – <p>Read consistency of the search. Defines how many replicas should be
+<li><p><strong>consistency</strong> (<em>Optional</em><em>[</em><em>common_types.ReadConsistency</em><em>]</em>) – <p>Read consistency of the search. Defines how many replicas should be
 queried before returning the result.
 Values:
 - int - number of replicas to query, values should present in all</p>
@@ -801,12 +986,15 @@ Values:
 <li><p>’all’ - query all replicas, and return values present in all replicas</p></li>
 </ul>
 </p></li>
-<li><p><strong>**kwargs</strong> – Any other named arguments to pass through to
+<li><p><strong>**kwargs</strong> (<em>Any</em>) – Any other named arguments to pass through to
 AsyncQdrantClient.Search().</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns</dt>
 <dd class="field-even"><p>List of Documents most similar to the query.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>List[<a class="reference internal" href="../documents/langchain_core.documents.base.Document.html#langchain_core.documents.base.Document" title="langchain_core.documents.base.Document">Document</a>]</p>
 </dd>
 </dl>
 </dd></dl>
@@ -819,9 +1007,9 @@ AsyncQdrantClient.Search().</p></li>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>query</strong> – input text</p></li>
-<li><p><strong>k</strong> – Number of Documents to return. Defaults to 4.</p></li>
-<li><p><strong>**kwargs</strong> – <p>kwargs to be passed to similarity search. Should include:
+<li><p><strong>query</strong> (<em>str</em>) – input text</p></li>
+<li><p><strong>k</strong> (<em>int</em>) – Number of Documents to return. Defaults to 4.</p></li>
+<li><p><strong>**kwargs</strong> (<em>Any</em>) – <p>kwargs to be passed to similarity search. Should include:
 score_threshold: Optional, a floating point value between 0 to 1 to</p>
 <blockquote>
 <div><p>filter the resulting set of retrieved docs</p>
@@ -831,6 +1019,9 @@ score_threshold: Optional, a floating point value between 0 to 1 to</p>
 </dd>
 <dt class="field-even">Returns</dt>
 <dd class="field-even"><p>List of Tuples of (doc, similarity_score)</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>List[Tuple[<a class="reference internal" href="../documents/langchain_core.documents.base.Document.html#langchain_core.documents.base.Document" title="langchain_core.documents.base.Document">Document</a>, float]]</p>
 </dd>
 </dl>
 </dd></dl>
@@ -842,19 +1033,19 @@ score_threshold: Optional, a floating point value between 0 to 1 to</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>query</strong> – Text to look up documents similar to.</p></li>
-<li><p><strong>k</strong> – Number of Documents to return. Defaults to 4.</p></li>
-<li><p><strong>filter</strong> – Filter by metadata. Defaults to None.</p></li>
-<li><p><strong>search_params</strong> – Additional search params</p></li>
-<li><p><strong>offset</strong> – Offset of the first result to return.
+<li><p><strong>query</strong> (<em>str</em>) – Text to look up documents similar to.</p></li>
+<li><p><strong>k</strong> (<em>int</em>) – Number of Documents to return. Defaults to 4.</p></li>
+<li><p><strong>filter</strong> (<em>Optional</em><em>[</em><em>MetadataFilter</em><em>]</em>) – Filter by metadata. Defaults to None.</p></li>
+<li><p><strong>search_params</strong> (<em>Optional</em><em>[</em><em>common_types.SearchParams</em><em>]</em>) – Additional search params</p></li>
+<li><p><strong>offset</strong> (<em>int</em>) – Offset of the first result to return.
 May be used to paginate results.
 Note: large offset values may cause performance issues.</p></li>
-<li><p><strong>score_threshold</strong> – Define a minimal score threshold for the result.
+<li><p><strong>score_threshold</strong> (<em>Optional</em><em>[</em><em>float</em><em>]</em>) – Define a minimal score threshold for the result.
 If defined, less similar results will not be returned.
 Score of the returned result might be higher or smaller than the
 threshold depending on the Distance function used.
 E.g. for cosine similarity only higher scores will be returned.</p></li>
-<li><p><strong>consistency</strong> – <p>Read consistency of the search. Defines how many replicas should be
+<li><p><strong>consistency</strong> (<em>Optional</em><em>[</em><em>common_types.ReadConsistency</em><em>]</em>) – <p>Read consistency of the search. Defines how many replicas should be
 queried before returning the result.
 Values:
 - int - number of replicas to query, values should present in all</p>
@@ -875,12 +1066,15 @@ Values:
 <li><p>’all’ - query all replicas, and return values present in all replicas</p></li>
 </ul>
 </p></li>
-<li><p><strong>**kwargs</strong> – Any other named arguments to pass through to
+<li><p><strong>**kwargs</strong> (<em>Any</em>) – Any other named arguments to pass through to
 AsyncQdrantClient.Search().</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns</dt>
 <dd class="field-even"><p>List of documents most similar to the query text and distance for each.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>List[Tuple[<a class="reference internal" href="../documents/langchain_core.documents.base.Document.html#langchain_core.documents.base.Document" title="langchain_core.documents.base.Document">Document</a>, float]]</p>
 </dd>
 </dl>
 </dd></dl>
@@ -892,19 +1086,19 @@ AsyncQdrantClient.Search().</p></li>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>embedding</strong> – Embedding vector to look up documents similar to.</p></li>
-<li><p><strong>k</strong> – Number of Documents to return. Defaults to 4.</p></li>
-<li><p><strong>filter</strong> – Filter by metadata. Defaults to None.</p></li>
-<li><p><strong>search_params</strong> – Additional search params</p></li>
-<li><p><strong>offset</strong> – Offset of the first result to return.
+<li><p><strong>embedding</strong> (<em>List</em><em>[</em><em>float</em><em>]</em>) – Embedding vector to look up documents similar to.</p></li>
+<li><p><strong>k</strong> (<em>int</em>) – Number of Documents to return. Defaults to 4.</p></li>
+<li><p><strong>filter</strong> (<em>Optional</em><em>[</em><em>MetadataFilter</em><em>]</em>) – Filter by metadata. Defaults to None.</p></li>
+<li><p><strong>search_params</strong> (<em>Optional</em><em>[</em><em>common_types.SearchParams</em><em>]</em>) – Additional search params</p></li>
+<li><p><strong>offset</strong> (<em>int</em>) – Offset of the first result to return.
 May be used to paginate results.
 Note: large offset values may cause performance issues.</p></li>
-<li><p><strong>score_threshold</strong> – Define a minimal score threshold for the result.
+<li><p><strong>score_threshold</strong> (<em>Optional</em><em>[</em><em>float</em><em>]</em>) – Define a minimal score threshold for the result.
 If defined, less similar results will not be returned.
 Score of the returned result might be higher or smaller than the
 threshold depending on the Distance function used.
 E.g. for cosine similarity only higher scores will be returned.</p></li>
-<li><p><strong>consistency</strong> – <p>Read consistency of the search. Defines how many replicas should be
+<li><p><strong>consistency</strong> (<em>Optional</em><em>[</em><em>common_types.ReadConsistency</em><em>]</em>) – <p>Read consistency of the search. Defines how many replicas should be
 queried before returning the result.
 Values:
 - int - number of replicas to query, values should present in all</p>
@@ -925,12 +1119,15 @@ Values:
 <li><p>’all’ - query all replicas, and return values present in all replicas</p></li>
 </ul>
 </p></li>
-<li><p><strong>**kwargs</strong> – Any other named arguments to pass through to
+<li><p><strong>**kwargs</strong> (<em>Any</em>) – Any other named arguments to pass through to
 AsyncQdrantClient.Search().</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns</dt>
 <dd class="field-even"><p>List of documents most similar to the query text and distance for each.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>List[Tuple[<a class="reference internal" href="../documents/langchain_core.documents.base.Document.html#langchain_core.documents.base.Document" title="langchain_core.documents.base.Document">Document</a>, float]]</p>
 </dd>
 </dl>
 </dd></dl>
@@ -938,7 +1135,46 @@ AsyncQdrantClient.Search().</p></li>
 <dl class="py method">
 <dt class="sig sig-object py" id="langchain_community.vectorstores.qdrant.Qdrant.construct_instance">
 <em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">construct_instance</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">texts</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">embedding</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="../embeddings/langchain_core.embeddings.Embeddings.html#langchain_core.embeddings.Embeddings" title="langchain_core.embeddings.Embeddings"><span class="pre">Embeddings</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">location</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">url</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">port</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">6333</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">grpc_port</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">6334</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">prefer_grpc</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">https</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">bool</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">api_key</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">prefix</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeout</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">host</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">path</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">collection_name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">distance_func</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'Cosine'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">content_payload_key</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'page_content'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">metadata_payload_key</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'metadata'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vector_name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">shard_number</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">replication_factor</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">write_consistency_factor</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">on_disk_payload</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">bool</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">hnsw_config</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">common_types.HnswConfigDiff</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">optimizers_config</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">common_types.OptimizersConfigDiff</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">wal_config</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">common_types.WalConfigDiff</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">quantization_config</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">common_types.QuantizationConfig</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">init_from</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">common_types.InitFrom</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">on_disk</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">bool</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">force_recreate</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#langchain_community.vectorstores.qdrant.Qdrant" title="langchain_community.vectorstores.qdrant.Qdrant"><span class="pre">Qdrant</span></a></span></span><a class="reference internal" href="../_modules/langchain_community/vectorstores/qdrant.html#Qdrant.construct_instance"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#langchain_community.vectorstores.qdrant.Qdrant.construct_instance" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>texts</strong> (<em>List</em><em>[</em><em>str</em><em>]</em>) – </p></li>
+<li><p><strong>embedding</strong> (<a class="reference internal" href="../embeddings/langchain_core.embeddings.Embeddings.html#langchain_core.embeddings.Embeddings" title="langchain_core.embeddings.Embeddings"><em>Embeddings</em></a>) – </p></li>
+<li><p><strong>location</strong> (<em>Optional</em><em>[</em><em>str</em><em>]</em>) – </p></li>
+<li><p><strong>url</strong> (<em>Optional</em><em>[</em><em>str</em><em>]</em>) – </p></li>
+<li><p><strong>port</strong> (<em>Optional</em><em>[</em><em>int</em><em>]</em>) – </p></li>
+<li><p><strong>grpc_port</strong> (<em>int</em>) – </p></li>
+<li><p><strong>prefer_grpc</strong> (<em>bool</em>) – </p></li>
+<li><p><strong>https</strong> (<em>Optional</em><em>[</em><em>bool</em><em>]</em>) – </p></li>
+<li><p><strong>api_key</strong> (<em>Optional</em><em>[</em><em>str</em><em>]</em>) – </p></li>
+<li><p><strong>prefix</strong> (<em>Optional</em><em>[</em><em>str</em><em>]</em>) – </p></li>
+<li><p><strong>timeout</strong> (<em>Optional</em><em>[</em><em>float</em><em>]</em>) – </p></li>
+<li><p><strong>host</strong> (<em>Optional</em><em>[</em><em>str</em><em>]</em>) – </p></li>
+<li><p><strong>path</strong> (<em>Optional</em><em>[</em><em>str</em><em>]</em>) – </p></li>
+<li><p><strong>collection_name</strong> (<em>Optional</em><em>[</em><em>str</em><em>]</em>) – </p></li>
+<li><p><strong>distance_func</strong> (<em>str</em>) – </p></li>
+<li><p><strong>content_payload_key</strong> (<em>str</em>) – </p></li>
+<li><p><strong>metadata_payload_key</strong> (<em>str</em>) – </p></li>
+<li><p><strong>vector_name</strong> (<em>Optional</em><em>[</em><em>str</em><em>]</em>) – </p></li>
+<li><p><strong>shard_number</strong> (<em>Optional</em><em>[</em><em>int</em><em>]</em>) – </p></li>
+<li><p><strong>replication_factor</strong> (<em>Optional</em><em>[</em><em>int</em><em>]</em>) – </p></li>
+<li><p><strong>write_consistency_factor</strong> (<em>Optional</em><em>[</em><em>int</em><em>]</em>) – </p></li>
+<li><p><strong>on_disk_payload</strong> (<em>Optional</em><em>[</em><em>bool</em><em>]</em>) – </p></li>
+<li><p><strong>hnsw_config</strong> (<em>Optional</em><em>[</em><em>common_types.HnswConfigDiff</em><em>]</em>) – </p></li>
+<li><p><strong>optimizers_config</strong> (<em>Optional</em><em>[</em><em>common_types.OptimizersConfigDiff</em><em>]</em>) – </p></li>
+<li><p><strong>wal_config</strong> (<em>Optional</em><em>[</em><em>common_types.WalConfigDiff</em><em>]</em>) – </p></li>
+<li><p><strong>quantization_config</strong> (<em>Optional</em><em>[</em><em>common_types.QuantizationConfig</em><em>]</em>) – </p></li>
+<li><p><strong>init_from</strong> (<em>Optional</em><em>[</em><em>common_types.InitFrom</em><em>]</em>) – </p></li>
+<li><p><strong>on_disk</strong> (<em>Optional</em><em>[</em><em>bool</em><em>]</em>) – </p></li>
+<li><p><strong>force_recreate</strong> (<em>bool</em>) – </p></li>
+<li><p><strong>kwargs</strong> (<em>Any</em>) – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference internal" href="#langchain_community.vectorstores.qdrant.Qdrant" title="langchain_community.vectorstores.qdrant.Qdrant">Qdrant</a></p>
+</dd>
+</dl>
+</dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="langchain_community.vectorstores.qdrant.Qdrant.delete">
@@ -947,12 +1183,15 @@ AsyncQdrantClient.Search().</p></li>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>ids</strong> – List of ids to delete.</p></li>
-<li><p><strong>**kwargs</strong> – Other keyword arguments that subclasses might use.</p></li>
+<li><p><strong>ids</strong> (<em>Optional</em><em>[</em><em>List</em><em>[</em><em>str</em><em>]</em><em>]</em>) – List of ids to delete.</p></li>
+<li><p><strong>**kwargs</strong> (<em>Any</em>) – Other keyword arguments that subclasses might use.</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns</dt>
 <dd class="field-even"><p>True if deletion is successful, False otherwise.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><em>Optional</em>[bool]</p>
 </dd>
 </dl>
 </dd></dl>
@@ -961,6 +1200,18 @@ AsyncQdrantClient.Search().</p></li>
 <dt class="sig sig-object py" id="langchain_community.vectorstores.qdrant.Qdrant.from_documents">
 <em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">from_documents</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">documents</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="../documents/langchain_core.documents.base.Document.html#langchain_core.documents.base.Document" title="langchain_core.documents.base.Document"><span class="pre">Document</span></a><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">embedding</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="../embeddings/langchain_core.embeddings.Embeddings.html#langchain_core.embeddings.Embeddings" title="langchain_core.embeddings.Embeddings"><span class="pre">Embeddings</span></a></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">VST</span></span></span><a class="headerlink" href="#langchain_community.vectorstores.qdrant.Qdrant.from_documents" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return VectorStore initialized from documents and embeddings.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>documents</strong> (<em>List</em><em>[</em><a class="reference internal" href="../documents/langchain_core.documents.base.Document.html#langchain_core.documents.base.Document" title="langchain_core.documents.base.Document"><em>Document</em></a><em>]</em>) – </p></li>
+<li><p><strong>embedding</strong> (<a class="reference internal" href="../embeddings/langchain_core.embeddings.Embeddings.html#langchain_core.embeddings.Embeddings" title="langchain_core.embeddings.Embeddings"><em>Embeddings</em></a>) – </p></li>
+<li><p><strong>kwargs</strong> (<em>Any</em>) – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>VST</p>
+</dd>
+</dl>
 </dd></dl>
 
 <dl class="py method">
@@ -970,72 +1221,76 @@ AsyncQdrantClient.Search().</p></li>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>texts</strong> – A list of texts to be indexed in Qdrant.</p></li>
-<li><p><strong>embedding</strong> – A subclass of <cite>Embeddings</cite>, responsible for text vectorization.</p></li>
-<li><p><strong>metadatas</strong> – An optional list of metadata. If provided it has to be of the same
+<li><p><strong>texts</strong> (<em>List</em><em>[</em><em>str</em><em>]</em>) – A list of texts to be indexed in Qdrant.</p></li>
+<li><p><strong>embedding</strong> (<a class="reference internal" href="../embeddings/langchain_core.embeddings.Embeddings.html#langchain_core.embeddings.Embeddings" title="langchain_core.embeddings.Embeddings"><em>Embeddings</em></a>) – A subclass of <cite>Embeddings</cite>, responsible for text vectorization.</p></li>
+<li><p><strong>metadatas</strong> (<em>Optional</em><em>[</em><em>List</em><em>[</em><em>dict</em><em>]</em><em>]</em>) – An optional list of metadata. If provided it has to be of the same
 length as a list of texts.</p></li>
-<li><p><strong>ids</strong> – Optional list of ids to associate with the texts. Ids have to be
+<li><p><strong>ids</strong> (<em>Optional</em><em>[</em><em>Sequence</em><em>[</em><em>str</em><em>]</em><em>]</em>) – Optional list of ids to associate with the texts. Ids have to be
 uuid-like strings.</p></li>
-<li><p><strong>location</strong> – If <cite>:memory:</cite> - use in-memory Qdrant instance.
+<li><p><strong>location</strong> (<em>Optional</em><em>[</em><em>str</em><em>]</em>) – If <cite>:memory:</cite> - use in-memory Qdrant instance.
 If <cite>str</cite> - use it as a <cite>url</cite> parameter.
 If <cite>None</cite> - fallback to relying on <cite>host</cite> and <cite>port</cite> parameters.</p></li>
-<li><p><strong>url</strong> – either host or str of “Optional[scheme], host, Optional[port],
+<li><p><strong>url</strong> (<em>Optional</em><em>[</em><em>str</em><em>]</em>) – either host or str of “Optional[scheme], host, Optional[port],
 Optional[prefix]”. Default: <cite>None</cite></p></li>
-<li><p><strong>port</strong> – Port of the REST API interface. Default: 6333</p></li>
-<li><p><strong>grpc_port</strong> – Port of the gRPC interface. Default: 6334</p></li>
-<li><p><strong>prefer_grpc</strong> – If true - use gPRC interface whenever possible in custom methods.
+<li><p><strong>port</strong> (<em>Optional</em><em>[</em><em>int</em><em>]</em>) – Port of the REST API interface. Default: 6333</p></li>
+<li><p><strong>grpc_port</strong> (<em>int</em>) – Port of the gRPC interface. Default: 6334</p></li>
+<li><p><strong>prefer_grpc</strong> (<em>bool</em>) – If true - use gPRC interface whenever possible in custom methods.
 Default: False</p></li>
-<li><p><strong>https</strong> – If true - use HTTPS(SSL) protocol. Default: None</p></li>
-<li><p><strong>api_key</strong> – API key for authentication in Qdrant Cloud. Default: None</p></li>
-<li><p><strong>prefix</strong> – <p>If not None - add prefix to the REST URL path.
+<li><p><strong>https</strong> (<em>Optional</em><em>[</em><em>bool</em><em>]</em>) – If true - use HTTPS(SSL) protocol. Default: None</p></li>
+<li><p><strong>api_key</strong> (<em>Optional</em><em>[</em><em>str</em><em>]</em>) – API key for authentication in Qdrant Cloud. Default: None</p></li>
+<li><p><strong>prefix</strong> (<em>Optional</em><em>[</em><em>str</em><em>]</em>) – <p>If not None - add prefix to the REST URL path.
 Example: service/v1 will result in</p>
 <blockquote>
 <div><p><a class="reference external" href="http://localhost:6333/service/v1">http://localhost:6333/service/v1</a>/{qdrant-endpoint} for REST API.</p>
 </div></blockquote>
 <p>Default: None</p>
 </p></li>
-<li><p><strong>timeout</strong> – Timeout for REST and gRPC API requests.
+<li><p><strong>timeout</strong> (<em>Optional</em><em>[</em><em>float</em><em>]</em>) – Timeout for REST and gRPC API requests.
 Default: 5.0 seconds for REST and unlimited for gRPC</p></li>
-<li><p><strong>host</strong> – Host name of Qdrant service. If url and host are None, set to
+<li><p><strong>host</strong> (<em>Optional</em><em>[</em><em>str</em><em>]</em>) – Host name of Qdrant service. If url and host are None, set to
 ‘localhost’. Default: None</p></li>
-<li><p><strong>path</strong> – Path in which the vectors will be stored while using local mode.
+<li><p><strong>path</strong> (<em>Optional</em><em>[</em><em>str</em><em>]</em>) – Path in which the vectors will be stored while using local mode.
 Default: None</p></li>
-<li><p><strong>collection_name</strong> – Name of the Qdrant collection to be used. If not provided,
+<li><p><strong>collection_name</strong> (<em>Optional</em><em>[</em><em>str</em><em>]</em>) – Name of the Qdrant collection to be used. If not provided,
 it will be created randomly. Default: None</p></li>
-<li><p><strong>distance_func</strong> – Distance function. One of: “Cosine” / “Euclid” / “Dot”.
+<li><p><strong>distance_func</strong> (<em>str</em>) – Distance function. One of: “Cosine” / “Euclid” / “Dot”.
 Default: “Cosine”</p></li>
-<li><p><strong>content_payload_key</strong> – A payload key used to store the content of the document.
+<li><p><strong>content_payload_key</strong> (<em>str</em>) – A payload key used to store the content of the document.
 Default: “page_content”</p></li>
-<li><p><strong>metadata_payload_key</strong> – A payload key used to store the metadata of the document.
+<li><p><strong>metadata_payload_key</strong> (<em>str</em>) – A payload key used to store the metadata of the document.
 Default: “metadata”</p></li>
-<li><p><strong>vector_name</strong> – Name of the vector to be used internally in Qdrant.
+<li><p><strong>vector_name</strong> (<em>Optional</em><em>[</em><em>str</em><em>]</em>) – Name of the vector to be used internally in Qdrant.
 Default: None</p></li>
-<li><p><strong>batch_size</strong> – How many vectors upload per-request.
+<li><p><strong>batch_size</strong> (<em>int</em>) – How many vectors upload per-request.
 Default: 64</p></li>
-<li><p><strong>shard_number</strong> – Number of shards in collection. Default is 1, minimum is 1.</p></li>
-<li><p><strong>replication_factor</strong> – Replication factor for collection. Default is 1, minimum is 1.
+<li><p><strong>shard_number</strong> (<em>Optional</em><em>[</em><em>int</em><em>]</em>) – Number of shards in collection. Default is 1, minimum is 1.</p></li>
+<li><p><strong>replication_factor</strong> (<em>Optional</em><em>[</em><em>int</em><em>]</em>) – Replication factor for collection. Default is 1, minimum is 1.
 Defines how many copies of each shard will be created.
 Have effect only in distributed mode.</p></li>
-<li><p><strong>write_consistency_factor</strong> – Write consistency factor for collection. Default is 1, minimum is 1.
+<li><p><strong>write_consistency_factor</strong> (<em>Optional</em><em>[</em><em>int</em><em>]</em>) – Write consistency factor for collection. Default is 1, minimum is 1.
 Defines how many replicas should apply the operation for us to consider
 it successful. Increasing this number will make the collection more
 resilient to inconsistencies, but will also make it fail if not enough
 replicas are available.
 Does not have any performance impact.
 Have effect only in distributed mode.</p></li>
-<li><p><strong>on_disk_payload</strong> – If true - point`s payload will not be stored in memory.
+<li><p><strong>on_disk_payload</strong> (<em>Optional</em><em>[</em><em>bool</em><em>]</em>) – If true - point`s payload will not be stored in memory.
 It will be read from the disk every time it is requested.
 This setting saves RAM by (slightly) increasing the response time.
 Note: those payload values that are involved in filtering and are
 indexed - remain in RAM.</p></li>
-<li><p><strong>hnsw_config</strong> – Params for HNSW index</p></li>
-<li><p><strong>optimizers_config</strong> – Params for optimizer</p></li>
-<li><p><strong>wal_config</strong> – Params for Write-Ahead-Log</p></li>
-<li><p><strong>quantization_config</strong> – Params for quantization, if None - quantization will be disabled</p></li>
-<li><p><strong>init_from</strong> – Use data stored in another collection to initialize this collection</p></li>
-<li><p><strong>force_recreate</strong> – Force recreating the collection</p></li>
-<li><p><strong>**kwargs</strong> – Additional arguments passed directly into REST client initialization</p></li>
+<li><p><strong>hnsw_config</strong> (<em>Optional</em><em>[</em><em>common_types.HnswConfigDiff</em><em>]</em>) – Params for HNSW index</p></li>
+<li><p><strong>optimizers_config</strong> (<em>Optional</em><em>[</em><em>common_types.OptimizersConfigDiff</em><em>]</em>) – Params for optimizer</p></li>
+<li><p><strong>wal_config</strong> (<em>Optional</em><em>[</em><em>common_types.WalConfigDiff</em><em>]</em>) – Params for Write-Ahead-Log</p></li>
+<li><p><strong>quantization_config</strong> (<em>Optional</em><em>[</em><em>common_types.QuantizationConfig</em><em>]</em>) – Params for quantization, if None - quantization will be disabled</p></li>
+<li><p><strong>init_from</strong> (<em>Optional</em><em>[</em><em>common_types.InitFrom</em><em>]</em>) – Use data stored in another collection to initialize this collection</p></li>
+<li><p><strong>force_recreate</strong> (<em>bool</em>) – Force recreating the collection</p></li>
+<li><p><strong>**kwargs</strong> (<em>Any</em>) – Additional arguments passed directly into REST client initialization</p></li>
+<li><p><strong>on_disk</strong> (<em>Optional</em><em>[</em><em>bool</em><em>]</em>) – </p></li>
 </ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference internal" href="#langchain_community.vectorstores.qdrant.Qdrant" title="langchain_community.vectorstores.qdrant.Qdrant">Qdrant</a></p>
 </dd>
 </dl>
 <p>This is a user-friendly interface that:
@@ -1066,22 +1321,22 @@ among selected documents.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>query</strong> – Text to look up documents similar to.</p></li>
-<li><p><strong>k</strong> – Number of Documents to return. Defaults to 4.</p></li>
-<li><p><strong>fetch_k</strong> – Number of Documents to fetch to pass to MMR algorithm.
+<li><p><strong>query</strong> (<em>str</em>) – Text to look up documents similar to.</p></li>
+<li><p><strong>k</strong> (<em>int</em>) – Number of Documents to return. Defaults to 4.</p></li>
+<li><p><strong>fetch_k</strong> (<em>int</em>) – Number of Documents to fetch to pass to MMR algorithm.
 Defaults to 20.</p></li>
-<li><p><strong>lambda_mult</strong> – Number between 0 and 1 that determines the degree
+<li><p><strong>lambda_mult</strong> (<em>float</em>) – Number between 0 and 1 that determines the degree
 of diversity among the results with 0 corresponding
 to maximum diversity and 1 to minimum diversity.
 Defaults to 0.5.</p></li>
-<li><p><strong>filter</strong> – Filter by metadata. Defaults to None.</p></li>
-<li><p><strong>search_params</strong> – Additional search params</p></li>
-<li><p><strong>score_threshold</strong> – Define a minimal score threshold for the result.
+<li><p><strong>filter</strong> (<em>Optional</em><em>[</em><em>MetadataFilter</em><em>]</em>) – Filter by metadata. Defaults to None.</p></li>
+<li><p><strong>search_params</strong> (<em>Optional</em><em>[</em><em>common_types.SearchParams</em><em>]</em>) – Additional search params</p></li>
+<li><p><strong>score_threshold</strong> (<em>Optional</em><em>[</em><em>float</em><em>]</em>) – Define a minimal score threshold for the result.
 If defined, less similar results will not be returned.
 Score of the returned result might be higher or smaller than the
 threshold depending on the Distance function used.
 E.g. for cosine similarity only higher scores will be returned.</p></li>
-<li><p><strong>consistency</strong> – <p>Read consistency of the search. Defines how many replicas should be
+<li><p><strong>consistency</strong> (<em>Optional</em><em>[</em><em>common_types.ReadConsistency</em><em>]</em>) – <p>Read consistency of the search. Defines how many replicas should be
 queried before returning the result.
 Values:
 - int - number of replicas to query, values should present in all</p>
@@ -1102,11 +1357,14 @@ Values:
 <li><p>’all’ - query all replicas, and return values present in all replicas</p></li>
 </ul>
 </p></li>
-<li><p><strong>**kwargs</strong> – Any other named arguments to pass through to QdrantClient.search()</p></li>
+<li><p><strong>**kwargs</strong> (<em>Any</em>) – Any other named arguments to pass through to QdrantClient.search()</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns</dt>
 <dd class="field-even"><p>List of Documents selected by maximal marginal relevance.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>List[<a class="reference internal" href="../documents/langchain_core.documents.base.Document.html#langchain_core.documents.base.Document" title="langchain_core.documents.base.Document">Document</a>]</p>
 </dd>
 </dl>
 </dd></dl>
@@ -1120,21 +1378,21 @@ among selected documents.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>embedding</strong> – Embedding to look up documents similar to.</p></li>
-<li><p><strong>k</strong> – Number of Documents to return. Defaults to 4.</p></li>
-<li><p><strong>fetch_k</strong> – Number of Documents to fetch to pass to MMR algorithm.</p></li>
-<li><p><strong>lambda_mult</strong> – Number between 0 and 1 that determines the degree
+<li><p><strong>embedding</strong> (<em>List</em><em>[</em><em>float</em><em>]</em>) – Embedding to look up documents similar to.</p></li>
+<li><p><strong>k</strong> (<em>int</em>) – Number of Documents to return. Defaults to 4.</p></li>
+<li><p><strong>fetch_k</strong> (<em>int</em>) – Number of Documents to fetch to pass to MMR algorithm.</p></li>
+<li><p><strong>lambda_mult</strong> (<em>float</em>) – Number between 0 and 1 that determines the degree
 of diversity among the results with 0 corresponding
 to maximum diversity and 1 to minimum diversity.
 Defaults to 0.5.</p></li>
-<li><p><strong>filter</strong> – Filter by metadata. Defaults to None.</p></li>
-<li><p><strong>search_params</strong> – Additional search params</p></li>
-<li><p><strong>score_threshold</strong> – Define a minimal score threshold for the result.
+<li><p><strong>filter</strong> (<em>Optional</em><em>[</em><em>MetadataFilter</em><em>]</em>) – Filter by metadata. Defaults to None.</p></li>
+<li><p><strong>search_params</strong> (<em>Optional</em><em>[</em><em>common_types.SearchParams</em><em>]</em>) – Additional search params</p></li>
+<li><p><strong>score_threshold</strong> (<em>Optional</em><em>[</em><em>float</em><em>]</em>) – Define a minimal score threshold for the result.
 If defined, less similar results will not be returned.
 Score of the returned result might be higher or smaller than the
 threshold depending on the Distance function used.
 E.g. for cosine similarity only higher scores will be returned.</p></li>
-<li><p><strong>consistency</strong> – <p>Read consistency of the search. Defines how many replicas should be
+<li><p><strong>consistency</strong> (<em>Optional</em><em>[</em><em>common_types.ReadConsistency</em><em>]</em>) – <p>Read consistency of the search. Defines how many replicas should be
 queried before returning the result.
 Values:
 - int - number of replicas to query, values should present in all</p>
@@ -1155,11 +1413,14 @@ Values:
 <li><p>’all’ - query all replicas, and return values present in all replicas</p></li>
 </ul>
 </p></li>
-<li><p><strong>**kwargs</strong> – Any other named arguments to pass through to QdrantClient.search()</p></li>
+<li><p><strong>**kwargs</strong> (<em>Any</em>) – Any other named arguments to pass through to QdrantClient.search()</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns</dt>
 <dd class="field-even"><p>List of Documents selected by maximal marginal relevance.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>List[<a class="reference internal" href="../documents/langchain_core.documents.base.Document.html#langchain_core.documents.base.Document" title="langchain_core.documents.base.Document">Document</a>]</p>
 </dd>
 </dl>
 </dd></dl>
@@ -1179,18 +1440,18 @@ among selected documents.
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>lambda_mult</strong> – Number between 0 and 1 that determines the degree
+<li><p><strong>lambda_mult</strong> (<em>float</em>) – Number between 0 and 1 that determines the degree
 of diversity among the results with 0 corresponding
 to maximum diversity and 1 to minimum diversity.
 Defaults to 0.5.</p></li>
-<li><p><strong>filter</strong> – Filter by metadata. Defaults to None.</p></li>
-<li><p><strong>search_params</strong> – Additional search params</p></li>
-<li><p><strong>score_threshold</strong> – Define a minimal score threshold for the result.
+<li><p><strong>filter</strong> (<em>Optional</em><em>[</em><em>MetadataFilter</em><em>]</em>) – Filter by metadata. Defaults to None.</p></li>
+<li><p><strong>search_params</strong> (<em>Optional</em><em>[</em><em>common_types.SearchParams</em><em>]</em>) – Additional search params</p></li>
+<li><p><strong>score_threshold</strong> (<em>Optional</em><em>[</em><em>float</em><em>]</em>) – Define a minimal score threshold for the result.
 If defined, less similar results will not be returned.
 Score of the returned result might be higher or smaller than the
 threshold depending on the Distance function used.
 E.g. for cosine similarity only higher scores will be returned.</p></li>
-<li><p><strong>consistency</strong> – <p>Read consistency of the search. Defines how many replicas should be
+<li><p><strong>consistency</strong> (<em>Optional</em><em>[</em><em>common_types.ReadConsistency</em><em>]</em>) – <p>Read consistency of the search. Defines how many replicas should be
 queried before returning the result.
 Values:
 - int - number of replicas to query, values should present in all</p>
@@ -1211,12 +1472,18 @@ Values:
 <li><p>’all’ - query all replicas, and return values present in all replicas</p></li>
 </ul>
 </p></li>
-<li><p><strong>**kwargs</strong> – Any other named arguments to pass through to QdrantClient.search()</p></li>
+<li><p><strong>**kwargs</strong> (<em>Any</em>) – Any other named arguments to pass through to QdrantClient.search()</p></li>
+<li><p><strong>embedding</strong> (<em>List</em><em>[</em><em>float</em><em>]</em>) – </p></li>
+<li><p><strong>k</strong> (<em>int</em>) – </p></li>
+<li><p><strong>fetch_k</strong> (<em>int</em>) – </p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns</dt>
 <dd class="field-even"><p>List of Documents selected by maximal marginal relevance and distance for
 each.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>List[Tuple[<a class="reference internal" href="../documents/langchain_core.documents.base.Document.html#langchain_core.documents.base.Document" title="langchain_core.documents.base.Document">Document</a>, float]]</p>
 </dd>
 </dl>
 </dd></dl>
@@ -1225,6 +1492,18 @@ each.</p>
 <dt class="sig sig-object py" id="langchain_community.vectorstores.qdrant.Qdrant.search">
 <span class="sig-name descname"><span class="pre">search</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">query</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">search_type</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="../documents/langchain_core.documents.base.Document.html#langchain_core.documents.base.Document" title="langchain_core.documents.base.Document"><span class="pre">Document</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#langchain_community.vectorstores.qdrant.Qdrant.search" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return docs most similar to query using specified search type.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>query</strong> (<em>str</em>) – </p></li>
+<li><p><strong>search_type</strong> (<em>str</em>) – </p></li>
+<li><p><strong>kwargs</strong> (<em>Any</em>) – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>List[<a class="reference internal" href="../documents/langchain_core.documents.base.Document.html#langchain_core.documents.base.Document" title="langchain_core.documents.base.Document">Document</a>]</p>
+</dd>
+</dl>
 </dd></dl>
 
 <dl class="py method">
@@ -1234,19 +1513,19 @@ each.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>query</strong> – Text to look up documents similar to.</p></li>
-<li><p><strong>k</strong> – Number of Documents to return. Defaults to 4.</p></li>
-<li><p><strong>filter</strong> – Filter by metadata. Defaults to None.</p></li>
-<li><p><strong>search_params</strong> – Additional search params</p></li>
-<li><p><strong>offset</strong> – Offset of the first result to return.
+<li><p><strong>query</strong> (<em>str</em>) – Text to look up documents similar to.</p></li>
+<li><p><strong>k</strong> (<em>int</em>) – Number of Documents to return. Defaults to 4.</p></li>
+<li><p><strong>filter</strong> (<em>Optional</em><em>[</em><em>MetadataFilter</em><em>]</em>) – Filter by metadata. Defaults to None.</p></li>
+<li><p><strong>search_params</strong> (<em>Optional</em><em>[</em><em>common_types.SearchParams</em><em>]</em>) – Additional search params</p></li>
+<li><p><strong>offset</strong> (<em>int</em>) – Offset of the first result to return.
 May be used to paginate results.
 Note: large offset values may cause performance issues.</p></li>
-<li><p><strong>score_threshold</strong> – Define a minimal score threshold for the result.
+<li><p><strong>score_threshold</strong> (<em>Optional</em><em>[</em><em>float</em><em>]</em>) – Define a minimal score threshold for the result.
 If defined, less similar results will not be returned.
 Score of the returned result might be higher or smaller than the
 threshold depending on the Distance function used.
 E.g. for cosine similarity only higher scores will be returned.</p></li>
-<li><p><strong>consistency</strong> – <p>Read consistency of the search. Defines how many replicas should be
+<li><p><strong>consistency</strong> (<em>Optional</em><em>[</em><em>common_types.ReadConsistency</em><em>]</em>) – <p>Read consistency of the search. Defines how many replicas should be
 queried before returning the result.
 Values:
 - int - number of replicas to query, values should present in all</p>
@@ -1267,11 +1546,14 @@ Values:
 <li><p>’all’ - query all replicas, and return values present in all replicas</p></li>
 </ul>
 </p></li>
-<li><p><strong>**kwargs</strong> – Any other named arguments to pass through to QdrantClient.search()</p></li>
+<li><p><strong>**kwargs</strong> (<em>Any</em>) – Any other named arguments to pass through to QdrantClient.search()</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns</dt>
 <dd class="field-even"><p>List of Documents most similar to the query.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>List[<a class="reference internal" href="../documents/langchain_core.documents.base.Document.html#langchain_core.documents.base.Document" title="langchain_core.documents.base.Document">Document</a>]</p>
 </dd>
 </dl>
 </dd></dl>
@@ -1283,19 +1565,19 @@ Values:
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>embedding</strong> – Embedding vector to look up documents similar to.</p></li>
-<li><p><strong>k</strong> – Number of Documents to return. Defaults to 4.</p></li>
-<li><p><strong>filter</strong> – Filter by metadata. Defaults to None.</p></li>
-<li><p><strong>search_params</strong> – Additional search params</p></li>
-<li><p><strong>offset</strong> – Offset of the first result to return.
+<li><p><strong>embedding</strong> (<em>List</em><em>[</em><em>float</em><em>]</em>) – Embedding vector to look up documents similar to.</p></li>
+<li><p><strong>k</strong> (<em>int</em>) – Number of Documents to return. Defaults to 4.</p></li>
+<li><p><strong>filter</strong> (<em>Optional</em><em>[</em><em>MetadataFilter</em><em>]</em>) – Filter by metadata. Defaults to None.</p></li>
+<li><p><strong>search_params</strong> (<em>Optional</em><em>[</em><em>common_types.SearchParams</em><em>]</em>) – Additional search params</p></li>
+<li><p><strong>offset</strong> (<em>int</em>) – Offset of the first result to return.
 May be used to paginate results.
 Note: large offset values may cause performance issues.</p></li>
-<li><p><strong>score_threshold</strong> – Define a minimal score threshold for the result.
+<li><p><strong>score_threshold</strong> (<em>Optional</em><em>[</em><em>float</em><em>]</em>) – Define a minimal score threshold for the result.
 If defined, less similar results will not be returned.
 Score of the returned result might be higher or smaller than the
 threshold depending on the Distance function used.
 E.g. for cosine similarity only higher scores will be returned.</p></li>
-<li><p><strong>consistency</strong> – <p>Read consistency of the search. Defines how many replicas should be
+<li><p><strong>consistency</strong> (<em>Optional</em><em>[</em><em>common_types.ReadConsistency</em><em>]</em>) – <p>Read consistency of the search. Defines how many replicas should be
 queried before returning the result.
 Values:
 - int - number of replicas to query, values should present in all</p>
@@ -1316,11 +1598,14 @@ Values:
 <li><p>’all’ - query all replicas, and return values present in all replicas</p></li>
 </ul>
 </p></li>
-<li><p><strong>**kwargs</strong> – Any other named arguments to pass through to QdrantClient.search()</p></li>
+<li><p><strong>**kwargs</strong> (<em>Any</em>) – Any other named arguments to pass through to QdrantClient.search()</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns</dt>
 <dd class="field-even"><p>List of Documents most similar to the query.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>List[<a class="reference internal" href="../documents/langchain_core.documents.base.Document.html#langchain_core.documents.base.Document" title="langchain_core.documents.base.Document">Document</a>]</p>
 </dd>
 </dl>
 </dd></dl>
@@ -1333,9 +1618,9 @@ Values:
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>query</strong> – input text</p></li>
-<li><p><strong>k</strong> – Number of Documents to return. Defaults to 4.</p></li>
-<li><p><strong>**kwargs</strong> – <p>kwargs to be passed to similarity search. Should include:
+<li><p><strong>query</strong> (<em>str</em>) – input text</p></li>
+<li><p><strong>k</strong> (<em>int</em>) – Number of Documents to return. Defaults to 4.</p></li>
+<li><p><strong>**kwargs</strong> (<em>Any</em>) – <p>kwargs to be passed to similarity search. Should include:
 score_threshold: Optional, a floating point value between 0 to 1 to</p>
 <blockquote>
 <div><p>filter the resulting set of retrieved docs</p>
@@ -1345,6 +1630,9 @@ score_threshold: Optional, a floating point value between 0 to 1 to</p>
 </dd>
 <dt class="field-even">Returns</dt>
 <dd class="field-even"><p>List of Tuples of (doc, similarity_score)</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>List[Tuple[<a class="reference internal" href="../documents/langchain_core.documents.base.Document.html#langchain_core.documents.base.Document" title="langchain_core.documents.base.Document">Document</a>, float]]</p>
 </dd>
 </dl>
 </dd></dl>
@@ -1356,19 +1644,19 @@ score_threshold: Optional, a floating point value between 0 to 1 to</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>query</strong> – Text to look up documents similar to.</p></li>
-<li><p><strong>k</strong> – Number of Documents to return. Defaults to 4.</p></li>
-<li><p><strong>filter</strong> – Filter by metadata. Defaults to None.</p></li>
-<li><p><strong>search_params</strong> – Additional search params</p></li>
-<li><p><strong>offset</strong> – Offset of the first result to return.
+<li><p><strong>query</strong> (<em>str</em>) – Text to look up documents similar to.</p></li>
+<li><p><strong>k</strong> (<em>int</em>) – Number of Documents to return. Defaults to 4.</p></li>
+<li><p><strong>filter</strong> (<em>Optional</em><em>[</em><em>MetadataFilter</em><em>]</em>) – Filter by metadata. Defaults to None.</p></li>
+<li><p><strong>search_params</strong> (<em>Optional</em><em>[</em><em>common_types.SearchParams</em><em>]</em>) – Additional search params</p></li>
+<li><p><strong>offset</strong> (<em>int</em>) – Offset of the first result to return.
 May be used to paginate results.
 Note: large offset values may cause performance issues.</p></li>
-<li><p><strong>score_threshold</strong> – Define a minimal score threshold for the result.
+<li><p><strong>score_threshold</strong> (<em>Optional</em><em>[</em><em>float</em><em>]</em>) – Define a minimal score threshold for the result.
 If defined, less similar results will not be returned.
 Score of the returned result might be higher or smaller than the
 threshold depending on the Distance function used.
 E.g. for cosine similarity only higher scores will be returned.</p></li>
-<li><p><strong>consistency</strong> – <p>Read consistency of the search. Defines how many replicas should be
+<li><p><strong>consistency</strong> (<em>Optional</em><em>[</em><em>common_types.ReadConsistency</em><em>]</em>) – <p>Read consistency of the search. Defines how many replicas should be
 queried before returning the result.
 Values:
 - int - number of replicas to query, values should present in all</p>
@@ -1389,11 +1677,14 @@ Values:
 <li><p>’all’ - query all replicas, and return values present in all replicas</p></li>
 </ul>
 </p></li>
-<li><p><strong>**kwargs</strong> – Any other named arguments to pass through to QdrantClient.search()</p></li>
+<li><p><strong>**kwargs</strong> (<em>Any</em>) – Any other named arguments to pass through to QdrantClient.search()</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns</dt>
 <dd class="field-even"><p>List of documents most similar to the query text and distance for each.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>List[Tuple[<a class="reference internal" href="../documents/langchain_core.documents.base.Document.html#langchain_core.documents.base.Document" title="langchain_core.documents.base.Document">Document</a>, float]]</p>
 </dd>
 </dl>
 </dd></dl>
@@ -1405,19 +1696,19 @@ Values:
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>embedding</strong> – Embedding vector to look up documents similar to.</p></li>
-<li><p><strong>k</strong> – Number of Documents to return. Defaults to 4.</p></li>
-<li><p><strong>filter</strong> – Filter by metadata. Defaults to None.</p></li>
-<li><p><strong>search_params</strong> – Additional search params</p></li>
-<li><p><strong>offset</strong> – Offset of the first result to return.
+<li><p><strong>embedding</strong> (<em>List</em><em>[</em><em>float</em><em>]</em>) – Embedding vector to look up documents similar to.</p></li>
+<li><p><strong>k</strong> (<em>int</em>) – Number of Documents to return. Defaults to 4.</p></li>
+<li><p><strong>filter</strong> (<em>Optional</em><em>[</em><em>MetadataFilter</em><em>]</em>) – Filter by metadata. Defaults to None.</p></li>
+<li><p><strong>search_params</strong> (<em>Optional</em><em>[</em><em>common_types.SearchParams</em><em>]</em>) – Additional search params</p></li>
+<li><p><strong>offset</strong> (<em>int</em>) – Offset of the first result to return.
 May be used to paginate results.
 Note: large offset values may cause performance issues.</p></li>
-<li><p><strong>score_threshold</strong> – Define a minimal score threshold for the result.
+<li><p><strong>score_threshold</strong> (<em>Optional</em><em>[</em><em>float</em><em>]</em>) – Define a minimal score threshold for the result.
 If defined, less similar results will not be returned.
 Score of the returned result might be higher or smaller than the
 threshold depending on the Distance function used.
 E.g. for cosine similarity only higher scores will be returned.</p></li>
-<li><p><strong>consistency</strong> – <p>Read consistency of the search. Defines how many replicas should be
+<li><p><strong>consistency</strong> (<em>Optional</em><em>[</em><em>common_types.ReadConsistency</em><em>]</em>) – <p>Read consistency of the search. Defines how many replicas should be
 queried before returning the result.
 Values:
 - int - number of replicas to query, values should present in all</p>
@@ -1438,11 +1729,14 @@ Values:
 <li><p>’all’ - query all replicas, and return values present in all replicas</p></li>
 </ul>
 </p></li>
-<li><p><strong>**kwargs</strong> – Any other named arguments to pass through to QdrantClient.search()</p></li>
+<li><p><strong>**kwargs</strong> (<em>Any</em>) – Any other named arguments to pass through to QdrantClient.search()</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns</dt>
 <dd class="field-even"><p>List of documents most similar to the query text and distance for each.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>List[Tuple[<a class="reference internal" href="../documents/langchain_core.documents.base.Document.html#langchain_core.documents.base.Document" title="langchain_core.documents.base.Document">Document</a>, float]]</p>
 </dd>
 </dl>
 </dd></dl>
@@ -1460,7 +1754,7 @@ Values:
     <div class="container">
       <footer class="sk-content-footer">
             &copy; 2023, LangChain, Inc..
-          Last updated on Feb 14, 2024.
+          Last updated on Mar 01, 2024.
           <a href="../_sources/vectorstores/langchain_community.vectorstores.qdrant.Qdrant.rst.txt" rel="nofollow">Show this page source</a>
       </footer>
     </div>

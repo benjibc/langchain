@@ -9,7 +9,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   
-  <title>langchain_experimental.data_anonymizer.deanonymizer_matching_strategies &mdash; 🦜🔗 LangChain 0.1.7</title>
+  <title>langchain_experimental.data_anonymizer.deanonymizer_matching_strategies &mdash; 🦜🔗 LangChain 0.1.9</title>
   
   <link rel="canonical" href="https://api.python.langchain.com/en/latest/_modules/langchain_experimental/data_anonymizer/deanonymizer_matching_strategies.html" />
 
@@ -60,10 +60,28 @@
           <a class="sk-nav-link nav-link" href="../../../experimental_api_reference.html">Experimental</a>
         </li>
         <li class="nav-item">
+          <a class="sk-nav-link nav-link" href="../../../text_splitters_api_reference.html">Text splitters</a>
+        </li>
+        <li class="nav-item">
+          <a class="sk-nav-link nav-link nav-more-item-mobile-items" href="../../../ai21_api_reference.html">ai21</a>
+        </li>
+        <li class="nav-item">
+          <a class="sk-nav-link nav-link nav-more-item-mobile-items" href="../../../airbyte_api_reference.html">airbyte</a>
+        </li>
+        <li class="nav-item">
           <a class="sk-nav-link nav-link nav-more-item-mobile-items" href="../../../anthropic_api_reference.html">anthropic</a>
         </li>
         <li class="nav-item">
+          <a class="sk-nav-link nav-link nav-more-item-mobile-items" href="../../../astradb_api_reference.html">astradb</a>
+        </li>
+        <li class="nav-item">
+          <a class="sk-nav-link nav-link nav-more-item-mobile-items" href="../../../elasticsearch_api_reference.html">elasticsearch</a>
+        </li>
+        <li class="nav-item">
           <a class="sk-nav-link nav-link nav-more-item-mobile-items" href="../../../exa_api_reference.html">exa</a>
+        </li>
+        <li class="nav-item">
+          <a class="sk-nav-link nav-link nav-more-item-mobile-items" href="../../../fireworks_api_reference.html">fireworks</a>
         </li>
         <li class="nav-item">
           <a class="sk-nav-link nav-link nav-more-item-mobile-items" href="../../../google_genai_api_reference.html">google-genai</a>
@@ -72,7 +90,16 @@
           <a class="sk-nav-link nav-link nav-more-item-mobile-items" href="../../../google_vertexai_api_reference.html">google-vertexai</a>
         </li>
         <li class="nav-item">
+          <a class="sk-nav-link nav-link nav-more-item-mobile-items" href="../../../groq_api_reference.html">groq</a>
+        </li>
+        <li class="nav-item">
+          <a class="sk-nav-link nav-link nav-more-item-mobile-items" href="../../../ibm_api_reference.html">ibm</a>
+        </li>
+        <li class="nav-item">
           <a class="sk-nav-link nav-link nav-more-item-mobile-items" href="../../../mistralai_api_reference.html">mistralai</a>
+        </li>
+        <li class="nav-item">
+          <a class="sk-nav-link nav-link nav-more-item-mobile-items" href="../../../mongodb_api_reference.html">mongodb</a>
         </li>
         <li class="nav-item">
           <a class="sk-nav-link nav-link nav-more-item-mobile-items" href="../../../nomic_api_reference.html">nomic</a>
@@ -98,11 +125,19 @@
         <li class="nav-item dropdown nav-more-item-dropdown">
           <a class="sk-nav-link nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Partner libs</a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="sk-nav-dropdown-item dropdown-item" href="../../../ai21_api_reference.html">ai21</a>
+              <a class="sk-nav-dropdown-item dropdown-item" href="../../../airbyte_api_reference.html">airbyte</a>
               <a class="sk-nav-dropdown-item dropdown-item" href="../../../anthropic_api_reference.html">anthropic</a>
+              <a class="sk-nav-dropdown-item dropdown-item" href="../../../astradb_api_reference.html">astradb</a>
+              <a class="sk-nav-dropdown-item dropdown-item" href="../../../elasticsearch_api_reference.html">elasticsearch</a>
               <a class="sk-nav-dropdown-item dropdown-item" href="../../../exa_api_reference.html">exa</a>
+              <a class="sk-nav-dropdown-item dropdown-item" href="../../../fireworks_api_reference.html">fireworks</a>
               <a class="sk-nav-dropdown-item dropdown-item" href="../../../google_genai_api_reference.html">google-genai</a>
               <a class="sk-nav-dropdown-item dropdown-item" href="../../../google_vertexai_api_reference.html">google-vertexai</a>
+              <a class="sk-nav-dropdown-item dropdown-item" href="../../../groq_api_reference.html">groq</a>
+              <a class="sk-nav-dropdown-item dropdown-item" href="../../../ibm_api_reference.html">ibm</a>
               <a class="sk-nav-dropdown-item dropdown-item" href="../../../mistralai_api_reference.html">mistralai</a>
+              <a class="sk-nav-dropdown-item dropdown-item" href="../../../mongodb_api_reference.html">mongodb</a>
               <a class="sk-nav-dropdown-item dropdown-item" href="../../../nomic_api_reference.html">nomic</a>
               <a class="sk-nav-dropdown-item dropdown-item" href="../../../nvidia_ai_endpoints_api_reference.html">nvidia-ai-endpoints</a>
               <a class="sk-nav-dropdown-item dropdown-item" href="../../../nvidia_trt_api_reference.html">nvidia-trt</a>
@@ -152,8 +187,8 @@
 
 
 <div class="viewcode-block" id="exact_matching_strategy"><a class="viewcode-back" href="../../../data_anonymizer/langchain_experimental.data_anonymizer.deanonymizer_matching_strategies.exact_matching_strategy.html#langchain_experimental.data_anonymizer.deanonymizer_matching_strategies.exact_matching_strategy">[docs]</a><span class="k">def</span> <span class="nf">exact_matching_strategy</span><span class="p">(</span><span class="n">text</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">deanonymizer_mapping</span><span class="p">:</span> <span class="n">MappingDataType</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    Exact matching strategy for deanonymization.</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Exact matching strategy for deanonymization.</span>
+
 <span class="sd">    It replaces all the anonymized entities with the original ones.</span>
 
 <span class="sd">    Args:</span>
@@ -170,8 +205,8 @@
 <div class="viewcode-block" id="case_insensitive_matching_strategy"><a class="viewcode-back" href="../../../data_anonymizer/langchain_experimental.data_anonymizer.deanonymizer_matching_strategies.case_insensitive_matching_strategy.html#langchain_experimental.data_anonymizer.deanonymizer_matching_strategies.case_insensitive_matching_strategy">[docs]</a><span class="k">def</span> <span class="nf">case_insensitive_matching_strategy</span><span class="p">(</span>
     <span class="n">text</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">deanonymizer_mapping</span><span class="p">:</span> <span class="n">MappingDataType</span>
 <span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    Case insensitive matching strategy for deanonymization.</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Case insensitive matching strategy for deanonymization.</span>
+
 <span class="sd">    It replaces all the anonymized entities with the original ones</span>
 <span class="sd">        irrespective of their letter case.</span>
 
@@ -195,8 +230,8 @@
 <div class="viewcode-block" id="fuzzy_matching_strategy"><a class="viewcode-back" href="../../../data_anonymizer/langchain_experimental.data_anonymizer.deanonymizer_matching_strategies.fuzzy_matching_strategy.html#langchain_experimental.data_anonymizer.deanonymizer_matching_strategies.fuzzy_matching_strategy">[docs]</a><span class="k">def</span> <span class="nf">fuzzy_matching_strategy</span><span class="p">(</span>
     <span class="n">text</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">deanonymizer_mapping</span><span class="p">:</span> <span class="n">MappingDataType</span><span class="p">,</span> <span class="n">max_l_dist</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">3</span>
 <span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    Fuzzy matching strategy for deanonymization.</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Fuzzy matching strategy for deanonymization.</span>
+
 <span class="sd">    It uses fuzzy matching to find the position of the anonymized entity in the text.</span>
 <span class="sd">    It replaces all the anonymized entities with the original ones.</span>
 
@@ -240,9 +275,9 @@
 <div class="viewcode-block" id="combined_exact_fuzzy_matching_strategy"><a class="viewcode-back" href="../../../data_anonymizer/langchain_experimental.data_anonymizer.deanonymizer_matching_strategies.combined_exact_fuzzy_matching_strategy.html#langchain_experimental.data_anonymizer.deanonymizer_matching_strategies.combined_exact_fuzzy_matching_strategy">[docs]</a><span class="k">def</span> <span class="nf">combined_exact_fuzzy_matching_strategy</span><span class="p">(</span>
     <span class="n">text</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">deanonymizer_mapping</span><span class="p">:</span> <span class="n">MappingDataType</span><span class="p">,</span> <span class="n">max_l_dist</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">3</span>
 <span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    RECOMMENDED STRATEGY.</span>
-<span class="sd">    Combined exact and fuzzy matching strategy for deanonymization.</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Combined exact and fuzzy matching strategy for deanonymization.</span>
+
+<span class="sd">    It is a RECOMMENDED STRATEGY.</span>
 
 <span class="sd">    Args:</span>
 <span class="sd">        text: text to deanonymize</span>
@@ -265,8 +300,8 @@
     <span class="n">fuzzy_threshold</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">85</span><span class="p">,</span>
     <span class="n">use_variable_length</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">True</span><span class="p">,</span>
 <span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    N-gram fuzzy matching strategy for deanonymization.</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;N-gram fuzzy matching strategy for deanonymization.</span>
+
 <span class="sd">    It replaces all the anonymized entities with the original ones.</span>
 <span class="sd">    It uses fuzzy matching to find the position of the anonymized entity in the text.</span>
 <span class="sd">    It generates n-grams of the same length as the anonymized entity from the text and</span>
@@ -336,7 +371,7 @@
     <div class="container">
       <footer class="sk-content-footer">
             &copy; 2023, LangChain, Inc..
-          Last updated on Feb 14, 2024.
+          Last updated on Mar 01, 2024.
       </footer>
     </div>
   </div>

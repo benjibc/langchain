@@ -9,7 +9,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   
-  <title>langchain_core.runnables.history &mdash; 🦜🔗 LangChain 0.1.7</title>
+  <title>langchain_core.runnables.history &mdash; 🦜🔗 LangChain 0.1.9</title>
   
   <link rel="canonical" href="https://api.python.langchain.com/en/latest/_modules/langchain_core/runnables/history.html" />
 
@@ -60,10 +60,28 @@
           <a class="sk-nav-link nav-link" href="../../../experimental_api_reference.html">Experimental</a>
         </li>
         <li class="nav-item">
+          <a class="sk-nav-link nav-link" href="../../../text_splitters_api_reference.html">Text splitters</a>
+        </li>
+        <li class="nav-item">
+          <a class="sk-nav-link nav-link nav-more-item-mobile-items" href="../../../ai21_api_reference.html">ai21</a>
+        </li>
+        <li class="nav-item">
+          <a class="sk-nav-link nav-link nav-more-item-mobile-items" href="../../../airbyte_api_reference.html">airbyte</a>
+        </li>
+        <li class="nav-item">
           <a class="sk-nav-link nav-link nav-more-item-mobile-items" href="../../../anthropic_api_reference.html">anthropic</a>
         </li>
         <li class="nav-item">
+          <a class="sk-nav-link nav-link nav-more-item-mobile-items" href="../../../astradb_api_reference.html">astradb</a>
+        </li>
+        <li class="nav-item">
+          <a class="sk-nav-link nav-link nav-more-item-mobile-items" href="../../../elasticsearch_api_reference.html">elasticsearch</a>
+        </li>
+        <li class="nav-item">
           <a class="sk-nav-link nav-link nav-more-item-mobile-items" href="../../../exa_api_reference.html">exa</a>
+        </li>
+        <li class="nav-item">
+          <a class="sk-nav-link nav-link nav-more-item-mobile-items" href="../../../fireworks_api_reference.html">fireworks</a>
         </li>
         <li class="nav-item">
           <a class="sk-nav-link nav-link nav-more-item-mobile-items" href="../../../google_genai_api_reference.html">google-genai</a>
@@ -72,7 +90,16 @@
           <a class="sk-nav-link nav-link nav-more-item-mobile-items" href="../../../google_vertexai_api_reference.html">google-vertexai</a>
         </li>
         <li class="nav-item">
+          <a class="sk-nav-link nav-link nav-more-item-mobile-items" href="../../../groq_api_reference.html">groq</a>
+        </li>
+        <li class="nav-item">
+          <a class="sk-nav-link nav-link nav-more-item-mobile-items" href="../../../ibm_api_reference.html">ibm</a>
+        </li>
+        <li class="nav-item">
           <a class="sk-nav-link nav-link nav-more-item-mobile-items" href="../../../mistralai_api_reference.html">mistralai</a>
+        </li>
+        <li class="nav-item">
+          <a class="sk-nav-link nav-link nav-more-item-mobile-items" href="../../../mongodb_api_reference.html">mongodb</a>
         </li>
         <li class="nav-item">
           <a class="sk-nav-link nav-link nav-more-item-mobile-items" href="../../../nomic_api_reference.html">nomic</a>
@@ -98,11 +125,19 @@
         <li class="nav-item dropdown nav-more-item-dropdown">
           <a class="sk-nav-link nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Partner libs</a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="sk-nav-dropdown-item dropdown-item" href="../../../ai21_api_reference.html">ai21</a>
+              <a class="sk-nav-dropdown-item dropdown-item" href="../../../airbyte_api_reference.html">airbyte</a>
               <a class="sk-nav-dropdown-item dropdown-item" href="../../../anthropic_api_reference.html">anthropic</a>
+              <a class="sk-nav-dropdown-item dropdown-item" href="../../../astradb_api_reference.html">astradb</a>
+              <a class="sk-nav-dropdown-item dropdown-item" href="../../../elasticsearch_api_reference.html">elasticsearch</a>
               <a class="sk-nav-dropdown-item dropdown-item" href="../../../exa_api_reference.html">exa</a>
+              <a class="sk-nav-dropdown-item dropdown-item" href="../../../fireworks_api_reference.html">fireworks</a>
               <a class="sk-nav-dropdown-item dropdown-item" href="../../../google_genai_api_reference.html">google-genai</a>
               <a class="sk-nav-dropdown-item dropdown-item" href="../../../google_vertexai_api_reference.html">google-vertexai</a>
+              <a class="sk-nav-dropdown-item dropdown-item" href="../../../groq_api_reference.html">groq</a>
+              <a class="sk-nav-dropdown-item dropdown-item" href="../../../ibm_api_reference.html">ibm</a>
               <a class="sk-nav-dropdown-item dropdown-item" href="../../../mistralai_api_reference.html">mistralai</a>
+              <a class="sk-nav-dropdown-item dropdown-item" href="../../../mongodb_api_reference.html">mongodb</a>
               <a class="sk-nav-dropdown-item dropdown-item" href="../../../nomic_api_reference.html">nomic</a>
               <a class="sk-nav-dropdown-item dropdown-item" href="../../../nvidia_ai_endpoints_api_reference.html">nvidia-ai-endpoints</a>
               <a class="sk-nav-dropdown-item dropdown-item" href="../../../nvidia_trt_api_reference.html">nvidia-trt</a>
@@ -162,12 +197,13 @@
 
 <span class="kn">from</span> <span class="nn">langchain_core.chat_history</span> <span class="kn">import</span> <span class="n">BaseChatMessageHistory</span>
 <span class="kn">from</span> <span class="nn">langchain_core.load.load</span> <span class="kn">import</span> <span class="n">load</span>
-<span class="kn">from</span> <span class="nn">langchain_core.pydantic_v1</span> <span class="kn">import</span> <span class="n">BaseModel</span><span class="p">,</span> <span class="n">create_model</span>
+<span class="kn">from</span> <span class="nn">langchain_core.pydantic_v1</span> <span class="kn">import</span> <span class="n">BaseModel</span>
 <span class="kn">from</span> <span class="nn">langchain_core.runnables.base</span> <span class="kn">import</span> <span class="n">Runnable</span><span class="p">,</span> <span class="n">RunnableBindingBase</span><span class="p">,</span> <span class="n">RunnableLambda</span>
 <span class="kn">from</span> <span class="nn">langchain_core.runnables.config</span> <span class="kn">import</span> <span class="n">run_in_executor</span>
 <span class="kn">from</span> <span class="nn">langchain_core.runnables.passthrough</span> <span class="kn">import</span> <span class="n">RunnablePassthrough</span>
 <span class="kn">from</span> <span class="nn">langchain_core.runnables.utils</span> <span class="kn">import</span> <span class="p">(</span>
     <span class="n">ConfigurableFieldSpec</span><span class="p">,</span>
+    <span class="n">create_model</span><span class="p">,</span>
     <span class="n">get_unique_config_specs</span><span class="p">,</span>
 <span class="p">)</span>
 
@@ -243,9 +279,9 @@
 
 <span class="sd">            messages: List[BaseMessage] = Field(default_factory=list)</span>
 
-<span class="sd">            def add_message(self, message: BaseMessage) -&gt; None:</span>
-<span class="sd">                \&quot;\&quot;\&quot;Add a self-created message to the store\&quot;\&quot;\&quot;</span>
-<span class="sd">                self.messages.append(message)</span>
+<span class="sd">            def add_messages(self, messages: List[BaseMessage]) -&gt; None:</span>
+<span class="sd">                \&quot;\&quot;\&quot;Add a list of messages to the store\&quot;\&quot;\&quot;</span>
+<span class="sd">                self.messages.extend(messages)</span>
 
 <span class="sd">            def clear(self) -&gt; None:</span>
 <span class="sd">                self.messages = []</span>
@@ -566,7 +602,7 @@
         <span class="k">return</span> <span class="k">await</span> <span class="n">run_in_executor</span><span class="p">(</span><span class="n">config</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_enter_history</span><span class="p">,</span> <span class="nb">input</span><span class="p">,</span> <span class="n">config</span><span class="p">)</span>
 
     <span class="k">def</span> <span class="nf">_exit_history</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">run</span><span class="p">:</span> <span class="n">Run</span><span class="p">,</span> <span class="n">config</span><span class="p">:</span> <span class="n">RunnableConfig</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
-        <span class="n">hist</span> <span class="o">=</span> <span class="n">config</span><span class="p">[</span><span class="s2">&quot;configurable&quot;</span><span class="p">][</span><span class="s2">&quot;message_history&quot;</span><span class="p">]</span>
+        <span class="n">hist</span><span class="p">:</span> <span class="n">BaseChatMessageHistory</span> <span class="o">=</span> <span class="n">config</span><span class="p">[</span><span class="s2">&quot;configurable&quot;</span><span class="p">][</span><span class="s2">&quot;message_history&quot;</span><span class="p">]</span>
 
         <span class="c1"># Get the input messages</span>
         <span class="n">inputs</span> <span class="o">=</span> <span class="n">load</span><span class="p">(</span><span class="n">run</span><span class="o">.</span><span class="n">inputs</span><span class="p">)</span>
@@ -582,9 +618,7 @@
         <span class="c1"># Get the output messages</span>
         <span class="n">output_val</span> <span class="o">=</span> <span class="n">load</span><span class="p">(</span><span class="n">run</span><span class="o">.</span><span class="n">outputs</span><span class="p">)</span>
         <span class="n">output_messages</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_get_output_messages</span><span class="p">(</span><span class="n">output_val</span><span class="p">)</span>
-
-        <span class="k">for</span> <span class="n">m</span> <span class="ow">in</span> <span class="n">input_messages</span> <span class="o">+</span> <span class="n">output_messages</span><span class="p">:</span>
-            <span class="n">hist</span><span class="o">.</span><span class="n">add_message</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
+        <span class="n">hist</span><span class="o">.</span><span class="n">add_messages</span><span class="p">(</span><span class="n">input_messages</span> <span class="o">+</span> <span class="n">output_messages</span><span class="p">)</span>
 
     <span class="k">def</span> <span class="nf">_merge_configs</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">configs</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">RunnableConfig</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="n">RunnableConfig</span><span class="p">:</span>
         <span class="n">config</span> <span class="o">=</span> <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="n">_merge_configs</span><span class="p">(</span><span class="o">*</span><span class="n">configs</span><span class="p">)</span>
@@ -637,7 +671,7 @@
     <div class="container">
       <footer class="sk-content-footer">
             &copy; 2023, LangChain, Inc..
-          Last updated on Feb 14, 2024.
+          Last updated on Mar 01, 2024.
       </footer>
     </div>
   </div>

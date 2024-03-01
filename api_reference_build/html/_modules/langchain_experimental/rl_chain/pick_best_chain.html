@@ -9,7 +9,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   
-  <title>langchain_experimental.rl_chain.pick_best_chain &mdash; 🦜🔗 LangChain 0.1.7</title>
+  <title>langchain_experimental.rl_chain.pick_best_chain &mdash; 🦜🔗 LangChain 0.1.9</title>
   
   <link rel="canonical" href="https://api.python.langchain.com/en/latest/_modules/langchain_experimental/rl_chain/pick_best_chain.html" />
 
@@ -60,10 +60,28 @@
           <a class="sk-nav-link nav-link" href="../../../experimental_api_reference.html">Experimental</a>
         </li>
         <li class="nav-item">
+          <a class="sk-nav-link nav-link" href="../../../text_splitters_api_reference.html">Text splitters</a>
+        </li>
+        <li class="nav-item">
+          <a class="sk-nav-link nav-link nav-more-item-mobile-items" href="../../../ai21_api_reference.html">ai21</a>
+        </li>
+        <li class="nav-item">
+          <a class="sk-nav-link nav-link nav-more-item-mobile-items" href="../../../airbyte_api_reference.html">airbyte</a>
+        </li>
+        <li class="nav-item">
           <a class="sk-nav-link nav-link nav-more-item-mobile-items" href="../../../anthropic_api_reference.html">anthropic</a>
         </li>
         <li class="nav-item">
+          <a class="sk-nav-link nav-link nav-more-item-mobile-items" href="../../../astradb_api_reference.html">astradb</a>
+        </li>
+        <li class="nav-item">
+          <a class="sk-nav-link nav-link nav-more-item-mobile-items" href="../../../elasticsearch_api_reference.html">elasticsearch</a>
+        </li>
+        <li class="nav-item">
           <a class="sk-nav-link nav-link nav-more-item-mobile-items" href="../../../exa_api_reference.html">exa</a>
+        </li>
+        <li class="nav-item">
+          <a class="sk-nav-link nav-link nav-more-item-mobile-items" href="../../../fireworks_api_reference.html">fireworks</a>
         </li>
         <li class="nav-item">
           <a class="sk-nav-link nav-link nav-more-item-mobile-items" href="../../../google_genai_api_reference.html">google-genai</a>
@@ -72,7 +90,16 @@
           <a class="sk-nav-link nav-link nav-more-item-mobile-items" href="../../../google_vertexai_api_reference.html">google-vertexai</a>
         </li>
         <li class="nav-item">
+          <a class="sk-nav-link nav-link nav-more-item-mobile-items" href="../../../groq_api_reference.html">groq</a>
+        </li>
+        <li class="nav-item">
+          <a class="sk-nav-link nav-link nav-more-item-mobile-items" href="../../../ibm_api_reference.html">ibm</a>
+        </li>
+        <li class="nav-item">
           <a class="sk-nav-link nav-link nav-more-item-mobile-items" href="../../../mistralai_api_reference.html">mistralai</a>
+        </li>
+        <li class="nav-item">
+          <a class="sk-nav-link nav-link nav-more-item-mobile-items" href="../../../mongodb_api_reference.html">mongodb</a>
         </li>
         <li class="nav-item">
           <a class="sk-nav-link nav-link nav-more-item-mobile-items" href="../../../nomic_api_reference.html">nomic</a>
@@ -98,11 +125,19 @@
         <li class="nav-item dropdown nav-more-item-dropdown">
           <a class="sk-nav-link nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Partner libs</a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="sk-nav-dropdown-item dropdown-item" href="../../../ai21_api_reference.html">ai21</a>
+              <a class="sk-nav-dropdown-item dropdown-item" href="../../../airbyte_api_reference.html">airbyte</a>
               <a class="sk-nav-dropdown-item dropdown-item" href="../../../anthropic_api_reference.html">anthropic</a>
+              <a class="sk-nav-dropdown-item dropdown-item" href="../../../astradb_api_reference.html">astradb</a>
+              <a class="sk-nav-dropdown-item dropdown-item" href="../../../elasticsearch_api_reference.html">elasticsearch</a>
               <a class="sk-nav-dropdown-item dropdown-item" href="../../../exa_api_reference.html">exa</a>
+              <a class="sk-nav-dropdown-item dropdown-item" href="../../../fireworks_api_reference.html">fireworks</a>
               <a class="sk-nav-dropdown-item dropdown-item" href="../../../google_genai_api_reference.html">google-genai</a>
               <a class="sk-nav-dropdown-item dropdown-item" href="../../../google_vertexai_api_reference.html">google-vertexai</a>
+              <a class="sk-nav-dropdown-item dropdown-item" href="../../../groq_api_reference.html">groq</a>
+              <a class="sk-nav-dropdown-item dropdown-item" href="../../../ibm_api_reference.html">ibm</a>
               <a class="sk-nav-dropdown-item dropdown-item" href="../../../mistralai_api_reference.html">mistralai</a>
+              <a class="sk-nav-dropdown-item dropdown-item" href="../../../mongodb_api_reference.html">mongodb</a>
               <a class="sk-nav-dropdown-item dropdown-item" href="../../../nomic_api_reference.html">nomic</a>
               <a class="sk-nav-dropdown-item dropdown-item" href="../../../nvidia_ai_endpoints_api_reference.html">nvidia-ai-endpoints</a>
               <a class="sk-nav-dropdown-item dropdown-item" href="../../../nvidia_trt_api_reference.html">nvidia-trt</a>
@@ -165,6 +200,8 @@
 
 
 <div class="viewcode-block" id="PickBestSelected"><a class="viewcode-back" href="../../../rl_chain/langchain_experimental.rl_chain.pick_best_chain.PickBestSelected.html#langchain_experimental.rl_chain.pick_best_chain.PickBestSelected">[docs]</a><span class="k">class</span> <span class="nc">PickBestSelected</span><span class="p">(</span><span class="n">base</span><span class="o">.</span><span class="n">Selected</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Selected class for PickBest chain.&quot;&quot;&quot;</span>
+
     <span class="n">index</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">int</span><span class="p">]</span>
     <span class="n">probability</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">float</span><span class="p">]</span>
     <span class="n">score</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">float</span><span class="p">]</span>
@@ -181,6 +218,8 @@
 
 
 <div class="viewcode-block" id="PickBestEvent"><a class="viewcode-back" href="../../../rl_chain/langchain_experimental.rl_chain.pick_best_chain.PickBestEvent.html#langchain_experimental.rl_chain.pick_best_chain.PickBestEvent">[docs]</a><span class="k">class</span> <span class="nc">PickBestEvent</span><span class="p">(</span><span class="n">base</span><span class="o">.</span><span class="n">Event</span><span class="p">[</span><span class="n">PickBestSelected</span><span class="p">]):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Event class for PickBest chain.&quot;&quot;&quot;</span>
+
 <div class="viewcode-block" id="PickBestEvent.__init__"><a class="viewcode-back" href="../../../rl_chain/langchain_experimental.rl_chain.pick_best_chain.PickBestEvent.html#langchain_experimental.rl_chain.pick_best_chain.PickBestEvent.__init__">[docs]</a>    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span>
         <span class="bp">self</span><span class="p">,</span>
         <span class="n">inputs</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">],</span>
@@ -194,8 +233,8 @@
 
 
 <div class="viewcode-block" id="PickBestFeatureEmbedder"><a class="viewcode-back" href="../../../rl_chain/langchain_experimental.rl_chain.pick_best_chain.PickBestFeatureEmbedder.html#langchain_experimental.rl_chain.pick_best_chain.PickBestFeatureEmbedder">[docs]</a><span class="k">class</span> <span class="nc">PickBestFeatureEmbedder</span><span class="p">(</span><span class="n">base</span><span class="o">.</span><span class="n">Embedder</span><span class="p">[</span><span class="n">PickBestEvent</span><span class="p">]):</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    Text Embedder class that embeds the `BasedOn` and `ToSelectFrom` inputs into a format that can be used by the learning policy</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Embed the `BasedOn` and `ToSelectFrom` inputs into a format that can be used</span>
+<span class="sd">    by the learning policy.</span>
 
 <span class="sd">    Attributes:</span>
 <span class="sd">        model name (Any, optional): The type of embeddings to be used for feature representation. Defaults to BERT SentenceTransformer.</span>
@@ -372,6 +411,8 @@
 
 
 <div class="viewcode-block" id="PickBestRandomPolicy"><a class="viewcode-back" href="../../../rl_chain/langchain_experimental.rl_chain.pick_best_chain.PickBestRandomPolicy.html#langchain_experimental.rl_chain.pick_best_chain.PickBestRandomPolicy">[docs]</a><span class="k">class</span> <span class="nc">PickBestRandomPolicy</span><span class="p">(</span><span class="n">base</span><span class="o">.</span><span class="n">Policy</span><span class="p">[</span><span class="n">PickBestEvent</span><span class="p">]):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Random policy for PickBest chain.&quot;&quot;&quot;</span>
+
 <div class="viewcode-block" id="PickBestRandomPolicy.__init__"><a class="viewcode-back" href="../../../rl_chain/langchain_experimental.rl_chain.pick_best_chain.PickBestRandomPolicy.html#langchain_experimental.rl_chain.pick_best_chain.PickBestRandomPolicy.__init__">[docs]</a>    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">feature_embedder</span><span class="p">:</span> <span class="n">base</span><span class="o">.</span><span class="n">Embedder</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">:</span> <span class="n">Any</span><span class="p">):</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">feature_embedder</span> <span class="o">=</span> <span class="n">feature_embedder</span></div>
 
@@ -387,8 +428,8 @@
 
 
 <div class="viewcode-block" id="PickBest"><a class="viewcode-back" href="../../../rl_chain/langchain_experimental.rl_chain.pick_best_chain.PickBest.html#langchain_experimental.rl_chain.pick_best_chain.PickBest">[docs]</a><span class="k">class</span> <span class="nc">PickBest</span><span class="p">(</span><span class="n">base</span><span class="o">.</span><span class="n">RLChain</span><span class="p">[</span><span class="n">PickBestEvent</span><span class="p">]):</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    `PickBest` is a class designed to leverage the Vowpal Wabbit (VW) model for reinforcement learning with a context, with the goal of modifying the prompt before the LLM call.</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Chain that leverages the Vowpal Wabbit (VW) model for reinforcement learning</span>
+<span class="sd">    with a context, with the goal of modifying the prompt before the LLM call.</span>
 
 <span class="sd">    Each invocation of the chain&#39;s `run()` method should be equipped with a set of potential actions (`ToSelectFrom`) and will result in the selection of a specific action based on the `BasedOn` input. This chosen action then informs the LLM (Language Model) prompt for the subsequent response generation.</span>
 
@@ -563,7 +604,7 @@
     <div class="container">
       <footer class="sk-content-footer">
             &copy; 2023, LangChain, Inc..
-          Last updated on Feb 14, 2024.
+          Last updated on Mar 01, 2024.
       </footer>
     </div>
   </div>

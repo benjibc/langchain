@@ -9,7 +9,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   
-  <title>langchain_core.load.serializable &mdash; 🦜🔗 LangChain 0.1.7</title>
+  <title>langchain_core.load.serializable &mdash; 🦜🔗 LangChain 0.1.9</title>
   
   <link rel="canonical" href="https://api.python.langchain.com/en/latest/_modules/langchain_core/load/serializable.html" />
 
@@ -60,7 +60,13 @@
           <a class="sk-nav-link nav-link" href="../../../experimental_api_reference.html">Experimental</a>
         </li>
         <li class="nav-item">
+          <a class="sk-nav-link nav-link" href="../../../text_splitters_api_reference.html">Text splitters</a>
+        </li>
+        <li class="nav-item">
           <a class="sk-nav-link nav-link nav-more-item-mobile-items" href="../../../ai21_api_reference.html">ai21</a>
+        </li>
+        <li class="nav-item">
+          <a class="sk-nav-link nav-link nav-more-item-mobile-items" href="../../../airbyte_api_reference.html">airbyte</a>
         </li>
         <li class="nav-item">
           <a class="sk-nav-link nav-link nav-more-item-mobile-items" href="../../../anthropic_api_reference.html">anthropic</a>
@@ -69,7 +75,13 @@
           <a class="sk-nav-link nav-link nav-more-item-mobile-items" href="../../../astradb_api_reference.html">astradb</a>
         </li>
         <li class="nav-item">
+          <a class="sk-nav-link nav-link nav-more-item-mobile-items" href="../../../elasticsearch_api_reference.html">elasticsearch</a>
+        </li>
+        <li class="nav-item">
           <a class="sk-nav-link nav-link nav-more-item-mobile-items" href="../../../exa_api_reference.html">exa</a>
+        </li>
+        <li class="nav-item">
+          <a class="sk-nav-link nav-link nav-more-item-mobile-items" href="../../../fireworks_api_reference.html">fireworks</a>
         </li>
         <li class="nav-item">
           <a class="sk-nav-link nav-link nav-more-item-mobile-items" href="../../../google_genai_api_reference.html">google-genai</a>
@@ -78,10 +90,16 @@
           <a class="sk-nav-link nav-link nav-more-item-mobile-items" href="../../../google_vertexai_api_reference.html">google-vertexai</a>
         </li>
         <li class="nav-item">
+          <a class="sk-nav-link nav-link nav-more-item-mobile-items" href="../../../groq_api_reference.html">groq</a>
+        </li>
+        <li class="nav-item">
           <a class="sk-nav-link nav-link nav-more-item-mobile-items" href="../../../ibm_api_reference.html">ibm</a>
         </li>
         <li class="nav-item">
           <a class="sk-nav-link nav-link nav-more-item-mobile-items" href="../../../mistralai_api_reference.html">mistralai</a>
+        </li>
+        <li class="nav-item">
+          <a class="sk-nav-link nav-link nav-more-item-mobile-items" href="../../../mongodb_api_reference.html">mongodb</a>
         </li>
         <li class="nav-item">
           <a class="sk-nav-link nav-link nav-more-item-mobile-items" href="../../../nomic_api_reference.html">nomic</a>
@@ -108,13 +126,18 @@
           <a class="sk-nav-link nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Partner libs</a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
               <a class="sk-nav-dropdown-item dropdown-item" href="../../../ai21_api_reference.html">ai21</a>
+              <a class="sk-nav-dropdown-item dropdown-item" href="../../../airbyte_api_reference.html">airbyte</a>
               <a class="sk-nav-dropdown-item dropdown-item" href="../../../anthropic_api_reference.html">anthropic</a>
               <a class="sk-nav-dropdown-item dropdown-item" href="../../../astradb_api_reference.html">astradb</a>
+              <a class="sk-nav-dropdown-item dropdown-item" href="../../../elasticsearch_api_reference.html">elasticsearch</a>
               <a class="sk-nav-dropdown-item dropdown-item" href="../../../exa_api_reference.html">exa</a>
+              <a class="sk-nav-dropdown-item dropdown-item" href="../../../fireworks_api_reference.html">fireworks</a>
               <a class="sk-nav-dropdown-item dropdown-item" href="../../../google_genai_api_reference.html">google-genai</a>
               <a class="sk-nav-dropdown-item dropdown-item" href="../../../google_vertexai_api_reference.html">google-vertexai</a>
+              <a class="sk-nav-dropdown-item dropdown-item" href="../../../groq_api_reference.html">groq</a>
               <a class="sk-nav-dropdown-item dropdown-item" href="../../../ibm_api_reference.html">ibm</a>
               <a class="sk-nav-dropdown-item dropdown-item" href="../../../mistralai_api_reference.html">mistralai</a>
+              <a class="sk-nav-dropdown-item dropdown-item" href="../../../mongodb_api_reference.html">mongodb</a>
               <a class="sk-nav-dropdown-item dropdown-item" href="../../../nomic_api_reference.html">nomic</a>
               <a class="sk-nav-dropdown-item dropdown-item" href="../../../nvidia_ai_endpoints_api_reference.html">nvidia-ai-endpoints</a>
               <a class="sk-nav-dropdown-item dropdown-item" href="../../../nvidia_trt_api_reference.html">nvidia-trt</a>
@@ -158,39 +181,52 @@
         
   <h1>Source code for langchain_core.load.serializable</h1><div class="highlight"><pre>
 <span></span><span class="kn">from</span> <span class="nn">abc</span> <span class="kn">import</span> <span class="n">ABC</span>
-<span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">Any</span><span class="p">,</span> <span class="n">Dict</span><span class="p">,</span> <span class="n">List</span><span class="p">,</span> <span class="n">Literal</span><span class="p">,</span> <span class="n">Optional</span><span class="p">,</span> <span class="n">TypedDict</span><span class="p">,</span> <span class="n">Union</span><span class="p">,</span> <span class="n">cast</span>
+<span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="p">(</span>
+    <span class="n">Any</span><span class="p">,</span>
+    <span class="n">Dict</span><span class="p">,</span>
+    <span class="n">List</span><span class="p">,</span>
+    <span class="n">Literal</span><span class="p">,</span>
+    <span class="n">Optional</span><span class="p">,</span>
+    <span class="n">TypedDict</span><span class="p">,</span>
+    <span class="n">Union</span><span class="p">,</span>
+    <span class="n">cast</span><span class="p">,</span>
+<span class="p">)</span>
+
+<span class="kn">from</span> <span class="nn">typing_extensions</span> <span class="kn">import</span> <span class="n">NotRequired</span>
 
 <span class="kn">from</span> <span class="nn">langchain_core.pydantic_v1</span> <span class="kn">import</span> <span class="n">BaseModel</span><span class="p">,</span> <span class="n">PrivateAttr</span>
 
 
-<span class="k">class</span> <span class="nc">BaseSerialized</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
+<div class="viewcode-block" id="BaseSerialized"><a class="viewcode-back" href="../../../load/langchain_core.load.serializable.BaseSerialized.html#langchain_community.agent_toolkits.nla.tool.BaseSerialized">[docs]</a><span class="k">class</span> <span class="nc">BaseSerialized</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;Base class for serialized objects.&quot;&quot;&quot;</span>
 
     <span class="n">lc</span><span class="p">:</span> <span class="nb">int</span>
     <span class="nb">id</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span>
+    <span class="n">name</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span>
+    <span class="n">graph</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">]]</span></div>
 
 
-<span class="k">class</span> <span class="nc">SerializedConstructor</span><span class="p">(</span><span class="n">BaseSerialized</span><span class="p">):</span>
+<div class="viewcode-block" id="SerializedConstructor"><a class="viewcode-back" href="../../../load/langchain_core.load.serializable.SerializedConstructor.html#langchain_community.agent_toolkits.nla.tool.SerializedConstructor">[docs]</a><span class="k">class</span> <span class="nc">SerializedConstructor</span><span class="p">(</span><span class="n">BaseSerialized</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;Serialized constructor.&quot;&quot;&quot;</span>
 
     <span class="nb">type</span><span class="p">:</span> <span class="n">Literal</span><span class="p">[</span><span class="s2">&quot;constructor&quot;</span><span class="p">]</span>
-    <span class="n">kwargs</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">]</span>
+    <span class="n">kwargs</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">]</span></div>
 
 
-<span class="k">class</span> <span class="nc">SerializedSecret</span><span class="p">(</span><span class="n">BaseSerialized</span><span class="p">):</span>
+<div class="viewcode-block" id="SerializedSecret"><a class="viewcode-back" href="../../../load/langchain_core.load.serializable.SerializedSecret.html#langchain_community.agent_toolkits.nla.tool.SerializedSecret">[docs]</a><span class="k">class</span> <span class="nc">SerializedSecret</span><span class="p">(</span><span class="n">BaseSerialized</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;Serialized secret.&quot;&quot;&quot;</span>
 
-    <span class="nb">type</span><span class="p">:</span> <span class="n">Literal</span><span class="p">[</span><span class="s2">&quot;secret&quot;</span><span class="p">]</span>
+    <span class="nb">type</span><span class="p">:</span> <span class="n">Literal</span><span class="p">[</span><span class="s2">&quot;secret&quot;</span><span class="p">]</span></div>
 
 
-<span class="k">class</span> <span class="nc">SerializedNotImplemented</span><span class="p">(</span><span class="n">BaseSerialized</span><span class="p">):</span>
+<div class="viewcode-block" id="SerializedNotImplemented"><a class="viewcode-back" href="../../../load/langchain_core.load.serializable.SerializedNotImplemented.html#langchain_community.agent_toolkits.nla.tool.SerializedNotImplemented">[docs]</a><span class="k">class</span> <span class="nc">SerializedNotImplemented</span><span class="p">(</span><span class="n">BaseSerialized</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;Serialized not implemented.&quot;&quot;&quot;</span>
 
     <span class="nb">type</span><span class="p">:</span> <span class="n">Literal</span><span class="p">[</span><span class="s2">&quot;not_implemented&quot;</span><span class="p">]</span>
-    <span class="nb">repr</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span>
+    <span class="nb">repr</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span></div>
 
 
-<span class="k">def</span> <span class="nf">try_neq_default</span><span class="p">(</span><span class="n">value</span><span class="p">:</span> <span class="n">Any</span><span class="p">,</span> <span class="n">key</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">model</span><span class="p">:</span> <span class="n">BaseModel</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
+<div class="viewcode-block" id="try_neq_default"><a class="viewcode-back" href="../../../load/langchain_core.load.serializable.try_neq_default.html#langchain_community.agent_toolkits.nla.tool.try_neq_default">[docs]</a><span class="k">def</span> <span class="nf">try_neq_default</span><span class="p">(</span><span class="n">value</span><span class="p">:</span> <span class="n">Any</span><span class="p">,</span> <span class="n">key</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">model</span><span class="p">:</span> <span class="n">BaseModel</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;Try to determine if a value is different from the default.</span>
 
 <span class="sd">    Args:</span>
@@ -204,25 +240,25 @@
     <span class="k">try</span><span class="p">:</span>
         <span class="k">return</span> <span class="n">model</span><span class="o">.</span><span class="n">__fields__</span><span class="p">[</span><span class="n">key</span><span class="p">]</span><span class="o">.</span><span class="n">get_default</span><span class="p">()</span> <span class="o">!=</span> <span class="n">value</span>
     <span class="k">except</span> <span class="ne">Exception</span><span class="p">:</span>
-        <span class="k">return</span> <span class="kc">True</span>
+        <span class="k">return</span> <span class="kc">True</span></div>
 
 
-<span class="k">class</span> <span class="nc">Serializable</span><span class="p">(</span><span class="n">BaseModel</span><span class="p">,</span> <span class="n">ABC</span><span class="p">):</span>
+<div class="viewcode-block" id="Serializable"><a class="viewcode-back" href="../../../load/langchain_core.load.serializable.Serializable.html#langchain_community.agent_toolkits.nla.tool.Serializable">[docs]</a><span class="k">class</span> <span class="nc">Serializable</span><span class="p">(</span><span class="n">BaseModel</span><span class="p">,</span> <span class="n">ABC</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;Serializable base class.&quot;&quot;&quot;</span>
 
-    <span class="nd">@classmethod</span>
+<div class="viewcode-block" id="Serializable.is_lc_serializable"><a class="viewcode-back" href="../../../load/langchain_core.load.serializable.Serializable.html#langchain_community.agent_toolkits.nla.tool.Serializable.is_lc_serializable">[docs]</a>    <span class="nd">@classmethod</span>
     <span class="k">def</span> <span class="nf">is_lc_serializable</span><span class="p">(</span><span class="bp">cls</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;Is this class serializable?&quot;&quot;&quot;</span>
-        <span class="k">return</span> <span class="kc">False</span>
+        <span class="k">return</span> <span class="kc">False</span></div>
 
-    <span class="nd">@classmethod</span>
+<div class="viewcode-block" id="Serializable.get_lc_namespace"><a class="viewcode-back" href="../../../load/langchain_core.load.serializable.Serializable.html#langchain_community.agent_toolkits.nla.tool.Serializable.get_lc_namespace">[docs]</a>    <span class="nd">@classmethod</span>
     <span class="k">def</span> <span class="nf">get_lc_namespace</span><span class="p">(</span><span class="bp">cls</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]:</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;Get the namespace of the langchain object.</span>
 
 <span class="sd">        For example, if the class is `langchain.llms.openai.OpenAI`, then the</span>
 <span class="sd">        namespace is [&quot;langchain&quot;, &quot;llms&quot;, &quot;openai&quot;]</span>
 <span class="sd">        &quot;&quot;&quot;</span>
-        <span class="k">return</span> <span class="bp">cls</span><span class="o">.</span><span class="vm">__module__</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;.&quot;</span><span class="p">)</span>
+        <span class="k">return</span> <span class="bp">cls</span><span class="o">.</span><span class="vm">__module__</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;.&quot;</span><span class="p">)</span></div>
 
     <span class="nd">@property</span>
     <span class="k">def</span> <span class="nf">lc_secrets</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">str</span><span class="p">]:</span>
@@ -241,14 +277,14 @@
 <span class="sd">        &quot;&quot;&quot;</span>
         <span class="k">return</span> <span class="p">{}</span>
 
-    <span class="nd">@classmethod</span>
+<div class="viewcode-block" id="Serializable.lc_id"><a class="viewcode-back" href="../../../load/langchain_core.load.serializable.Serializable.html#langchain_community.agent_toolkits.nla.tool.Serializable.lc_id">[docs]</a>    <span class="nd">@classmethod</span>
     <span class="k">def</span> <span class="nf">lc_id</span><span class="p">(</span><span class="bp">cls</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]:</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;A unique identifier for this class for serialization purposes.</span>
 
 <span class="sd">        The unique identifier is a list of strings that describes the path</span>
 <span class="sd">        to the object.</span>
 <span class="sd">        &quot;&quot;&quot;</span>
-        <span class="k">return</span> <span class="p">[</span><span class="o">*</span><span class="bp">cls</span><span class="o">.</span><span class="n">get_lc_namespace</span><span class="p">(),</span> <span class="bp">cls</span><span class="o">.</span><span class="vm">__name__</span><span class="p">]</span>
+        <span class="k">return</span> <span class="p">[</span><span class="o">*</span><span class="bp">cls</span><span class="o">.</span><span class="n">get_lc_namespace</span><span class="p">(),</span> <span class="bp">cls</span><span class="o">.</span><span class="vm">__name__</span><span class="p">]</span></div>
 
     <span class="k">class</span> <span class="nc">Config</span><span class="p">:</span>
         <span class="n">extra</span> <span class="o">=</span> <span class="s2">&quot;ignore&quot;</span>
@@ -266,7 +302,7 @@
         <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_lc_kwargs</span> <span class="o">=</span> <span class="n">kwargs</span>
 
-    <span class="k">def</span> <span class="nf">to_json</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Union</span><span class="p">[</span><span class="n">SerializedConstructor</span><span class="p">,</span> <span class="n">SerializedNotImplemented</span><span class="p">]:</span>
+<div class="viewcode-block" id="Serializable.to_json"><a class="viewcode-back" href="../../../load/langchain_core.load.serializable.Serializable.html#langchain_community.agent_toolkits.nla.tool.Serializable.to_json">[docs]</a>    <span class="k">def</span> <span class="nf">to_json</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Union</span><span class="p">[</span><span class="n">SerializedConstructor</span><span class="p">,</span> <span class="n">SerializedNotImplemented</span><span class="p">]:</span>
         <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">is_lc_serializable</span><span class="p">():</span>
             <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">to_json_not_implemented</span><span class="p">()</span>
 
@@ -326,10 +362,10 @@
             <span class="s2">&quot;kwargs&quot;</span><span class="p">:</span> <span class="n">lc_kwargs</span>
             <span class="k">if</span> <span class="ow">not</span> <span class="n">secrets</span>
             <span class="k">else</span> <span class="n">_replace_secrets</span><span class="p">(</span><span class="n">lc_kwargs</span><span class="p">,</span> <span class="n">secrets</span><span class="p">),</span>
-        <span class="p">}</span>
+        <span class="p">}</span></div>
 
-    <span class="k">def</span> <span class="nf">to_json_not_implemented</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">SerializedNotImplemented</span><span class="p">:</span>
-        <span class="k">return</span> <span class="n">to_json_not_implemented</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+<div class="viewcode-block" id="Serializable.to_json_not_implemented"><a class="viewcode-back" href="../../../load/langchain_core.load.serializable.Serializable.html#langchain_community.agent_toolkits.nla.tool.Serializable.to_json_not_implemented">[docs]</a>    <span class="k">def</span> <span class="nf">to_json_not_implemented</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">SerializedNotImplemented</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">to_json_not_implemented</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span></div></div>
 
 
 <span class="k">def</span> <span class="nf">_replace_secrets</span><span class="p">(</span>
@@ -353,7 +389,7 @@
     <span class="k">return</span> <span class="n">result</span>
 
 
-<span class="k">def</span> <span class="nf">to_json_not_implemented</span><span class="p">(</span><span class="n">obj</span><span class="p">:</span> <span class="nb">object</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">SerializedNotImplemented</span><span class="p">:</span>
+<div class="viewcode-block" id="to_json_not_implemented"><a class="viewcode-back" href="../../../load/langchain_core.load.serializable.to_json_not_implemented.html#langchain_community.agent_toolkits.nla.tool.to_json_not_implemented">[docs]</a><span class="k">def</span> <span class="nf">to_json_not_implemented</span><span class="p">(</span><span class="n">obj</span><span class="p">:</span> <span class="nb">object</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">SerializedNotImplemented</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;Serialize a &quot;not implemented&quot; object.</span>
 
 <span class="sd">    Args:</span>
@@ -381,14 +417,14 @@
         <span class="n">result</span><span class="p">[</span><span class="s2">&quot;repr&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="nb">repr</span><span class="p">(</span><span class="n">obj</span><span class="p">)</span>
     <span class="k">except</span> <span class="ne">Exception</span><span class="p">:</span>
         <span class="k">pass</span>
-    <span class="k">return</span> <span class="n">result</span>
+    <span class="k">return</span> <span class="n">result</span></div>
 </pre></div>
 
       </div>
     <div class="container">
       <footer class="sk-content-footer">
             &copy; 2023, LangChain, Inc..
-          Last updated on Feb 17, 2024.
+          Last updated on Mar 01, 2024.
       </footer>
     </div>
   </div>
